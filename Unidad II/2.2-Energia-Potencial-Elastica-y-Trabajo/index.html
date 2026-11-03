@@ -1335,10 +1335,9 @@ La fuerza elástica o recuperadora dada por la Ley de Hooke (<span class="arithm
 $<span class="arithmatex">\(F_{\text{resorte}} = -k \cdot x\)</span>$</p>
 <p>Como la fuerza varía continuamente con la posición <span class="arithmatex">\(x\)</span>, no se puede usar la fórmula simple <span class="arithmatex">\(W = F \cdot \Delta x\)</span>. Se debe recurrir al cálculo integral[cite: 2]:</p>
 <div class="arithmatex">\[W = \int_{x_1}^{x_2} F(x) \, dx\]</div>
-<div class="highlight"><pre><span></span><code>graph LR
+<pre class="mermaid"><code>graph LR
     A["Trabajo Elástico"] --&gt; B["&lt;b&gt;Agente Externo:&lt;/b&gt;&lt;br/&gt;Aplica F_ext = +k*x para estirar/comprimir.&lt;br/&gt;W_ext = +1/2*k*(x2² - x1²) &gt; 0"]
-    A --&gt; C["&lt;b&gt;Fuerza Restitutiva:&lt;/b&gt;&lt;br/&gt;Opone F_res = -k*x.&lt;br/&gt;W_res = -1/2*k*(x2² - x1²) = -ΔU"]
-</code></pre></div>
+    A --&gt; C["&lt;b&gt;Fuerza Restitutiva:&lt;/b&gt;&lt;br/&gt;Opone F_res = -k*x.&lt;br/&gt;W_res = -1/2*k*(x2² - x1²) = -ΔU"]</code></pre>
 <h3 id="calculo-integral-del-trabajo-de-la-fuerza-restitutiva-explicacion-paso-a-paso">🔬 Cálculo Integral del Trabajo de la Fuerza Restitutiva (Explicación Paso a Paso)</h3>
 <blockquote>
 <p><strong>Pregunta de Parcial UNCA:</strong> <em>"Demostrar analíticamente el trabajo realizado por la fuerza restauradora de un resorte al desplazarse desde una posición <span class="arithmatex">\(x_1\)</span> hasta <span class="arithmatex">\(x_2\)</span>."</em></p>
@@ -1587,6 +1586,8 @@ $<span class="arithmatex">\(x = 18\,\text{cm} = 0,18\,\text{m} \implies x^2 = (0
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       
     
   </body>
