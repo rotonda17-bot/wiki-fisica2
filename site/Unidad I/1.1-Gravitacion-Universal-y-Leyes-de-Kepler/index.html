@@ -1,0 +1,1518 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes, fórmulas y gráficos interactivos de la materia">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../1.2-Campo-y-Potencial-Gravitatorio/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>1.1 Leyes de Kepler - Wiki de Física II</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tema-11-ley-de-gravitacion-universal-y-leyes-de-kepler" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Wiki de Física II" class="md-header__button md-logo" aria-label="Wiki de Física II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wiki de Física II
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1.1 Leyes de Kepler
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Wiki de Física II" class="md-nav__button md-logo" aria-label="Wiki de Física II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Wiki de Física II
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Leyes de Kepler
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Leyes de Kepler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenido-de-esta-nota-indice-interactivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Contenido de esta nota (Índice interactivo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-traductor-de-lenguaje-fisico-y-notacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Traductor de Lenguaje Físico y Notación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ley-de-gravitacion-universal-de-newton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ley de Gravitación Universal de Newton
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Ley de Gravitación Universal de Newton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enunciado-formal-catedra-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enunciado Formal (Cátedra UNCA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propiedades-fundamentales-de-la-fuerza-gravitatoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades Fundamentales de la Fuerza Gravitatoria:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-experimento-de-cavendish-y-medicion-de-g" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Experimento de Cavendish y Medición de \(G\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-leyes-de-kepler-y-deduccion-teorica-de-la-3a-ley" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Leyes de Kepler y Deducción Teórica de la 3ª Ley
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-leyes-de-kepler-y-deduccion-teorica-de-la-3a-ley_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Leyes de Kepler y Deducción Teórica de la 3ª Ley
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Leyes de Kepler y Deducción Teórica de la 3ª Ley">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#las-tres-leyes-de-kepler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Las Tres Leyes de Kepler:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detalle-cinematico-de-la-1a-y-2a-ley" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detalle Cinemático de la 1ª y 2ª Ley:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deduccion-teorica-de-parcial-3a-ley-de-kepler-para-orbitas-circulares" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔬 Deducción Teórica de Parcial: 3ª Ley de Kepler para Órbitas Circulares
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 Deducción Teórica de Parcial: 3ª Ley de Kepler para Órbitas Circulares">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-matematico-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Matemático Paso a Paso:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-diagramas-codigo-python-y-representacion-grafica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📐 5. Diagramas, Código Python y Representación Gráfica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-trampas-y-errores-tipicos-en-examenes-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 6. Trampas y Errores Típicos en Exámenes (UNCA)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-ejercicios-resueltos-paso-a-paso-de-parcial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 7. Ejercicios Resueltos Paso a Paso de Parcial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 7. Ejercicios Resueltos Paso a Paso de Parcial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso-ejercicio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso (Ejercicio 1):
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso-ejercicio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso (Ejercicio 2):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-conexion-con-el-siguiente-tema-pozo-de-potencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Conexión con el Siguiente Tema (Pozo de Potencial)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Enlaces Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.2-Campo-y-Potencial-Gravitatorio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Campo y Potencial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.3-Satelites-Movimiento-Orbital-y-Energia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Satélites y Órbitas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.1-Elasticidad-Modulos-y-Ley-de-Hooke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Elasticidad y Ley de Hooke
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.2-Energia-Potencial-Elastica-y-Trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Energía Potencial Elástica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad III
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad III
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.1-Movimiento-Armonico-Simple-MAS-Ecuaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Ecuaciones del MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenido-de-esta-nota-indice-interactivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Contenido de esta nota (Índice interactivo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-traductor-de-lenguaje-fisico-y-notacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Traductor de Lenguaje Físico y Notación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ley-de-gravitacion-universal-de-newton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ley de Gravitación Universal de Newton
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Ley de Gravitación Universal de Newton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enunciado-formal-catedra-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enunciado Formal (Cátedra UNCA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propiedades-fundamentales-de-la-fuerza-gravitatoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades Fundamentales de la Fuerza Gravitatoria:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-experimento-de-cavendish-y-medicion-de-g" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Experimento de Cavendish y Medición de \(G\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-leyes-de-kepler-y-deduccion-teorica-de-la-3a-ley" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Leyes de Kepler y Deducción Teórica de la 3ª Ley
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-leyes-de-kepler-y-deduccion-teorica-de-la-3a-ley_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Leyes de Kepler y Deducción Teórica de la 3ª Ley
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Leyes de Kepler y Deducción Teórica de la 3ª Ley">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#las-tres-leyes-de-kepler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Las Tres Leyes de Kepler:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detalle-cinematico-de-la-1a-y-2a-ley" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detalle Cinemático de la 1ª y 2ª Ley:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deduccion-teorica-de-parcial-3a-ley-de-kepler-para-orbitas-circulares" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔬 Deducción Teórica de Parcial: 3ª Ley de Kepler para Órbitas Circulares
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 Deducción Teórica de Parcial: 3ª Ley de Kepler para Órbitas Circulares">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-matematico-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Matemático Paso a Paso:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-diagramas-codigo-python-y-representacion-grafica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📐 5. Diagramas, Código Python y Representación Gráfica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-trampas-y-errores-tipicos-en-examenes-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 6. Trampas y Errores Típicos en Exámenes (UNCA)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-ejercicios-resueltos-paso-a-paso-de-parcial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 7. Ejercicios Resueltos Paso a Paso de Parcial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 7. Ejercicios Resueltos Paso a Paso de Parcial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso-ejercicio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso (Ejercicio 1):
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso-ejercicio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso (Ejercicio 2):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-conexion-con-el-siguiente-tema-pozo-de-potencial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Conexión con el Siguiente Tema (Pozo de Potencial)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Enlaces Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tema-11-ley-de-gravitacion-universal-y-leyes-de-kepler">🌌 Tema 1.1: Ley de Gravitación Universal y Leyes de Kepler</h1>
+<blockquote>
+<p><strong>Intuición y Propósito del Tema:</strong>
+La <strong>Gravitación Universal</strong> es la interacción atractiva fundamental entre cuerpos con masa. 
+* <strong>En criollo:</strong> Dos masas cualesquiera en el universo se atraen. La fuerza es más intensa cuanto más masivos sean los cuerpos y decae rápidamente al alejarse con el cuadrado de la distancia (<span class="arithmatex">\(1/r^2\)</span>).
+* <strong>Eje Conceptual:</strong> Explica cómo una única fuerza central e inversamente proporcional al cuadrado de la distancia (<span class="arithmatex">\(F_g \propto 1/r^2\)</span>) gobierna tanto la caída de los cuerpos en la superficie terrestre como la mecánica celeste de las órbitas elípticas de los planetas y satélites (Leyes de Kepler).</p>
+</blockquote>
+<hr />
+<h3 id="contenido-de-esta-nota-indice-interactivo">📌 Contenido de esta nota (Índice interactivo)</h3>
+<ul>
+<li><a href="#-tema-11-ley-de-gravitación-universal-y-leyes-de-kepler">🌌 Tema 1.1: Ley de Gravitación Universal y Leyes de Kepler</a><ul>
+<li><a href="#-contenido-de-esta-nota-índice-interactivo">📌 Contenido de esta nota (Índice interactivo)</a></li>
+</ul>
+</li>
+<li><a href="#1-traductor-de-lenguaje-físico-y-notación">1. Traductor de Lenguaje Físico y Notación</a></li>
+<li><a href="#2-ley-de-gravitación-universal-de-newton">2. Ley de Gravitación Universal de Newton</a><ul>
+<li><a href="#enunciado-formal-cátedra-unca">Enunciado Formal (Cátedra UNCA)</a></li>
+<li><a href="#propiedades-fundamentales-de-la-fuerza-gravitatoria">Propiedades Fundamentales de la Fuerza Gravitatoria:</a></li>
+</ul>
+</li>
+<li><a href="#3-experimento-de-cavendish-y-medición-de-g">3. Experimento de Cavendish y Medición de <span class="arithmatex">\(G\)</span></a></li>
+<li><a href="#4-leyes-de-kepler-y-deducción-teórica-de-la-3ª-ley">4. Leyes de Kepler y Deducción Teórica de la 3ª Ley</a></li>
+<li><a href="#4-leyes-de-kepler-y-deducción-teórica-de-la-3ª-ley-1">4. Leyes de Kepler y Deducción Teórica de la 3ª Ley</a><ul>
+<li><a href="#las-tres-leyes-de-kepler">Las Tres Leyes de Kepler:</a></li>
+<li><a href="#detalle-cinemático-de-la-1ª-y-2ª-ley">Detalle Cinemático de la 1ª y 2ª Ley:</a></li>
+<li><a href="#-deducción-teórica-de-parcial-3ª-ley-de-kepler-para-órbitas-circulares">🔬 Deducción Teórica de Parcial: 3ª Ley de Kepler para Órbitas Circulares</a></li>
+<li><a href="#desarrollo-matemático-paso-a-paso">Desarrollo Matemático Paso a Paso:</a></li>
+</ul>
+</li>
+<li><a href="#-5-diagramas-código-python-y-representación-gráfica">📐 5. Diagramas, Código Python y Representación Gráfica</a></li>
+<li><a href="#️-6-trampas-y-errores-típicos-en-exámenes-unca">⚠️ 6. Trampas y Errores Típicos en Exámenes (UNCA)</a></li>
+<li><a href="#-7-ejercicios-resueltos-paso-a-paso-de-parcial">📝 7. Ejercicios Resueltos Paso a Paso de Parcial</a><ul>
+<li><a href="#desarrollo-paso-a-paso-ejercicio-1">Desarrollo Paso a Paso (Ejercicio 1):</a></li>
+<li><a href="#desarrollo-paso-a-paso-ejercicio-2">Desarrollo Paso a Paso (Ejercicio 2):</a></li>
+</ul>
+</li>
+<li><a href="#8-conexión-con-el-siguiente-tema-pozo-de-potencial">8. Conexión con el Siguiente Tema (Pozo de Potencial)</a></li>
+<li><a href="#-enlaces-relacionados">🔗 Enlaces Relacionados</a></li>
+<li><a href="#referencias">Referencias</a></li>
+</ul>
+<hr />
+<h2 id="1-traductor-de-lenguaje-fisico-y-notacion">1. Traductor de Lenguaje Físico y Notación</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Símbolo Formal</th>
+<th style="text-align: left;">Lectura Universitaria</th>
+<th style="text-align: left;">Significado Físico / Intuición</th>
+<th style="text-align: center;">Unidades (SI)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{F}_g\)</span></td>
+<td style="text-align: left;">Fuerza Gravitatoria</td>
+<td style="text-align: left;">Fuerza vectorial de atracción dirigida sobre la línea que une ambos centros de masa.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{N}\)</span> (<span class="arithmatex">\(\text{kg}\cdot\text{m/s}^2\)</span>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(G\)</span></td>
+<td style="text-align: left;">Constante de Gravitación Universal</td>
+<td style="text-align: left;">Escalar universal fundamental (<span class="arithmatex">\(G \approx 6,674 \times 10^{-11}\)</span>). Mide la intensidad de la interacción gravitatoria en el universo.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\frac{\text{N}\cdot\text{m}^2}{\text{kg}^2}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(r\)</span></td>
+<td style="text-align: left;">Distancia Centro a Centro</td>
+<td style="text-align: left;">Distancia medida <strong>estrictamente entre los centros de masa</strong> de los cuerpos (<span class="arithmatex">\(r = R_{\text{astro}} + h\)</span>).</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\hat{r}\)</span></td>
+<td style="text-align: left;">Vector Unitario Radial</td>
+<td style="text-align: left;">Vector de módulo 1 dirigido desde la masa fuente hacia la masa atraída. El signo <span class="arithmatex">\(-\hat{r}\)</span> garantiza el carácter <strong>atractivo</strong>.</td>
+<td style="text-align: center;">Adimensional</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T\)</span></td>
+<td style="text-align: left;">Período Orbital</td>
+<td style="text-align: left;">Tiempo que tarda un cuerpo orbitante en completar una revolución entera (<span class="arithmatex">\(360^\circ\)</span>).</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{s}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(a\)</span></td>
+<td style="text-align: left;">Semieje Mayor de la Elipse</td>
+<td style="text-align: left;">Distancia media entre el centro de la elipse orbital y sus vértices sobre el eje focal.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(e\)</span></td>
+<td style="text-align: left;">Excentricidad Orbital</td>
+<td style="text-align: left;">Grado de achatamiento de la elipse (<span class="arithmatex">\(0 \le e &lt; 1\)</span>). Si <span class="arithmatex">\(e=0\)</span>, la órbita es una circunferencia perfecta.</td>
+<td style="text-align: center;">Adimensional</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-ley-de-gravitacion-universal-de-newton">2. Ley de Gravitación Universal de Newton</h2>
+<h3 id="enunciado-formal-catedra-unca">Enunciado Formal (Cátedra UNCA)</h3>
+<p>Dos partículas puntuales de masas <span class="arithmatex">\(m_1\)</span> y <span class="arithmatex">\(m_2\)</span> separadas una distancia <span class="arithmatex">\(r\)</span> se atraen mutuamente mediante una fuerza dirigida a lo largo de la línea que une sus centros, cuya magnitud es directamente proporcional al producto de sus masas e inversamente proporcional al cuadrado de la distancia que las separa:</p>
+<div class="arithmatex">\[\vec{F}_{12} = -G \frac{m_1 m_2}{r^2} \hat{r}_{12}\]</div>
+<ul>
+<li><strong>Forma Escalar (Magnitud de la Fuerza):</strong>
+  $<span class="arithmatex">\(F_g = G \frac{m_1 m_2}{r^2}\)</span>$</li>
+</ul>
+<p><img alt="Esquema Vectorial de Atracción Gravitatoria entre Dos Masas" src="./assets/1.1-fuerza-gravitatoria-vectorial.png" /></p>
+<h3 id="propiedades-fundamentales-de-la-fuerza-gravitatoria">Propiedades Fundamentales de la Fuerza Gravitatoria:</h3>
+<ol>
+<li><strong>Fuerza Central:</strong> Su línea de acción pasa siempre por el centro de masa del cuerpo atraedor. No genera torque respecto al centro (<span class="arithmatex">\(\vec{\tau} = \vec{r} \times \vec{F} = \vec{0}\)</span>), lo que implica la <strong>conservación del momento angular (<span class="arithmatex">\(\vec{L} = \text{constante}\)</span>)</strong>.</li>
+<li><strong>Fuerza Conservativa:</strong> El trabajo realizado a lo largo de cualquier trayectoria cerrada es nulo (<span class="arithmatex">\(\oint \vec{F}_g \cdot d\vec{r} = 0\)</span>), lo que permite definir una función escalar de <strong>Energía Potencial Gravitatoria <span class="arithmatex">\(U(r)\)</span></strong>.</li>
+<li><strong>Par de Acción y Reacción (3ª Ley de Newton):</strong> Ambas masas experimentan fuerzas de igual módulo y sentido opuesto (<span class="arithmatex">\(\vec{F}_{12} = -\vec{F}_{21}\)</span>).</li>
+</ol>
+<hr />
+<h2 id="3-experimento-de-cavendish-y-medicion-de-g">3. Experimento de Cavendish y Medición de <span class="arithmatex">\(G\)</span></h2>
+<p>Debido al valor extremadamente pequeño de la constante <span class="arithmatex">\(G\)</span>, la atracción entre objetos de escala humana es imperceptible a simple vista. </p>
+<p>En 1798, <strong>Henry Cavendish</strong> midió por primera vez el valor experimental de <span class="arithmatex">\(G\)</span> mediante una <strong>balanza de torsión</strong>:
+* Consistió en dos esferas pequeñas de masa <span class="arithmatex">\(m\)</span> sujetas a los extremos de una varilla ligera suspendida de un hilo de fibra fina, enfrentadas a dos grandes esferas de plomo de masa <span class="arithmatex">\(M\)</span>.
+* La atracción gravitatoria entre <span class="arithmatex">\(M\)</span> y <span class="arithmatex">\(m\)</span> hizo rotar la varilla un ángulo <span class="arithmatex">\(\theta\)</span>, torciendo la fibra hasta equilibrar el torque gravitatorio con el torque de restitución elástica de la fibra (<span class="arithmatex">\(\tau = \kappa \theta\)</span>).
+* <strong>Importancia Histórica y Teórica:</strong> Al determinar <span class="arithmatex">\(G\)</span>, Cavendish pudo "pesar la Tierra", calculando por primera vez su masa <span class="arithmatex">\(M_T = \frac{g R_T^2}{G}\)</span> y su densidad media.</p>
+<h2 id="4-leyes-de-kepler-y-deduccion-teorica-de-la-3a-ley">4. Leyes de Kepler y Deducción Teórica de la 3ª Ley</h2>
+<p>Johannes Kepler enunció tres leyes empíricas que describen el movimiento cinemático de los planetas alrededor del Sol. Newton demostró que son consecuencia directa de la fuerza de tracción gravitacional <span class="arithmatex">\(1/r^2\)</span>.</p>
+<div class="highlight"><pre><span></span><code>graph LR
+    A["Leyes de Kepler"] --&gt; B["&lt;b&gt;1ª Ley (Órbitas):&lt;/b&gt;&lt;br/&gt;Los planetas describen elipses con el Sol en uno de sus focos."]
+    A --&gt; C["&lt;b&gt;2ª Ley (Áreas):&lt;/b&gt;&lt;br/&gt;El radio vector barre áreas iguales en tiempos iguales (dA/dt = L/2m = cte)."]
+    A --&gt; D["&lt;b&gt;3ª Ley (Períodos):&lt;/b&gt;&lt;br/&gt;El cuadrado del período es proporcional al cubo del semieje mayor (T² ∝ a³)."]
+</code></pre></div>
+<h2 id="4-leyes-de-kepler-y-deduccion-teorica-de-la-3a-ley_1">4. Leyes de Kepler y Deducción Teórica de la 3ª Ley</h2>
+<p>Johannes Kepler enunció tres leyes empíricas que describen el movimiento cinemático de los planetas alrededor del Sol. Newton demostró que son consecuencia directa de la fuerza de tracción gravitacional <span class="arithmatex">\(1/r^2\)</span>.</p>
+<h3 id="las-tres-leyes-de-kepler">Las Tres Leyes de Kepler:</h3>
+<ol>
+<li><strong>1ª Ley (Órbitas):</strong> Los planetas describen elipses con el Sol en uno de sus focos.</li>
+<li><strong>2ª Ley (Áreas):</strong> El radio vector barre áreas iguales en tiempos iguales (<span class="arithmatex">\(dA/dt = L/2m = \text{constante}\)</span>).</li>
+<li><strong>3ª Ley (Períodos):</strong> El cuadrado del período es proporcional al cubo del semieje mayor (<span class="arithmatex">\(T^2 \propto a^3\)</span>).</li>
+</ol>
+<h3 id="detalle-cinematico-de-la-1a-y-2a-ley">Detalle Cinemático de la 1ª y 2ª Ley:</h3>
+<ul>
+<li><strong>1ª Ley (Geometría de la Elipse):</strong></li>
+<li><strong>Perihelio (Perigeo):</strong> Punto de máxima cercanía al centro. Distancia <span class="arithmatex">\(r_{\min} = a(1 - e)\)</span>.</li>
+<li><strong>Afelio (Apogeo):</strong> Punto de máxima lejanía del centro. Distancia <span class="arithmatex">\(r_{\max} = a(1 + e)\)</span>.</li>
+<li><strong>2ª Ley (Conservación del Momento Angular <span class="arithmatex">\(\vec{L}\)</span>):</strong></li>
+<li>Como el torque de la fuerza gravitatoria es nulo (<span class="arithmatex">\(\vec{\tau} = \vec{0}\)</span>), el momento angular del cuerpo orbitante se conserva vectorialmente:
+    $<span class="arithmatex">\(\vec{L} = \vec{r} \times m\vec{v} = \text{constante}\)</span>$</li>
+<li>La velocidad areal es directamente proporcional al módulo de <span class="arithmatex">\(\vec{L}\)</span>: <span class="arithmatex">\(\frac{dA}{dt} = \frac{L}{2m} = \text{constante}\)</span>.</li>
+<li><strong>Consecuencia clave:</strong> El planeta se mueve más rápido en el perihelio (<span class="arithmatex">\(v_{\max}\)</span>) y más lento en el afelio (<span class="arithmatex">\(v_{\min}\)</span>), cumpliéndose:
+    $<span class="arithmatex">\(v_{\text{perihelio}} \cdot r_{\min} = v_{\text{afelio}} \cdot r_{\max}\)</span>$</li>
+</ul>
+<hr />
+<h3 id="deduccion-teorica-de-parcial-3a-ley-de-kepler-para-orbitas-circulares">🔬 Deducción Teórica de Parcial: 3ª Ley de Kepler para Órbitas Circulares</h3>
+<blockquote>
+<p><strong>Consigna formal de examen:</strong> <em>"Demostrar analíticamente la Tercera Ley de Kepler a partir de las Leyes de Newton para un satélite de masa <span class="arithmatex">\(m\)</span> que describe una órbita circular de radio <span class="arithmatex">\(r\)</span> alrededor de un planeta de masa <span class="arithmatex">\(M\)</span>."</em></p>
+</blockquote>
+<h4 id="desarrollo-matematico-paso-a-paso">Desarrollo Matemático Paso a Paso:</h4>
+<ul>
+<li>
+<p><strong>Paso 1: Planteo Dinámico (2ª Ley de Newton)</strong>
+  $<span class="arithmatex">\(\sum F_r = m \cdot a_c\)</span>$
+  La fuerza gravitatoria <span class="arithmatex">\(F_g\)</span> es la única fuerza radial y actúa como fuerza centrípeta.</p>
+</li>
+<li>
+<p><strong>Paso 2: Sustitución Dinámica</strong>
+  $<span class="arithmatex">\(G \frac{M m}{r^2} = m \frac{v^2}{r}\)</span>$
+  Se reemplaza la Ley de Gravitación Universal y <span class="arithmatex">\(a_c = \frac{v^2}{r}\)</span>.</p>
+</li>
+<li>
+<p><strong>Paso 3: Rapidez Orbital</strong>
+  $<span class="arithmatex">\(v = \sqrt{\frac{G M}{r}}\)</span>$
+  Se simplifica <span class="arithmatex">\(m\)</span>. La rapidez orbital <strong>no depende de la masa del satélite</strong>.</p>
+</li>
+<li>
+<p><strong>Paso 4: Relación Cinemática</strong>
+  $<span class="arithmatex">\(v = \frac{2\pi r}{T}\)</span>$
+  Rapidez igual a la distancia recorrida en una vuelta (<span class="arithmatex">\(2\pi r\)</span>) sobre el período <span class="arithmatex">\(T\)</span>.</p>
+</li>
+<li>
+<p><strong>Paso 5: Igualación Algebraica</strong>
+  $<span class="arithmatex">\(\left(\frac{2\pi r}{T}\right)^2 = \frac{G M}{r} \implies \frac{4\pi^2 r^2}{T^2} = \frac{G M}{r}\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 6: Expresión Final (3ª Ley de Kepler)</strong>
+  $<span class="arithmatex">\(T^2 = \left(\frac{4\pi^2}{G M}\right) r^3\)</span>$</p>
+</li>
+<li>
+<p><strong>Constante de Kepler (<span class="arithmatex">\(K\)</span>):</strong>
+  $<span class="arithmatex">\(K = \frac{4\pi^2}{G M} \quad \implies \quad T^2 = K \cdot r^3\)</span>$</p>
+</li>
+<li><strong>Interpretación:</strong> La constante <span class="arithmatex">\(K\)</span> depende exclusivamente de la masa del cuerpo central <span class="arithmatex">\(M\)</span> y es idéntica para todos los cuerpos que orbiten alrededor de ese mismo astro.</li>
+<li><strong>Generalización Elíptica:</strong> Para órbitas elípticas, el radio orbital <span class="arithmatex">\(r\)</span> se reemplaza simplemente por el semieje mayor <span class="arithmatex">\(a\)</span>:
+    $<span class="arithmatex">\(T^2 = \left(\frac{4\pi^2}{G M}\right) a^3\)</span>$</li>
+</ul>
+<h2 id="5-diagramas-codigo-python-y-representacion-grafica">📐 5. Diagramas, Código Python y Representación Gráfica</h2>
+<p>Gráfica de la relación entre el período orbital y el radio de la órbita (<span class="arithmatex">\(T\)</span> vs <span class="arithmatex">\(r\)</span>), junto a la variación de la rapidez orbital (<span class="arithmatex">\(v\)</span> vs <span class="arithmatex">\(r\)</span>), generada mediante el script <code>generar_graficos_1_1.py</code>:</p>
+<p><img alt="Leyes de Kepler" src="../../assets/Imagenes-1/1.1-kepler-periodo-y-velocidad.png" /></p>
+<hr />
+<h2 id="6-trampas-y-errores-tipicos-en-examenes-unca">⚠️ 6. Trampas y Errores Típicos en Exámenes (UNCA)</h2>
+<blockquote>
+<p>⚠️ <strong>Trampa 1: El "Peligro de la Altura <span class="arithmatex">\(h\)</span>" vs. Radio Orbital <span class="arithmatex">\(r\)</span> (Confusión de Distancia)</strong><br />
+<strong>Error común:</strong> Enunciados de parcial que dicen <em>"un satélite vuela a una altura <span class="arithmatex">\(h = 600\,\text{km}\)</span>"</em> y reemplazar directamente <span class="arithmatex">\(r = 600\,\text{km}\)</span>.<br />
+<strong>Por qué se invalida:</strong> La Ley de Gravitación Universal exige la distancia <strong>centro a centro de masa</strong>. La altura <span class="arithmatex">\(h\)</span> es solo la distancia desde la superficie del planeta.<br />
+<strong>Regla de Parcial INVIOLABLE:</strong>
+$<span class="arithmatex">\(r = R_{\text{planeta}} + h\)</span>$</p>
+<p>⚠️ <strong>Trampa 2: Descomposición e Incompatibilidad de Unidades en el Sistema Internacional (SI)</strong><br />
+<strong>Error grave:</strong> Operar con el período <span class="arithmatex">\(T\)</span> en horas o días, o el radio <span class="arithmatex">\(r\)</span> en kilómetros (<span class="arithmatex">\(\text{km}\)</span>), combinándolos directamente con <span class="arithmatex">\(G = 6,674 \times 10^{-11}\,\frac{\text{N}\cdot\text{m}^2}{\text{kg}^2}\)</span>.<br />
+<strong>Tabla de Conversión Obligatoria:</strong>
+* Distancias: <span class="arithmatex">\(1\,\text{km} = 10^3\,\text{m} \quad | \quad 1\,\text{UA} = 1,50 \times 10^{11}\,\text{m}\)</span>
+* Tiempos: <span class="arithmatex">\(1\,\text{hora} = 3600\,\text{s} \quad | \quad 1\,\text{día} = 86.400\,\text{s}\)</span></p>
+<p>⚠️ <strong>Trampa 3: Usar la Masa del Satélite en la Constante de Kepler</strong><br />
+<strong>Error común:</strong> En <span class="arithmatex">\(T^2 = \left(\frac{4\pi^2}{G M}\right) r^3\)</span>, poner la masa del satélite <span class="arithmatex">\(m\)</span> en el denominador en lugar de la masa del cuerpo central <span class="arithmatex">\(M\)</span>.<br />
+<strong>Criterio de Cátedra:</strong> La constante <span class="arithmatex">\(K = \frac{4\pi^2}{GM}\)</span> depende <strong>únicamente del cuerpo central atraedor</strong>.</p>
+<p>⚠️ <strong>Trampa 4: Olvidar el Vector Unitario <span class="arithmatex">\(-\hat{r}\)</span> y la Naturaleza Atractiva de <span class="arithmatex">\(\vec{F}_g\)</span></strong><br />
+<strong>Error en preguntas teóricas:</strong> Omitir el signo negativo en <span class="arithmatex">\(\vec{F}_g = -G \frac{M m}{r^2} \hat{r}\)</span>.<br />
+<strong>Corrección Teórica:</strong> Indicar siempre que <em>"el signo negativo indica que la fuerza es atractiva y de dirección central (sentido opuesto al vector unitario radial <span class="arithmatex">\(\hat{r}\)</span>)"</em>.</p>
+<p>⚠️ <strong>Trampa 5: Asumir que la Velocidad Orbital Depende de la Masa del Satélite</strong><br />
+<strong>Error de concepto:</strong> Creer que un satélite más pesado necesita viajar más rápido para sostener la órbita.<br />
+<strong>Demostración:</strong> <span class="arithmatex">\(v = \sqrt{\frac{G M}{r}}\)</span>. Dos satélites de distinta masa en el mismo radio <span class="arithmatex">\(r\)</span> viajan exactamente a la misma rapidez <span class="arithmatex">\(v\)</span>.</p>
+</blockquote>
+<h2 id="7-ejercicios-resueltos-paso-a-paso-de-parcial">📝 7. Ejercicios Resueltos Paso a Paso de Parcial</h2>
+<blockquote>
+<p><strong>Ejercicio 1 (Cálculo de Órbita Geoestacionaria - Parcial UNCA):</strong><br />
+<em>Un satélite geofísico debe colocarse en una órbita circular geoestacionaria alrededor de la Tierra (<span class="arithmatex">\(T = 24\,\text{horas}\)</span>).</em><br />
+<em>Datos: <span class="arithmatex">\(M_T = 5,97 \times 10^{24}\,\text{kg}\)</span>, <span class="arithmatex">\(R_T = 6,38 \times 10^6\,\text{m}\)</span>, <span class="arithmatex">\(G = 6,674 \times 10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2\)</span>.</em><br />
+1. <em>Calcular el radio orbital <span class="arithmatex">\(r\)</span> y la altura <span class="arithmatex">\(h\)</span> del satélite sobre la superficie.</em><br />
+2. <em>Calcular la rapidez orbital <span class="arithmatex">\(v\)</span>.</em></p>
+</blockquote>
+<h3 id="desarrollo-paso-a-paso-ejercicio-1">Desarrollo Paso a Paso (Ejercicio 1):</h3>
+<ul>
+<li>
+<p><strong>Paso 1: Conversión al Sistema Internacional (SI)</strong>
+  $<span class="arithmatex">\(T = 24\,\text{h} \times 3600\,\frac{\text{s}}{\text{h}} = 86.400\,\text{s}\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 2: Despeje del Radio Orbital desde la 3ª Ley de Kepler</strong>
+  $<span class="arithmatex">\(T^2 = \left(\frac{4\pi^2}{G M_T}\right) r^3 \implies r = \sqrt[3]{\frac{G M_T T^2}{4\pi^2}}\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 3: Sustitución Numérica y Cálculo de <span class="arithmatex">\(r\)</span></strong>
+  $<span class="arithmatex">\(r = \sqrt[3]{\frac{(6,674 \times 10^{-11}) \cdot (5,97 \times 10^{24}) \cdot (86.400)^2}{4\pi^2}}\)</span>$
+  $<span class="arithmatex">\(r = \sqrt[3]{7,535 \times 10^{22}} \approx 4,224 \times 10^7\,\text{m} = 42.240\,\text{km}\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 4: Cálculo de la Altura <span class="arithmatex">\(h\)</span> sobre la Superficie Terrestre</strong>
+  $<span class="arithmatex">\(h = r - R_T = 42.240\,\text{km} - 6.380\,\text{km} = 35.860\,\text{km}\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 5: Cálculo de la Rapidez Orbital <span class="arithmatex">\(v\)</span></strong>
+  $<span class="arithmatex">\(v = \sqrt{\frac{G M_T}{r}} = \sqrt{\frac{(6,674 \times 10^{-11}) \cdot (5,97 \times 10^{24})}{4,224 \times 10^7}}\)</span>$
+  $<span class="arithmatex">\(v \approx 3071\,\text{m/s} = 3,07\,\text{km/s}\)</span>$</p>
+</li>
+</ul>
+<hr />
+<blockquote>
+<p><strong>Ejercicio 2 (Punto de Anulación Gravitatoria / Equilibrio Tierra-Luna - Parcial UNCA):</strong><br />
+<em>Determinar a qué distancia <span class="arithmatex">\(x\)</span> medida desde el centro de la Tierra la fuerza gravitatoria neta ejercida por la Tierra y la Luna sobre una nave de masa <span class="arithmatex">\(m\)</span> es igual a cero.</em><br />
+<em>Datos: Distancia Tierra-Luna <span class="arithmatex">\(d = 3,84 \times 10^8\,\text{m}\)</span>, Masa Tierra <span class="arithmatex">\(M_T = 5,97 \times 10^{24}\,\text{kg}\)</span>, Masa Luna <span class="arithmatex">\(M_L = 7,35 \times 10^{22}\,\text{kg}\)</span>.</em></p>
+</blockquote>
+<h3 id="desarrollo-paso-a-paso-ejercicio-2">Desarrollo Paso a Paso (Ejercicio 2):</h3>
+<ul>
+<li>
+<p><strong>Paso 1: Condición Dinámica de Equilibrio</strong>
+  $<span class="arithmatex">\(\vec{F}_{\text{neta}} = \vec{F}_{T-m} + \vec{F}_{L-m} = \vec{0} \implies F_{T-m} = F_{L-m}\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 2: Igualación de las Expresiones Gravitatorias</strong>
+  $<span class="arithmatex">\(G \frac{M_T m}{x^2} = G \frac{M_L m}{(d - x)^2}\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 3: Simplificación de Constantes y Aplicación de Raíz Cuadrada</strong>
+  $<span class="arithmatex">\(\frac{M_T}{x^2} = \frac{M_L}{(d - x)^2} \implies \frac{\sqrt{M_T}}{x} = \frac{\sqrt{M_L}}{d - x}\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 4: Despeje Algebraico de <span class="arithmatex">\(x\)</span></strong>
+  $<span class="arithmatex">\(\sqrt{M_T} (d - x) = \sqrt{M_L} \cdot x \implies \sqrt{M_T} d = (\sqrt{M_T} + \sqrt{M_L}) x\)</span>$
+  $<span class="arithmatex">\(x = d \cdot \left(\frac{\sqrt{M_T}}{\sqrt{M_T} + \sqrt{M_L}}\right)\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 5: Sustitución Numérica</strong>
+  $<span class="arithmatex">\(\sqrt{M_T} = 2,443 \times 10^{12} \quad | \quad \sqrt{M_L} = 2,711 \times 10^{11}\)</span>$
+  $<span class="arithmatex">\(x = (3,84 \times 10^8\,\text{m}) \cdot \left(\frac{2,443 \times 10^{12}}{2,443 \times 10^{12} + 0,2711 \times 10^{12}}\right)\)</span>$
+  $<span class="arithmatex">\(x \approx 3,456 \times 10^8\,\text{m} \quad (345.600\,\text{km})\)</span>$
+  <em>Interpretación:</em> La fuerza se anula a <span class="arithmatex">\(345.600\,\text{km}\)</span> del centro de la Tierra (aproximadamente al <span class="arithmatex">\(90\%\)</span> del camino hacia la Luna).</p>
+</li>
+</ul>
+<h2 id="8-conexion-con-el-siguiente-tema-pozo-de-potencial">8. Conexión con el Siguiente Tema (Pozo de Potencial)</h2>
+<p>El estudio de la fuerza <span class="arithmatex">\(F_g \propto \frac{1}{r^2}\)</span> establece el punto de partida directo para definir el <strong>Campo Gravitatorio <span class="arithmatex">\(\vec{g}\)</span></strong> y el <strong>Potencial Gravitatorio <span class="arithmatex">\(V\)</span></strong>:
+* La fuerza depende de la masa de prueba <span class="arithmatex">\(m\)</span>. Al normalizarla por unidad de masa (<span class="arithmatex">\(\vec{g} = \vec{F}_g / m\)</span>), obtenemos una propiedad intrínseca del espacio creada por la masa fuente <span class="arithmatex">\(M\)</span>.
+* Al integrar la fuerza respecto a la distancia (<span class="arithmatex">\(W = \int \vec{F}_g \cdot d\vec{r}\)</span>), pasamos de una dependencia <span class="arithmatex">\(1/r^2\)</span> en la fuerza a un <strong>pozo de potencial de energía <span class="arithmatex">\(1/r\)</span></strong>, fundamento central del <strong>Tema 1.2</strong>.</p>
+<hr />
+<h2 id="enlaces-relacionados">🔗 Enlaces Relacionados</h2>
+<ul>
+<li><a href="../1.2-Campo-y-Potencial-Gravitatorio/">➡️ Tema 1.2: Campo y Potencial Gravitatorio</a></li>
+<li><a href="../../Unidad%20II/2.1-Elasticidad-Modulos-y-Ley-de-Hooke/">➡️ Unidad 2: Elasticidad y Ley de Hooke</a></li>
+<li><a href="../../README">📚 Menú Principal de Física II</a></li>
+</ul>
+<h2 id="referencias">Referencias</h2>
+<ul>
+<li><em>Cátedra:</em> Física II – UNCA (Unidad 1: Gravitación y Mecánica Celeste, Sección 1.1).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

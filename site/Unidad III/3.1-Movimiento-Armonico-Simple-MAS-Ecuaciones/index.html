@@ -1,0 +1,1557 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes, fórmulas y gráficos interactivos de la materia">
+      
+      
+      
+      
+        <link rel="prev" href="../../Unidad%20II/2.2-Energia-Potencial-Elastica-y-Trabajo/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>3.1 Ecuaciones del MAS - Wiki de Física II</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tema-31-movimiento-armonico-simple-mas-y-ecuaciones-cinematicas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Wiki de Física II" class="md-header__button md-logo" aria-label="Wiki de Física II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wiki de Física II
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3.1 Ecuaciones del MAS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Wiki de Física II" class="md-nav__button md-logo" aria-label="Wiki de Física II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Wiki de Física II
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.1-Gravitacion-Universal-y-Leyes-de-Kepler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Leyes de Kepler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.2-Campo-y-Potencial-Gravitatorio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Campo y Potencial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.3-Satelites-Movimiento-Orbital-y-Energia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Satélites y Órbitas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.1-Elasticidad-Modulos-y-Ley-de-Hooke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Elasticidad y Ley de Hooke
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.2-Energia-Potencial-Elastica-y-Trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Energía Potencial Elástica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad III
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad III
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Ecuaciones del MAS
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Ecuaciones del MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenido-de-esta-nota-indice-interactivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Contenido de esta nota (Índice interactivo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-traductor-de-lenguaje-fisico-y-notacion-angular-especifica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Traductor de Lenguaje Físico y Notación Angular Específica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-deduccion-dinamica-de-la-ecuacion-diferencial-del-mas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Deducción Dinámica de la Ecuación Diferencial del M.A.S.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Deducción Dinámica de la Ecuación Diferencial del M.A.S.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-solucion-matematica-general-e-integracion-cinematica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Solución Matemática General e Integración Cinemática
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Solución Matemática General e Integración Cinemática">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ecuacion-de-posicion-elongacion-xt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Ecuación de Posición / Elongación \(x(t)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ecuacion-de-velocidad-instantanea-vt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ecuación de Velocidad Instantánea \(v(t)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ecuacion-de-aceleracion-instantanea-at" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ecuación de Aceleración Instantánea \(a(t)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-determinacion-de-parametros-por-condiciones-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Determinación de Parámetros por Condiciones Iniciales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Determinación de Parámetros por Condiciones Iniciales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deduccion-del-angulo-de-fase-inicial-phi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deducción del Ángulo de Fase Inicial (\(\phi\)):
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deduccion-de-la-amplitud-maxima-x_max" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deducción de la Amplitud Máxima (\(x_{\max}\)):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-relaciones-de-periodo-frecuencia-y-propiedad-de-independencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Relaciones de Período, Frecuencia y Propiedad de Independencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-analisis-dimensional-y-cancelacion-de-unidades-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Análisis Dimensional y Cancelación de Unidades Paso a Paso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Análisis Dimensional y Cancelación de Unidades Paso a Paso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caso-1-demostracion-dimensional-de-la-frecuencia-angular-omega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 1: Demostración Dimensional de la Frecuencia Angular (\(\omega\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caso-2-demostracion-dimensional-del-periodo-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 2: Demostración Dimensional del Período (\(T\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-trampas-y-errores-tipicos-en-examenes-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 7. Trampas y Errores Típicos en Exámenes (UNCA)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ejercicios-resueltos-paso-a-paso-de-parcial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 8. Ejercicios Resueltos Paso a Paso de Parcial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 8. Ejercicios Resueltos Paso a Paso de Parcial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conexion-con-el-siguiente-tema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Conexión con el Siguiente Tema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Enlaces Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenido-de-esta-nota-indice-interactivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Contenido de esta nota (Índice interactivo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-traductor-de-lenguaje-fisico-y-notacion-angular-especifica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Traductor de Lenguaje Físico y Notación Angular Específica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-deduccion-dinamica-de-la-ecuacion-diferencial-del-mas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Deducción Dinámica de la Ecuación Diferencial del M.A.S.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Deducción Dinámica de la Ecuación Diferencial del M.A.S.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-solucion-matematica-general-e-integracion-cinematica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Solución Matemática General e Integración Cinemática
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Solución Matemática General e Integración Cinemática">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ecuacion-de-posicion-elongacion-xt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Ecuación de Posición / Elongación \(x(t)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ecuacion-de-velocidad-instantanea-vt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ecuación de Velocidad Instantánea \(v(t)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ecuacion-de-aceleracion-instantanea-at" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ecuación de Aceleración Instantánea \(a(t)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-determinacion-de-parametros-por-condiciones-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Determinación de Parámetros por Condiciones Iniciales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Determinación de Parámetros por Condiciones Iniciales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deduccion-del-angulo-de-fase-inicial-phi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deducción del Ángulo de Fase Inicial (\(\phi\)):
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deduccion-de-la-amplitud-maxima-x_max" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deducción de la Amplitud Máxima (\(x_{\max}\)):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-relaciones-de-periodo-frecuencia-y-propiedad-de-independencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Relaciones de Período, Frecuencia y Propiedad de Independencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-analisis-dimensional-y-cancelacion-de-unidades-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Análisis Dimensional y Cancelación de Unidades Paso a Paso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Análisis Dimensional y Cancelación de Unidades Paso a Paso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caso-1-demostracion-dimensional-de-la-frecuencia-angular-omega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 1: Demostración Dimensional de la Frecuencia Angular (\(\omega\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caso-2-demostracion-dimensional-del-periodo-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 2: Demostración Dimensional del Período (\(T\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-trampas-y-errores-tipicos-en-examenes-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 7. Trampas y Errores Típicos en Exámenes (UNCA)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ejercicios-resueltos-paso-a-paso-de-parcial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 8. Ejercicios Resueltos Paso a Paso de Parcial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 8. Ejercicios Resueltos Paso a Paso de Parcial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conexion-con-el-siguiente-tema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Conexión con el Siguiente Tema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Enlaces Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tema-31-movimiento-armonico-simple-mas-y-ecuaciones-cinematicas">🌀 Tema 3.1: Movimiento Armónico Simple (M.A.S.) y Ecuaciones Cinemáticas</h1>
+<blockquote>
+<p><strong>Intuición y Propósito del Tema:</strong>
+El <strong>Movimiento Armónico Simple (M.A.S.)</strong> es el modelo fundamental de movimiento periódico en la física.
+* <strong>En criollo:</strong> Ocurre cuando un cuerpo oscila alrededor de una posición de equilibrio estable bajo la acción de una fuerza de restitución que es directamente proporcional a la distancia a la que lo alejamos (<span class="arithmatex">\(F \propto -x\)</span>). 
+* <strong>Eje Conceptual:</strong> Plantear la Segunda Ley de Newton con la Ley de Hooke para derivar la <strong>Ecuación Diferencial Ordinaria (EDO)</strong> del oscilador armónico. Su solución matemática es una función sinusoidal (<span class="arithmatex">\(\cos\)</span> o <span class="arithmatex">\(\sin\)</span>) cuyas derivadas temporales entregan la velocidad y la aceleración instantáneas, mostrando cómo varía el estado del sistema en el tiempo.</p>
+</blockquote>
+<hr />
+<h3 id="contenido-de-esta-nota-indice-interactivo">📌 Contenido de esta nota (Índice interactivo)</h3>
+<ul>
+<li><a href="#-tema-31-movimiento-armónico-simple-mas-y-ecuaciones-cinemáticas">🌀 Tema 3.1: Movimiento Armónico Simple (M.A.S.) y Ecuaciones Cinemáticas</a><ul>
+<li><a href="#-contenido-de-esta-nota-índice-interactivo">📌 Contenido de esta nota (Índice interactivo)</a></li>
+</ul>
+</li>
+<li><a href="#1-traductor-de-lenguaje-físico-y-notación-angular-específica">1. Traductor de Lenguaje Físico y Notación Angular Específica</a></li>
+<li><a href="#2-deducción-dinámica-de-la-ecuación-diferencial-del-mas">2. Deducción Dinámica de la Ecuación Diferencial del M.A.S.</a><ul>
+<li><a href="#desarrollo-paso-a-paso">Desarrollo Paso a Paso:</a></li>
+</ul>
+</li>
+<li><a href="#3-solución-matemática-general-e-integración-cinemática">3. Solución Matemática General e Integración Cinemática</a><ul>
+<li><a href="#1-ecuación-de-posición--elongación-xt">1. Ecuación de Posición / Elongación <span class="arithmatex">\(x(t)\)</span></a></li>
+<li><a href="#2-ecuación-de-velocidad-instantánea-vt">2. Ecuación de Velocidad Instantánea <span class="arithmatex">\(v(t)\)</span></a></li>
+<li><a href="#3-ecuación-de-aceleración-instantánea-at">3. Ecuación de Aceleración Instantánea <span class="arithmatex">\(a(t)\)</span></a></li>
+</ul>
+</li>
+<li><a href="#4-determinación-de-parámetros-por-condiciones-iniciales">4. Determinación de Parámetros por Condiciones Iniciales</a><ul>
+<li><a href="#deducción-del-ángulo-de-fase-inicial-phi">Deducción del Ángulo de Fase Inicial (<span class="arithmatex">\(\\phi\)</span>):</a></li>
+<li><a href="#deducción-de-la-amplitud-máxima-x_max">Deducción de la Amplitud Máxima (<span class="arithmatex">\(x\_{\\max}\)</span>):</a></li>
+</ul>
+</li>
+<li><a href="#5-relaciones-de-período-frecuencia-y-propiedad-de-independencia">5. Relaciones de Período, Frecuencia y Propiedad de Independencia</a></li>
+<li><a href="#6-análisis-dimensional-y-cancelación-de-unidades-paso-a-paso">6. Análisis Dimensional y Cancelación de Unidades Paso a Paso</a><ul>
+<li><a href="#caso-1-demostración-dimensional-de-la-frecuencia-angular-omega">Caso 1: Demostración Dimensional de la Frecuencia Angular (<span class="arithmatex">\(\\omega\)</span>)</a></li>
+<li><a href="#caso-2-demostración-dimensional-del-período-t">Caso 2: Demostración Dimensional del Período (<span class="arithmatex">\(T\)</span>)</a></li>
+</ul>
+</li>
+<li><a href="#️-7-trampas-y-errores-típicos-en-exámenes-unca">⚠️ 7. Trampas y Errores Típicos en Exámenes (UNCA)</a></li>
+<li><a href="#-8-ejercicios-resueltos-paso-a-paso-de-parcial">📝 8. Ejercicios Resueltos Paso a Paso de Parcial</a><ul>
+<li><a href="#desarrollo-paso-a-paso-1">Desarrollo Paso a Paso:</a></li>
+</ul>
+</li>
+<li><a href="#9-conexión-con-el-siguiente-tema">9. Conexión con el Siguiente Tema</a></li>
+<li><a href="#-enlaces-relacionados">🔗 Enlaces Relacionados</a></li>
+<li><a href="#referencias">Referencias</a></li>
+</ul>
+<h2 id="1-traductor-de-lenguaje-fisico-y-notacion-angular-especifica">1. Traductor de Lenguaje Físico y Notación Angular Específica</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Símbolo Formal</th>
+<th style="text-align: left;">Lectura Universitaria</th>
+<th style="text-align: left;">Significado Físico / Intuición Angular Específica</th>
+<th style="text-align: center;">Unidades SI</th>
+<th style="text-align: center;">Unidades Fundamentales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(x(t)\)</span></td>
+<td style="text-align: left;">Elongación / Posición</td>
+<td style="text-align: left;">Distancia con signo (+/-) medida desde el punto de equilibrio (<span class="arithmatex">\(x=0\)</span>) en un instante <span class="arithmatex">\(t\)</span>.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(x_{\max}\)</span> (o <span class="arithmatex">\(A\)</span>)</td>
+<td style="text-align: left;">Amplitud Máxima</td>
+<td style="text-align: left;">Magnitud máxima del desplazamiento espacial. Equivale a la distancia entre el equilibrio y el punto de retorno.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\omega\)</span></td>
+<td style="text-align: left;">Frecuencia Angular / Pulsación</td>
+<td style="text-align: left;"><strong>Rapidez de cambio del estado angular</strong> dentro del ciclo sinusoide (<span class="arithmatex">\(\omega = \sqrt{k/m}\)</span>). Dicta qué tan "rápido" oscila el sistema.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{rad/s}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{s}^{-1}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\phi\)</span></td>
+<td style="text-align: left;">Ángulo de Fase Inicial</td>
+<td style="text-align: left;"><strong>Ángulo de desfasaje de origen (constante en <span class="arithmatex">\(t=0\)</span>).</strong> Determina el estado del oscilador en la posición inicial <span class="arithmatex">\((x_0, v_0)\)</span>.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{rad}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span> (Adimensional)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((\omega t + \phi)\)</span></td>
+<td style="text-align: left;">Fase Total / Argumento Angular</td>
+<td style="text-align: left;"><strong>Ángulo dinámico instantáneo.</strong> Es el argumento que entra dentro de la función trigonométrica coseno/seno para fijar la posición a tiempo <span class="arithmatex">\(t\)</span>.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{rad}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span> (Adimensional)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T\)</span></td>
+<td style="text-align: left;">Período de Oscilación</td>
+<td style="text-align: left;">Tiempo necesario para completar un <strong>ciclo u oscilación entera</strong> (<span class="arithmatex">\(360^\circ\)</span> o <span class="arithmatex">\(2\pi\,\text{rad}\)</span> de fase).</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{s}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{s}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(f\)</span></td>
+<td style="text-align: left;">Frecuencia Lineal</td>
+<td style="text-align: left;">Cantidad de ciclos u oscilaciones completas realizadas en la unidad de tiempo (<span class="arithmatex">\(f = 1/T\)</span>).</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{Hertz} \, (\text{Hz})\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{s}^{-1}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-deduccion-dinamica-de-la-ecuacion-diferencial-del-mas">2. Deducción Dinámica de la Ecuación Diferencial del M.A.S.</h2>
+<blockquote>
+<p><strong>Consigna formal de examen (UNCA):</strong> <em>"Plantear la Segunda Ley de Newton para una masa <span class="arithmatex">\(m\)</span> sujeta a un resorte de constante <span class="arithmatex">\(k\)</span> y deducir la Ecuación Diferencial del Movimiento Armónico Simple."</em></p>
+</blockquote>
+<h3 id="desarrollo-paso-a-paso">Desarrollo Paso a Paso:</h3>
+<ul>
+<li>
+<p><strong>Paso 1: Planteo de las Fuerzas Actuantes (2ª Ley de Newton)</strong>
+  $<span class="arithmatex">\(\sum F = m \cdot a\)</span>$
+  Sustituyendo la fuerza elástica restauradora dada por la Ley de Hooke (<span class="arithmatex">\(F = -k \cdot x\)</span>)[cite: 2, 3]:
+  $<span class="arithmatex">\(-k \cdot x = m \cdot a\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 2: Expresión de la Aceleración como Segunda Derivada Temporal</strong>
+  Como la aceleración es la derivada de la velocidad respecto al tiempo, y la velocidad es la derivada de la posición (<span class="arithmatex">\(a = \frac{dv}{dt} = \frac{d^2x}{dt^2}\)</span>)[cite: 2, 3]:
+  $<span class="arithmatex">\(-k \cdot x = m \cdot \frac{d^2x}{dt^2}\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 3: Reagrupamiento y Homogeneización de la Ecuación</strong>
+  Pasando todos los términos al mismo miembro de la ecuación:
+  $<span class="arithmatex">\(m \cdot \frac{d^2x}{dt^2} + k \cdot x = 0\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 4: Normalización (División por la masa <span class="arithmatex">\(m\)</span>)</strong>
+  Divide toda la expresión por la masa <span class="arithmatex">\(m\)</span> (<span class="arithmatex">\(m \ne 0\)</span>):
+  $<span class="arithmatex">\(\frac{d^2x}{dt^2} + \frac{k}{m} \cdot x = 0\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso 5: Definición de la Frecuencia Angular (<span class="arithmatex">\(\omega^2\)</span>) y Formato Estándar</strong>
+  Definiendo el parámetro constante <span class="arithmatex">\(\omega^2 = \frac{k}{m} \implies \omega = \sqrt{\frac{k}{m}}\)</span>[cite: 2, 3]:</p>
+</li>
+</ul>
+<div class="arithmatex">\[\frac{d^2x}{dt^2} + \omega^2 x = 0\]</div>
+<blockquote>
+<p><strong>Criterio de Reconocimiento Cátedra UNCA:</strong><br />
+<em>"Siempre que la aceleración de un objeto sea directamente proporcional a su desplazamiento pero de sentido opuesto (<span class="arithmatex">\(a = -\omega^2 x\)</span>), el objeto se mueve con Movimiento Armónico Simple."</em>[cite: 2, 3]</p>
+</blockquote>
+<h2 id="3-solucion-matematica-general-e-integracion-cinematica">3. Solución Matemática General e Integración Cinemática</h2>
+<p>La solución a la ecuación diferencial de segundo orden <span class="arithmatex">\(\frac{d^2x}{dt^2} + \omega^2 x = 0\)</span> es una función armónica cuya segunda derivada devuelve la misma función multiplicada por <span class="arithmatex">\(-\omega^2\)</span>[cite: 2, 3]:</p>
+<h3 id="1-ecuacion-de-posicion-elongacion-xt">1. Ecuación de Posición / Elongación <span class="arithmatex">\(x(t)\)</span></h3>
+<div class="arithmatex">\[x(t) = x_{\max} \cdot \cos(\omega t + \phi)\]</div>
+<hr />
+<h3 id="2-ecuacion-de-velocidad-instantanea-vt">2. Ecuación de Velocidad Instantánea <span class="arithmatex">\(v(t)\)</span></h3>
+<p>Derivando la posición <span class="arithmatex">\(x(t)\)</span> respecto del tiempo <span class="arithmatex">\(t\)</span> (aplicando la Regla de la Cadena)[cite: 3]:</p>
+<div class="arithmatex">\[v(t) = \frac{dx}{dt} = \frac{d}{dt} \left[ x_{\max} \cdot \cos(\omega t + \phi) \right]\]</div>
+<div class="arithmatex">\[v(t) = -x_{\max} \cdot \omega \cdot \sin(\omega t + \phi)\]</div>
+<ul>
+<li><strong>Velocidad Máxima (<span class="arithmatex">\(v_{\max}\)</span>):</strong> Ocurre cuando <span class="arithmatex">\(\sin(\omega t + \phi) = \mp 1\)</span> (al pasar por la posición de equilibrio <span class="arithmatex">\(x=0\)</span>)[cite: 3]:
+  $<span class="arithmatex">\(v_{\max} = \omega \cdot x_{\max}\)</span>$</li>
+</ul>
+<hr />
+<h3 id="3-ecuacion-de-aceleracion-instantanea-at">3. Ecuación de Aceleración Instantánea <span class="arithmatex">\(a(t)\)</span></h3>
+<p>Derivando la velocidad <span class="arithmatex">\(v(t)\)</span> respecto del tiempo <span class="arithmatex">\(t\)</span>[cite: 3]:</p>
+<div class="arithmatex">\[a(t) = \frac{d^2x}{dt^2} = \frac{d}{dt} \left[ -x_{\max} \cdot \omega \cdot \sin(\omega t + \phi) \right]\]</div>
+<div class="arithmatex">\[a(t) = -x_{\max} \cdot \omega^2 \cdot \cos(\omega t + \phi)\]</div>
+<p>Reemplazando <span class="arithmatex">\(x(t) = x_{\max} \cos(\omega t + \phi)\)</span> en la ecuación anterior[cite: 3]:</p>
+<div class="arithmatex">\[a(t) = -\omega^2 \cdot x(t)\]</div>
+<ul>
+<li><strong>Aceleración Máxima (<span class="arithmatex">\(a_{\max}\)</span>):</strong> Ocurre cuando <span class="arithmatex">\(\cos(\omega t + \phi) = \mp 1\)</span> (en los puntos de retorno de máxima elongación <span class="arithmatex">\(x = \pm x_{\max}\)</span>)[cite: 3]:
+  $<span class="arithmatex">\(a_{\max} = \omega^2 \cdot x_{\max}\)</span>$</li>
+</ul>
+<h2 id="4-determinacion-de-parametros-por-condiciones-iniciales">4. Determinación de Parámetros por Condiciones Iniciales</h2>
+<p>Si en el instante inicial <span class="arithmatex">\(t = 0\)</span> conocemos la posición inicial <span class="arithmatex">\(x_0\)</span> y la velocidad inicial <span class="arithmatex">\(v_0\)</span> del oscilador, podemos calcular unívocamente la <strong>Fase Inicial (<span class="arithmatex">\(\phi\)</span>)</strong> y la <strong>Amplitud (<span class="arithmatex">\(x_{\max}\)</span>)</strong>[cite: 3].</p>
+<h3 id="deduccion-del-angulo-de-fase-inicial-phi">Deducción del Ángulo de Fase Inicial (<span class="arithmatex">\(\phi\)</span>):</h3>
+<p>Evaluando <span class="arithmatex">\(x(t)\)</span> y <span class="arithmatex">\(v(t)\)</span> en <span class="arithmatex">\(t = 0\)</span>:
+1. <span class="arithmatex">\(x(0) = x_0 = x_{\max} \cos(\phi)\)</span>[cite: 3]
+2. <span class="arithmatex">\(v(0) = v_0 = -x_{\max} \omega \sin(\phi)\)</span>[cite: 3]</p>
+<p>Dividiendo la ecuación de velocidad entre la ecuación de posición[cite: 3]:
+$<span class="arithmatex">\(\frac{v_0}{x_0} = \frac{-x_{\max} \omega \sin(\phi)}{x_{\max} \cos(\phi)} = -\omega \tan(\phi)\)</span>$</p>
+<p>Despejando <span class="arithmatex">\(\tan(\phi)\)</span> y aplicando la función inversa arcotangente[cite: 3]:
+$<span class="arithmatex">\(\tan(\phi) = -\frac{v_0}{\omega x_0} \implies \phi = \arctan\left(-\frac{v_0}{\omega x_0}\right)\)</span>$</p>
+<hr />
+<h3 id="deduccion-de-la-amplitud-maxima-x_max">Deducción de la Amplitud Máxima (<span class="arithmatex">\(x_{\max}\)</span>):</h3>
+<p>Despejando <span class="arithmatex">\(\cos(\phi)\)</span> y <span class="arithmatex">\(\sin(\phi)\)</span> de las condiciones iniciales:
+$<span class="arithmatex">\(\cos(\phi) = \frac{x_0}{x_{\max}} \quad \mid \quad \sin(\phi) = -\frac{v_0}{\omega x_{\max}}\)</span>$</p>
+<p>Utilizando la Identidad Pitagórica Fundamental (<span class="arithmatex">\(\cos^2\phi + \sin^2\phi = 1\)</span>)[cite: 3]:
+$<span class="arithmatex">\(\left(\frac{x_0}{x_{\max}}\right)^2 + \left(-\frac{v_0}{\omega x_{\max}}\right)^2 = 1\)</span>$</p>
+<div class="arithmatex">\[\frac{x_0^2}{x_{\max}^2} + \frac{v_0^2}{\omega^2 x_{\max}^2} = 1 \implies \frac{1}{x_{\max}^2} \left( x_0^2 + \frac{v_0^2}{\omega^2} \right) = 1\]</div>
+<p>Multiplicando por <span class="arithmatex">\(x_{\max}^2\)</span> y aplicando raíz cuadrada[cite: 3]:</p>
+<div class="arithmatex">\[x_{\max} = \sqrt{x_0^2 + \frac{v_0^2}{\omega^2}}\]</div>
+<h2 id="5-relaciones-de-periodo-frecuencia-y-propiedad-de-independencia">5. Relaciones de Período, Frecuencia y Propiedad de Independencia</h2>
+<p>A partir de la frecuencia angular <span class="arithmatex">\(\omega = \sqrt{k/m}\)</span>, se deducen los parámetros globales del ciclo de oscilación[cite: 2, 3]:</p>
+<ul>
+<li>
+<p><strong>Período (<span class="arithmatex">\(T\)</span>):</strong> Tiempo para una revolución de fase completa (<span class="arithmatex">\(2\pi\,\text{rad}\)</span>)[cite: 2, 3]:
+  $<span class="arithmatex">\(T = \frac{2\pi}{\omega} \implies T = 2\pi \sqrt{\frac{m}{k}}\)</span>$</p>
+</li>
+<li>
+<p><strong>Frecuencia Lineal (<span class="arithmatex">\(f\)</span>):</strong> Número de oscilaciones por segundo[cite: 2, 3]:
+  $<span class="arithmatex">\(f = \frac{1}{T} = \frac{\omega}{2\pi} \implies f = \frac{1}{2\pi} \sqrt{\frac{k}{m}}\)</span>$</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Propiedad Fundamental de Examen (UNCA):</strong>
+En un Movimiento Armónico Simple ideal masa-resorte, <strong>el período (<span class="arithmatex">\(T\)</span>) y la frecuencia (<span class="arithmatex">\(f\)</span>) son totalmente independientes de la amplitud de oscilación (<span class="arithmatex">\(x_{\max}\)</span>)</strong>. 
+Si duplicamos la amplitud (<span class="arithmatex">\(2 x_{\max}\)</span>), el cuerpo recorre el doble de distancia pero viaja proporcionalmente más rápido, tardando exactamente el mismo tiempo en completar un ciclo completo[cite: 2, 3].</p>
+</blockquote>
+<h2 id="6-analisis-dimensional-y-cancelacion-de-unidades-paso-a-paso">6. Análisis Dimensional y Cancelación de Unidades Paso a Paso</h2>
+<h3 id="caso-1-demostracion-dimensional-de-la-frecuencia-angular-omega">Caso 1: Demostración Dimensional de la Frecuencia Angular (<span class="arithmatex">\(\omega\)</span>)</h3>
+<div class="arithmatex">\[\omega = \sqrt{\frac{k}{m}}\]</div>
+<ol>
+<li>
+<p><strong>Unidades de la Constante elástica (<span class="arithmatex">\(k\)</span>) y Masa (<span class="arithmatex">\(m\)</span>):</strong>
+   $<span class="arithmatex">\([k] = \frac{\text{N}}{\text{m}} = \frac{\text{kg} \cdot \text{m} \cdot \text{s}^{-2}}{\text{m}} = \text{kg} \cdot \text{s}^{-2} \quad \mid \quad [m] = \text{kg}\)</span>$[cite: 2, 3]</p>
+</li>
+<li>
+<p><strong>Sustitución en el Radicando:</strong>
+   $<span class="arithmatex">\(\left[ \frac{k}{m} \right] = \frac{\text{kg} \cdot \text{s}^{-2}}{\text{kg}} = \text{s}^{-2}\)</span>$[cite: 2, 3]</p>
+</li>
+<li>
+<p><strong>Aplicación de la Raíz Cuadrada:</strong>
+   $<span class="arithmatex">\([\omega] = \sqrt{\text{s}^{-2}} = \text{s}^{-1} = \frac{\text{rad}}{\text{s}}\)</span>$
+   <em>(El radián se agrega formalmente por tratarse del cambio del argumento angular de la fase)[cite: 3].</em></p>
+</li>
+</ol>
+<hr />
+<h3 id="caso-2-demostracion-dimensional-del-periodo-t">Caso 2: Demostración Dimensional del Período (<span class="arithmatex">\(T\)</span>)</h3>
+<div class="arithmatex">\[T = 2\pi \sqrt{\frac{m}{k}}\]</div>
+<ol>
+<li><strong>El factor <span class="arithmatex">\(2\pi\)</span> es un escalar puro adimencional (<span class="arithmatex">\([2\pi] = 1\)</span>).</strong></li>
+<li><strong>Análisis del cociente inverso dentro de la raíz:</strong>
+   $<span class="arithmatex">\(\left[ \frac{m}{k} \right] = \frac{\text{kg}}{\text{kg} \cdot \text{s}^{-2}} = \frac{1}{\text{s}^{-2}} = \text{s}^2\)</span>$</li>
+<li><strong>Aplicación de la Raíz Cuadrada:</strong>
+   $<span class="arithmatex">\([T] = \sqrt{\text{s}^2} = \text{segundo} \, (\text{s})\)</span>$</li>
+</ol>
+<h2 id="7-trampas-y-errores-tipicos-en-examenes-unca">⚠️ 7. Trampas y Errores Típicos en Exámenes (UNCA)</h2>
+<blockquote>
+<p>⚠️ <strong>Trampa 1: Modo de la Calculadora al Evaluar la Fase (<span class="arithmatex">\(\omega t + \phi\)</span>)</strong><br />
+<strong>Error común:</strong> Calcular <span class="arithmatex">\(x(t) = 0,3 \cos(2 \cdot 1 + \frac{\pi}{6})\)</span> con la calculadora configurada en Grados Sexagesimales (<span class="arithmatex">\(\text{DEG}\)</span>).<br />
+<strong>Por qué se invalida:</strong> La frecuencia angular <span class="arithmatex">\(\omega\)</span> está en <span class="arithmatex">\(\text{rad/s}\)</span> y el tiempo en <span class="arithmatex">\(\text{s}\)</span>. El argumento <span class="arithmatex">\(2 \cdot 1\)</span> está en <strong>Radianes</strong>.<br />
+<strong>Regla Inviolable:</strong> Para evaluar ecuaciones de M.A.S. en la calculadora, <strong>DEBE configurarse estrictamente en modo RADIANES (<span class="arithmatex">\(\text{RAD}\)</span>)</strong>[cite: 3].</p>
+<p>⚠️ <strong>Trampa 2: Confundir Frecuencia Angular (<span class="arithmatex">\(\omega\)</span>) con Frecuencia Lineal (<span class="arithmatex">\(f\)</span>)</strong><br />
+<strong>Error de concepto:</strong> Si el enunciado dice <em>"oscila con una frecuencia de <span class="arithmatex">\(2\,\text{Hz}\)</span>"</em>, reemplazar directamente <span class="arithmatex">\(\omega = 2\)</span>.<br />
+<strong>Corrección:</strong> <span class="arithmatex">\(f = 2\,\text{Hz} \implies \omega = 2\pi f = 2\pi (2) = 4\pi \approx 12,57\,\text{rad/s}\)</span>[cite: 3].</p>
+<p>⚠️ <strong>Trampa 3: Desfasaje de <span class="arithmatex">\(\pi/2\)</span> entre Posición y Velocidad</strong><br />
+<strong>Pregunta Teórica:</strong> Cuando la posición es máxima (<span class="arithmatex">\(x = \pm x_{\max}\)</span>), la velocidad instantánea es <strong>nula</strong> (<span class="arithmatex">\(v = 0\)</span>). Cuando pasa por la posición de equilibrio (<span class="arithmatex">\(x = 0\)</span>), la velocidad alcanza sus valores máximos (<span class="arithmatex">\(v = \pm v_{\max}\)</span>)[cite: 3].</p>
+</blockquote>
+<h2 id="8-ejercicios-resueltos-paso-a-paso-de-parcial">📝 8. Ejercicios Resueltos Paso a Paso de Parcial</h2>
+<blockquote>
+<p><strong>Ejercicio Modelo (Apunte Cátedra UNCA):</strong><br />
+<em>Una partícula describe un M.A.S. con una ecuación de posición dada por:</em><br />
+$<span class="arithmatex">\(x(t) = 0,3\,\text{cm} \cdot \cos\left(2\,\text{s}^{-1} \cdot t + \frac{\pi}{6}\right)\)</span>$<br />
+<em>a) Determinar la Amplitud (<span class="arithmatex">\(x_{\max}\)</span>), Frecuencia Angular (<span class="arithmatex">\(\omega\)</span>), Constante de Fase (<span class="arithmatex">\(\phi\)</span>), Período (<span class="arithmatex">\(T\)</span>) y Frecuencia (<span class="arithmatex">\(f\)</span>).</em>[cite: 3]<br />
+<em>b) Calcular la posición de la partícula en <span class="arithmatex">\(t = 1\,\text{s}\)</span>.</em>[cite: 3]<br />
+<em>c) Escribir las expresiones instantáneas para la velocidad y aceleración en función del tiempo.</em>[cite: 3]<br />
+<em>d) Hallar la posición inicial (<span class="arithmatex">\(x_0\)</span>) y velocidad inicial (<span class="arithmatex">\(v_0\)</span>) en <span class="arithmatex">\(t = 0\)</span>.</em>[cite: 3]</p>
+</blockquote>
+<h3 id="desarrollo-paso-a-paso_1">Desarrollo Paso a Paso:</h3>
+<ul>
+<li><strong>Paso 1: a) Identificación directa por comparación estándar</strong>
+  Comparando con <span class="arithmatex">\(x(t) = x_{\max} \cos(\omega t + \phi)\)</span>[cite: 3]:</li>
+<li><strong>Amplitud Máxima:</strong> <span class="arithmatex">\(x_{\max} = 0,3\,\text{cm} = 3 \times 10^{-3}\,\text{m}\)</span>[cite: 3]</li>
+<li><strong>Frecuencia Angular:</strong> <span class="arithmatex">\(\omega = 2\,\text{s}^{-1} = 2\,\text{rad/s}\)</span>[cite: 3]</li>
+<li><strong>Fase Inicial:</strong> <span class="arithmatex">\(\phi = \frac{\pi}{6}\,\text{rad} \quad (30^\circ)\)</span>[cite: 3]</li>
+<li><strong>Período:</strong> <span class="arithmatex">\(T = \frac{2\pi}{\omega} = \frac{2\pi}{2} = \pi\,\text{s} \approx 3,14\,\text{s}\)</span>[cite: 3]</li>
+<li>
+<p><strong>Frecuencia:</strong> <span class="arithmatex">\(f = \frac{1}{T} = \frac{1}{\pi\,\text{s}} \approx 0,32\,\text{Hz}\)</span>[cite: 3]</p>
+</li>
+<li>
+<p><strong>Paso 2: b) Posición en <span class="arithmatex">\(t = 1\,\text{s}\)</span> (Calculadora en RADIANES)</strong>
+  $<span class="arithmatex">\(x(1) = 0,3\,\text{cm} \cdot \cos\left(2 \cdot 1 + \frac{\pi}{6}\right) = 0,3 \cdot \cos(2 + 0,5236) = 0,3 \cdot \cos(2,5236\,\text{rad})\)</span>$[cite: 3]
+  $<span class="arithmatex">\(\cos(2,5236\,\text{rad}) \approx -0,8168 \implies x(1) = 0,3 \cdot (-0,8168) = -0,245\,\text{cm}\)</span>$[cite: 3]</p>
+</li>
+<li>
+<p><strong>Paso 3: c) Ecuaciones para <span class="arithmatex">\(v(t)\)</span> y <span class="arithmatex">\(a(t)\)</span></strong></p>
+</li>
+<li><strong>Velocidad:</strong><br />
+    $<span class="arithmatex">\(v(t) = \frac{dx}{dt} = -0,3\,\text{cm} \cdot (2\,\text{s}^{-1}) \cdot \sin\left(2t + \frac{\pi}{6}\right) = -0,6\,\frac{\text{cm}}{\text{s}} \cdot \sin\left(2t + \frac{\pi}{6}\right)\)</span>$[cite: 3]</li>
+<li>
+<p><strong>Aceleración:</strong><br />
+    $<span class="arithmatex">\(a(t) = \frac{dv}{dt} = -0,6\,\frac{\text{cm}}{\text{s}} \cdot (2\,\text{s}^{-1}) \cdot \cos\left(2t + \frac{\pi}{6}\right) = -1,2\,\frac{\text{cm}}{\text{s}^2} \cdot \cos\left(2t + \frac{\pi}{6}\right)\)</span>$[cite: 3]</p>
+</li>
+<li>
+<p><strong>Paso 4: d) Condiciones Iniciales (<span class="arithmatex">\(t = 0\)</span>)</strong></p>
+</li>
+<li><strong>Posición Inicial <span class="arithmatex">\(x_0\)</span>:</strong><br />
+    $<span class="arithmatex">\(x(0) = 0,3 \cdot \cos\left(\frac{\pi}{6}\right) = 0,3 \cdot \frac{\sqrt{3}}{2} \approx 0,26\,\text{cm}\)</span>$[cite: 3]</li>
+<li><strong>Velocidad Inicial <span class="arithmatex">\(v_0\)</span>:</strong><br />
+    $<span class="arithmatex">\(v(0) = -0,6 \cdot \sin\left(\frac{\pi}{6}\right) = -0,6 \cdot 0,5 = -0,30\,\frac{\text{cm}}{\text{s}}\)</span>$[cite: 3]</li>
+</ul>
+<h2 id="9-conexion-con-el-siguiente-tema">9. Conexión con el Siguiente Tema</h2>
+<p>Una vez comprendida la cinemática armónica <span class="arithmatex">\(x(t)\)</span>, <span class="arithmatex">\(v(t)\)</span> y <span class="arithmatex">\(a(t)\)</span>, avanzamos a analizar las transformaciones de energía en el tiempo y el estudio de los sistemas oscilatorios físicos equivalentes:
+* <strong>Tema 3.2:</strong> Reemplazar las soluciones sinusoidales en <span class="arithmatex">\(K(t)\)</span> y <span class="arithmatex">\(U(t)\)</span> para demostrar la conservación de energía constante <span class="arithmatex">\(E\)</span>, y analizar los sistemas de <strong>Sistemas Combinados de Resortes</strong> (serie/paralelo) y <strong>Péndulos</strong> (Simple, Físico y Torsión)[cite: 2, 4].</p>
+<hr />
+<h2 id="enlaces-relacionados">🔗 Enlaces Relacionados</h2>
+<ul>
+<li><a href="../../Unidad%20II/2.2-Energia-Potencial-Elastica-y-Trabajo/">⬅️ Unidad II: Energía Potencial Elástica</a></li>
+<li><a href="../3.2-Energia-en-el-MAS-y-Sistemas-Oscilantes/">➡️ Tema 3.2: Energía en el MAS y Sistemas Oscilantes</a></li>
+<li><a href="../../README">📚 Menú Principal de Física II</a></li>
+</ul>
+<h2 id="referencias">Referencias</h2>
+<ul>
+<li><em>Cátedra:</em> Física II – UNCA (Unidad 3: Oscilaciones Armónicas Simples, Cinemática y Dinámica).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
