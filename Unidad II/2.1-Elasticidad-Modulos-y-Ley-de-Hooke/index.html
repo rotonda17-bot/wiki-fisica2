@@ -1,0 +1,1845 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes, fórmulas y gráficos interactivos de la materia">
+      
+      
+      
+      
+        <link rel="prev" href="../../Unidad%20I/1.3-Satelites-Movimiento-Orbital-y-Energia/">
+      
+      
+        <link rel="next" href="../2.2-Energia-Potencial-Elastica-y-Trabajo/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>2.1 Elasticidad y Ley de Hooke - Wiki de Física II</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tema-21-elasticidad-modulos-y-ley-de-hooke" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Wiki de Física II" class="md-header__button md-logo" aria-label="Wiki de Física II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wiki de Física II
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.1 Elasticidad y Ley de Hooke
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Wiki de Física II" class="md-nav__button md-logo" aria-label="Wiki de Física II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Wiki de Física II
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.1-Gravitacion-Universal-y-Leyes-de-Kepler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Leyes de Kepler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.2-Campo-y-Potencial-Gravitatorio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Campo y Potencial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.3-Satelites-Movimiento-Orbital-y-Energia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Satélites y Órbitas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Elasticidad y Ley de Hooke
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Elasticidad y Ley de Hooke
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenido-de-esta-nota-indice-interactivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Contenido de esta nota (Índice interactivo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-traductor-de-lenguaje-fisico-y-notacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Traductor de Lenguaje Físico y Notación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clasificacion-segun-la-catedra-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clasificación según la Cátedra (UNCA):
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-definicion-esfuerzo-deformacion-y-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Definición: Esfuerzo, Deformación y Módulo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Definición: Esfuerzo, Deformación y Módulo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-esfuerzo-epsilon-o-sigma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Esfuerzo (\(\epsilon\) o \(\sigma\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-deformacion-unitaria-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Deformación Unitaria (\(\delta\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-modulo-elastico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Módulo Elástico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-modulos-de-elasticidad-y-tipos-de-esfuerzo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Módulos de Elasticidad y Tipos de Esfuerzo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Módulos de Elasticidad y Tipos de Esfuerzo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-traccion-y-compresion-modulo-de-young-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Tracción y Compresión (Módulo de Young \(Y\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Tracción y Compresión (Módulo de Young \(Y\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formulas-formales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmulas Formales:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-corte-o-cizalladura-modulo-de-corte-m" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Corte o Cizalladura (Módulo de Corte \(M\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 Corte o Cizalladura (Módulo de Corte \(M\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formulas-formales_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmulas Formales:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-volumetrico-y-presion-hydrostatica-modulo-b-y-compresibilidad-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Volumétrico y Presión Hydrostática (Módulo \(B\) y Compresibilidad \(k\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 Volumétrico y Presión Hydrostática (Módulo \(B\) y Compresibilidad \(k\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formulas-formales_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmulas Formales:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ley-de-hooke-y-diagrama-esfuerzo-deformacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ley de Hooke y Diagrama Esfuerzo-Deformación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Ley de Hooke y Diagrama Esfuerzo-Deformación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formulacion-de-la-ley-de-hooke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formulación de la Ley de Hooke
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-esfuerzo-sigma-vs-deformacion-epsilon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagrama Esfuerzo (\(\sigma\)) vs Deformación (\(\epsilon\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagrama Esfuerzo (\(\sigma\)) vs Deformación (\(\epsilon\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#puntos-criticos-del-diagrama-examen-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Puntos Críticos del Diagrama (Examen UNCA):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-analisis-dimensional-y-cancelacion-de-unidades-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Análisis Dimensional y Cancelación de Unidades Paso a Paso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Análisis Dimensional y Cancelación de Unidades Paso a Paso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caso-1-demostracion-de-las-unidades-del-modulo-de-young-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 1: Demostración de las Unidades del Módulo de Young (\(Y\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caso-2-unidades-del-coeficiente-de-compresibilidad-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 2: Unidades del Coeficiente de Compresibilidad (\(k\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-trampas-y-errores-tipicos-en-examenes-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 7. Trampas y Errores Típicos en Exámenes (UNCA)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ejercicios-resueltos-paso-a-paso-de-parcial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 8. Ejercicios Resueltos Paso a Paso de Parcial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 8. Ejercicios Resueltos Paso a Paso de Parcial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso-ejercicio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso (Ejercicio 1):
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso-ejercicio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso (Ejercicio 2):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conexion-con-el-siguiente-tema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Conexión con el Siguiente Tema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Enlaces Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.2-Energia-Potencial-Elastica-y-Trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Energía Potencial Elástica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad III
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad III
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.1-Movimiento-Armonico-Simple-MAS-Ecuaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Ecuaciones del MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenido-de-esta-nota-indice-interactivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Contenido de esta nota (Índice interactivo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-traductor-de-lenguaje-fisico-y-notacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Traductor de Lenguaje Físico y Notación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clasificacion-segun-la-catedra-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clasificación según la Cátedra (UNCA):
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-definicion-esfuerzo-deformacion-y-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Definición: Esfuerzo, Deformación y Módulo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Definición: Esfuerzo, Deformación y Módulo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-esfuerzo-epsilon-o-sigma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Esfuerzo (\(\epsilon\) o \(\sigma\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-deformacion-unitaria-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Deformación Unitaria (\(\delta\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-modulo-elastico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Módulo Elástico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-modulos-de-elasticidad-y-tipos-de-esfuerzo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Módulos de Elasticidad y Tipos de Esfuerzo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Módulos de Elasticidad y Tipos de Esfuerzo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-traccion-y-compresion-modulo-de-young-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Tracción y Compresión (Módulo de Young \(Y\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Tracción y Compresión (Módulo de Young \(Y\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formulas-formales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmulas Formales:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-corte-o-cizalladura-modulo-de-corte-m" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Corte o Cizalladura (Módulo de Corte \(M\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 Corte o Cizalladura (Módulo de Corte \(M\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formulas-formales_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmulas Formales:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-volumetrico-y-presion-hydrostatica-modulo-b-y-compresibilidad-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Volumétrico y Presión Hydrostática (Módulo \(B\) y Compresibilidad \(k\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 Volumétrico y Presión Hydrostática (Módulo \(B\) y Compresibilidad \(k\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formulas-formales_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fórmulas Formales:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ley-de-hooke-y-diagrama-esfuerzo-deformacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ley de Hooke y Diagrama Esfuerzo-Deformación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Ley de Hooke y Diagrama Esfuerzo-Deformación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formulacion-de-la-ley-de-hooke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formulación de la Ley de Hooke
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-esfuerzo-sigma-vs-deformacion-epsilon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagrama Esfuerzo (\(\sigma\)) vs Deformación (\(\epsilon\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagrama Esfuerzo (\(\sigma\)) vs Deformación (\(\epsilon\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#puntos-criticos-del-diagrama-examen-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Puntos Críticos del Diagrama (Examen UNCA):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-analisis-dimensional-y-cancelacion-de-unidades-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Análisis Dimensional y Cancelación de Unidades Paso a Paso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Análisis Dimensional y Cancelación de Unidades Paso a Paso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caso-1-demostracion-de-las-unidades-del-modulo-de-young-y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 1: Demostración de las Unidades del Módulo de Young (\(Y\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caso-2-unidades-del-coeficiente-de-compresibilidad-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caso 2: Unidades del Coeficiente de Compresibilidad (\(k\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-trampas-y-errores-tipicos-en-examenes-unca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 7. Trampas y Errores Típicos en Exámenes (UNCA)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ejercicios-resueltos-paso-a-paso-de-parcial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 8. Ejercicios Resueltos Paso a Paso de Parcial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 8. Ejercicios Resueltos Paso a Paso de Parcial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso-ejercicio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso (Ejercicio 1):
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-paso-a-paso-ejercicio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Paso a Paso (Ejercicio 2):
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conexion-con-el-siguiente-tema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Conexión con el Siguiente Tema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Enlaces Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tema-21-elasticidad-modulos-y-ley-de-hooke">🧱 Tema 2.1: Elasticidad, Módulos y Ley de Hooke</h1>
+<blockquote>
+<p><strong>Intuición y Propósito del Tema:</strong>
+La <strong>Mecánica de Materiales</strong> estudia cómo responden los cuerpos reales cuando se les aplican fuerzas externas.
+* <strong>En criollo:</strong> A diferencia del "cuerpo rígido ideal" que no cambia su forma jamás, los materiales reales se estiran, se aplastan, se tuercen o se comprimen. Dependiendo de la magnitud del esfuerzo y del material, el cuerpo puede volver a su forma original (comportamiento elástico) o quedar deformado para siempre (comportamiento plástico).
+* <strong>Eje Conceptual:</strong> Relacionar las fuerzas aplicadas por unidad de área (<strong>Esfuerzo</strong>) con la deformación relativa resultante (<strong>Deformación Unitaria</strong>). La constante de proporcionalidad entre ambas es el <strong>Módulo de Elasticidad</strong> (Young, Corte o Volumétrico), característico de cada material.</p>
+</blockquote>
+<hr />
+<h3 id="contenido-de-esta-nota-indice-interactivo">📌 Contenido de esta nota (Índice interactivo)</h3>
+<ul>
+<li><a href="#-tema-21-elasticidad-módulos-y-ley-de-hooke">🧱 Tema 2.1: Elasticidad, Módulos y Ley de Hooke</a><ul>
+<li><a href="#-contenido-de-esta-nota-índice-interactivo">📌 Contenido de esta nota (Índice interactivo)</a></li>
+</ul>
+</li>
+<li><a href="#1-traductor-de-lenguaje-físico-y-notación">1. Traductor de Lenguaje Físico y Notación</a></li>
+<li><a href="#clasificación-según-la-cátedra-unca">Clasificación según la Cátedra (UNCA):</a></li>
+<li><a href="#3-definición-esfuerzo-deformación-y-módulo">3. Definición: Esfuerzo, Deformación y Módulo</a><ul>
+<li><a href="#1-esfuerzo-epsilon-o-sigma">1. Esfuerzo (<span class="arithmatex">\(\\epsilon\)</span> o <span class="arithmatex">\(\\sigma\)</span>)</a></li>
+<li><a href="#2-deformación-unitaria-delta">2. Deformación Unitaria (<span class="arithmatex">\(\\delta\)</span>)</a></li>
+<li><a href="#3-módulo-elástico">3. Módulo Elástico</a></li>
+</ul>
+</li>
+<li><a href="#4-módulos-de-elasticidad-y-tipos-de-esfuerzo">4. Módulos de Elasticidad y Tipos de Esfuerzo</a><ul>
+<li><a href="#41-tracción-y-compresión-módulo-de-young-y">4.1 Tracción y Compresión (Módulo de Young <span class="arithmatex">\(Y\)</span>)</a></li>
+<li><a href="#fórmulas-formales">Fórmulas Formales:</a></li>
+<li><a href="#42-corte-o-cizalladura-módulo-de-corte-m">4.2 Corte o Cizalladura (Módulo de Corte <span class="arithmatex">\(M\)</span>)</a></li>
+<li><a href="#fórmulas-formales-1">Fórmulas Formales:</a></li>
+<li><a href="#43-volumétrico-y-presión-hydrostática-módulo-b-y-compresibilidad-k">4.3 Volumétrico y Presión Hydrostática (Módulo <span class="arithmatex">\(B\)</span> y Compresibilidad <span class="arithmatex">\(k\)</span>)</a></li>
+<li><a href="#fórmulas-formales-2">Fórmulas Formales:</a></li>
+</ul>
+</li>
+<li><a href="#5-ley-de-hooke-y-diagrama-esfuerzo-deformación">5. Ley de Hooke y Diagrama Esfuerzo-Deformación</a><ul>
+<li><a href="#formulación-de-la-ley-de-hooke">Formulación de la Ley de Hooke</a></li>
+<li><a href="#diagrama-esfuerzo-sigma-vs-deformación-epsilon">Diagrama Esfuerzo (<span class="arithmatex">\(\\sigma\)</span>) vs Deformación (<span class="arithmatex">\(\\epsilon\)</span>)</a></li>
+<li><a href="#puntos-críticos-del-diagrama-examen-unca">Puntos Críticos del Diagrama (Examen UNCA):</a></li>
+</ul>
+</li>
+<li><a href="#6-análisis-dimensional-y-cancelación-de-unidades-paso-a-paso">6. Análisis Dimensional y Cancelación de Unidades Paso a Paso</a><ul>
+<li><a href="#caso-1-demostración-de-las-unidades-del-módulo-de-young-y">Caso 1: Demostración de las Unidades del Módulo de Young (<span class="arithmatex">\(Y\)</span>)</a></li>
+<li><a href="#caso-2-unidades-del-coeficiente-de-compresibilidad-k">Caso 2: Unidades del Coeficiente de Compresibilidad (<span class="arithmatex">\(k\)</span>)</a></li>
+</ul>
+</li>
+<li><a href="#️-7-trampas-y-errores-típicos-en-exámenes-unca">⚠️ 7. Trampas y Errores Típicos en Exámenes (UNCA)</a></li>
+<li><a href="#-8-ejercicios-resueltos-paso-a-paso-de-parcial">📝 8. Ejercicios Resueltos Paso a Paso de Parcial</a><ul>
+<li><a href="#desarrollo-paso-a-paso-ejercicio-1">Desarrollo Paso a Paso (Ejercicio 1):</a></li>
+<li><a href="#desarrollo-paso-a-paso-ejercicio-2">Desarrollo Paso a Paso (Ejercicio 2):</a></li>
+</ul>
+</li>
+<li><a href="#9-conexión-con-el-siguiente-tema">9. Conexión con el Siguiente Tema</a></li>
+<li><a href="#-enlaces-relacionados">🔗 Enlaces Relacionados</a></li>
+<li><a href="#referencias">Referencias</a></li>
+</ul>
+<h2 id="1-traductor-de-lenguaje-fisico-y-notacion">1. Traductor de Lenguaje Físico y Notación</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Símbolo Formal</th>
+<th style="text-align: left;">Lectura Universitaria</th>
+<th style="text-align: left;">Significado Físico / Intuición</th>
+<th style="text-align: center;">Unidades SI</th>
+<th style="text-align: center;">Unidades Fundamentales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon\)</span> (o <span class="arithmatex">\(\sigma\)</span>)</td>
+<td style="text-align: left;">Esfuerzo / Tensión</td>
+<td style="text-align: left;">Fuerza distribuida por unidad de área transversal que causa la deformación.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{N/m}^2 = \text{Pa}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\delta\)</span> (o <span class="arithmatex">\(\epsilon_u\)</span>)</td>
+<td style="text-align: left;">Deformación Unitaria</td>
+<td style="text-align: left;">Cambio relativo de dimensión (cambio de longitud, ángulo o volumen sobre dimensión inicial).</td>
+<td style="text-align: center;">Adimensional (<span class="arithmatex">\(1\)</span>)</td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span> (sin dimensiones)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(Y\)</span></td>
+<td style="text-align: left;">Módulo de Young</td>
+<td style="text-align: left;">Resistencia de un sólido a cambiar su longitud ante tracción o compresión.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{N/m}^2 = \text{Pa}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(M\)</span> (o <span class="arithmatex">\(G\)</span>)</td>
+<td style="text-align: left;">Módulo de Corte / Rigidez</td>
+<td style="text-align: left;">Resistencia de un sólido al deslizamiento de sus capas paralelas (cizalla).</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{N/m}^2 = \text{Pa}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(B\)</span></td>
+<td style="text-align: left;">Módulo Volumétrico</td>
+<td style="text-align: left;">Resistencia de un fluido o sólido a cambiar su volumen ante una presión uniforme.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{N/m}^2 = \text{Pa}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(k\)</span></td>
+<td style="text-align: left;">Compresibilidad</td>
+<td style="text-align: left;">Facilidad con la que una sustancia cambia de volumen bajo presión (<span class="arithmatex">\(k = 1/B\)</span>).</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{Pa}^{-1} = \text{m}^2/\text{N}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{kg}^{-1} \cdot \text{m} \cdot \text{s}^2\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(L_0\)</span></td>
+<td style="text-align: left;">Longitud Inicial</td>
+<td style="text-align: left;">Dimensión longitudinal original del cuerpo antes de aplicar la fuerza.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Delta L\)</span></td>
+<td style="text-align: left;">Alargamiento / Acortamiento</td>
+<td style="text-align: left;">Variación absoluta de la longitud (<span class="arithmatex">\(\Delta L = L - L_0\)</span>).</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A\)</span></td>
+<td style="text-align: left;">Área de Sección Transversal</td>
+<td style="text-align: left;">Superficie sobre la cual actúa la fuerza externa (<span class="arithmatex">\(A_\perp\)</span> o <span class="arithmatex">\(A_\parallel\)</span>).</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}^2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{m}^2\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\theta\)</span></td>
+<td style="text-align: left;">Ángulo de Cizalladura</td>
+<td style="text-align: left;">Ángulo de distorsión angular en radianes debido al esfuerzo de corte.</td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{rad}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span> (Adimensional)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="clasificacion-segun-la-catedra-unca">Clasificación según la Cátedra (UNCA):</h2>
+<ul>
+<li><strong>Cuerpo Elástico:</strong> Aquel que recupera sus dimensiones originales cuando cesa la acción de la fuerza deformadora. (Ejemplo: alambre de acero con cargas pequeñas, resorte helicoidal).</li>
+<li><strong>Cuerpo Inelástico:</strong> Aquel que no recupera su forma original tras retirar el esfuerzo.</li>
+<li><strong>Cuerpo Plástico:</strong> Aquel que experimenta una deformación permanente y no genera fuerzas internas de restitución para volver al estado inicial. </li>
+</ul>
+<hr />
+<h2 id="3-definicion-esfuerzo-deformacion-y-modulo">3. Definición: Esfuerzo, Deformación y Módulo</h2>
+<p>Para caracterizar el comportamiento de un material independientemente de sus dimensiones geométricas, la física define tres conceptos universales:</p>
+<h3 id="1-esfuerzo-epsilon-o-sigma">1. Esfuerzo (<span class="arithmatex">\(\epsilon\)</span> o <span class="arithmatex">\(\sigma\)</span>)</h3>
+<p>Es la intensidad de la fuerza interna distribuida por unidad de área de la sección sobre la cual actúa[cite: 3]:</p>
+<div class="arithmatex">\[\epsilon = \frac{F}{A}\]</div>
+<ul>
+<li><strong>Unidades en el SI:</strong> <span class="arithmatex">\(\frac{\text{N}}{\text{m}^2} = \text{Pascal} \, (\text{Pa})\)</span>[cite: 3].</li>
+</ul>
+<hr />
+<h3 id="2-deformacion-unitaria-delta">2. Deformación Unitaria (<span class="arithmatex">\(\delta\)</span>)</h3>
+<p>Es el cambio relativo en las dimensiones del cuerpo respecto a su dimensión inicial[cite: 3]:</p>
+<div class="arithmatex">\[\delta = \frac{\text{Variación de Dimensión}}{\text{Dimensión Inicial}}\]</div>
+<ul>
+<li><strong>Propiedad clave:</strong> La deformación unitaria es un <strong>número adimensional</strong> (sin unidades)[cite: 3]. </li>
+</ul>
+<hr />
+<h3 id="3-modulo-elastico">3. Módulo Elástico</h3>
+<p>Es la constante de proporcionalidad entre el esfuerzo aplicado y la deformación unitaria producida[cite: 3]. Mide la "rigidez" del material:</p>
+<div class="arithmatex">\[\text{Módulo Elástico} = \frac{\text{Esfuerzo}}{\text{Deformación Unitaria}}\]</div>
+<div class="arithmatex">\[\text{Módulo} = \frac{\epsilon}{\delta}\]</div>
+<ul>
+<li><strong>Unidades en el SI:</strong> Al ser la deformación unitaria adimensional, el Módulo de Elasticidad tiene <strong>exactamente las mismas unidades que el esfuerzo</strong> (<span class="arithmatex">\(\text{N/m}^2\)</span> o <span class="arithmatex">\(\text{Pa}\)</span>)[cite: 3].</li>
+</ul>
+<hr />
+<h2 id="4-modulos-de-elasticidad-y-tipos-de-esfuerzo">4. Módulos de Elasticidad y Tipos de Esfuerzo</h2>
+<p>Se distinguen tres tipos fundamentales de alteración estructural de los sólidos[cite: 3]:</p>
+<hr />
+<h3 id="41-traccion-y-compresion-modulo-de-young-y">4.1 Tracción y Compresión (Módulo de Young <span class="arithmatex">\(Y\)</span>)</h3>
+<p>Se presenta cuando una fuerza perpendicular <span class="arithmatex">\(F_\perp\)</span> actúa de forma uniforme sobre la sección transversal <span class="arithmatex">\(A\)</span> de una barra o alambre de longitud inicial <span class="arithmatex">\(L_0\)</span>[cite: 3].</p>
+<ul>
+<li><strong>Tracción:</strong> La fuerza tiende a estirar el cuerpo (<span class="arithmatex">\(\Delta L &gt; 0\)</span>)[cite: 3].</li>
+<li><strong>Compresión:</strong> La fuerza tiende a aplastar el cuerpo (<span class="arithmatex">\(\Delta L &lt; 0\)</span>)[cite: 3].</li>
+</ul>
+<h4 id="formulas-formales">Fórmulas Formales:</h4>
+<ul>
+<li>
+<p><strong>Esfuerzo Longitudinal:</strong>
+  $<span class="arithmatex">\(\epsilon = \frac{F_\perp}{A}\)</span>$</p>
+</li>
+<li>
+<p><strong>Deformación Unitaria Longitudinal:</strong>
+  $<span class="arithmatex">\(\delta = \frac{\Delta L}{L_0}\)</span>$</p>
+</li>
+<li>
+<p><strong>Módulo de Young (<span class="arithmatex">\(Y\)</span>):</strong>
+  $<span class="arithmatex">\(Y = \frac{\frac{F_\perp}{A}}{\frac{\Delta L}{L_0}} = \frac{F_\perp \cdot L_0}{A \cdot \Delta L}\)</span>$</p>
+</li>
+</ul>
+<p><img alt="Diagrama de Tracción y Compresión" src="../../assets/Imagenes-2/2.1-diagrama-esfuerzo-deformacion.png" /></p>
+<hr />
+<h3 id="42-corte-o-cizalladura-modulo-de-corte-m">4.2 Corte o Cizalladura (Módulo de Corte <span class="arithmatex">\(M\)</span>)</h3>
+<p>Ocurre cuando sobre un cuerpo actúa una fuerza paralela <span class="arithmatex">\(F_\parallel\)</span> a una de sus caras de área <span class="arithmatex">\(A\)</span>, mientras que la cara opuesta se mantiene fija[cite: 3]. Esto provoca un desplazamiento lateral <span class="arithmatex">\(\Delta x\)</span> entre planos paralelos y un distorsionamiento angular <span class="arithmatex">\(\theta\)</span>[cite: 3].</p>
+<h4 id="formulas-formales_1">Fórmulas Formales:</h4>
+<ul>
+<li>
+<p><strong>Esfuerzo de Corte:</strong>
+  $<span class="arithmatex">\(\epsilon_{\text{corte}} = \frac{F_\parallel}{A}\)</span>$</p>
+</li>
+<li>
+<p><strong>Deformación Unitaria de Corte:</strong>
+  Para ángulos pequeños (<span class="arithmatex">\(\theta \ll 1\,\text{rad}\)</span>), se cumple <span class="arithmatex">\(\tan\theta \approx \sin\theta \approx \theta\)</span>[cite: 3]:
+  $<span class="arithmatex">\(\delta_{\text{corte}} = \frac{\Delta x}{L} = \tan\theta \approx \theta \quad (\text{en radianes})\)</span>$</p>
+</li>
+<li>
+<p><strong>Módulo de Corte o Rigidez (<span class="arithmatex">\(M\)</span>):</strong>
+  $<span class="arithmatex">\(M = \frac{\frac{F_\parallel}{A}}{\frac{\Delta x}{L}} = \frac{F_\parallel}{A \cdot \theta}\)</span>$</p>
+</li>
+</ul>
+<p><img alt="Diagrama de Esfuerzo de Corte o Cizalladura" src="../../assets/Imagenes-2/2.1-esfuerzo-corte-cizalla.png" /></p>
+<hr />
+<h3 id="43-volumetrico-y-presion-hydrostatica-modulo-b-y-compresibilidad-k">4.3 Volumétrico y Presión Hydrostática (Módulo <span class="arithmatex">\(B\)</span> y Compresibilidad <span class="arithmatex">\(k\)</span>)</h3>
+<p>Se produce cuando un cuerpo sumergido en un fluido recibe una fuerza perpendicular uniforme en toda su superficie externa[cite: 3]. La fuerza por unidad de área se denomina <strong>Presión (<span class="arithmatex">\(P = F_\perp / A\)</span>)</strong>[cite: 3].</p>
+<h4 id="formulas-formales_2">Fórmulas Formales:</h4>
+<ul>
+<li>
+<p><strong>Esfuerzo Volumétrico (Presión):</strong>
+  $<span class="arithmatex">\(P = \frac{F_\perp}{A}\)</span>$</p>
+</li>
+<li>
+<p><strong>Deformación Unitaria Volumétrica:</strong>
+  $<span class="arithmatex">\(\delta_V = \frac{\Delta V}{V_0}\)</span>$</p>
+</li>
+<li>
+<p><strong>Módulo Volumétrico (<span class="arithmatex">\(B\)</span>):</strong>
+  $<span class="arithmatex">\(B = -\frac{\frac{F_\perp}{A}}{\frac{\Delta V}{V_0}} = -\frac{\Delta P}{\frac{\Delta V}{V_0}}\)</span>$</p>
+<blockquote>
+<p><strong>Nota sobre el Signo Negativo (<span class="arithmatex">\(-\)</span>):</strong> Se incluye explícitamente porque un aumento de presión (<span class="arithmatex">\(\Delta P &gt; 0\)</span>) siempre produce una disminución del volumen (<span class="arithmatex">\(\Delta V &lt; 0\)</span>), garantizando que el módulo <span class="arithmatex">\(B\)</span> sea una cantidad estrictamente positiva[cite: 3].</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Coeficiente de Compresibilidad (<span class="arithmatex">\(k\)</span>):</strong>
+  Es el recíproco o inverso multiplicativo del módulo volumétrico[cite: 3]:
+  $<span class="arithmatex">\(k = \frac{1}{B} = -\frac{\frac{\Delta V}{V_0}}{\Delta P}\)</span>$</p>
+</li>
+</ul>
+<hr />
+<h2 id="5-ley-de-hooke-y-diagrama-esfuerzo-deformacion">5. Ley de Hooke y Diagrama Esfuerzo-Deformación</h2>
+<h3 id="formulacion-de-la-ley-de-hooke">Formulación de la Ley de Hooke</h3>
+<p>Enunciada por Robert Hooke, establece que para deformaciones elásticas pequeñas, <strong>el esfuerzo es directamente proporcional a la deformación unitaria</strong>[cite: 3].</p>
+<ul>
+<li>
+<p><strong>Forma General:</strong>
+  $<span class="arithmatex">\(\text{Esfuerzo} \propto \text{Deformación Unitaria}\)</span>$</p>
+</li>
+<li>
+<p><strong>Forma Escalar de la Fuerza Restauradora:</strong>
+  $<span class="arithmatex">\(F = -k \cdot \Delta x\)</span>$</p>
+</li>
+<li><span class="arithmatex">\(k\)</span>: Constante elástica del cuerpo o resorte (<span class="arithmatex">\(\text{N/m}\)</span>).</li>
+<li>Signo negativo (<span class="arithmatex">\(-\)</span>): Indica que la fuerza recuperadora es opuesta al sentido del desplazamiento <span class="arithmatex">\(\Delta x\)</span>[cite: 3].</li>
+</ul>
+<hr />
+<h3 id="diagrama-esfuerzo-sigma-vs-deformacion-epsilon">Diagrama Esfuerzo (<span class="arithmatex">\(\sigma\)</span>) vs Deformación (<span class="arithmatex">\(\epsilon\)</span>)</h3>
+<p>Representa la respuesta mecánica completa de un material metálico (ductil) sometido a tracción progresiva[cite: 3]:</p>
+<p><img alt="Diagrama Esfuerzo Deformación Cátedra UNCA" src="../../assets/Imagenes-2/2.1-traccion-compresion-young.png" /></p>
+<h4 id="puntos-criticos-del-diagrama-examen-unca">Puntos Críticos del Diagrama (Examen UNCA):</h4>
+<ol>
+<li><strong>Punto a (Límite de Proporcionalidad):</strong> Fin del tramo rectilíneo. Hasta aquí se cumple estrictamente la Ley de Hooke (<span class="arithmatex">\(\sigma = Y \cdot \epsilon\)</span>)[cite: 3].</li>
+<li><strong>Punto b (Límite Elástico):</strong> Esfuerzo máximo que el material puede soportar sin sufrir deformaciones permanentes. Si se quita la carga antes de <span class="arithmatex">\(b\)</span>, el objeto recupera su longitud <span class="arithmatex">\(L_0\)</span>[cite: 3].</li>
+<li><strong>Límite de Cedencia / Fluencia (<span class="arithmatex">\(LC\)</span>):</strong> Valor mínimo de esfuerzo a partir del cual el material "fluye" o se deforma plásticamente con muy poco incremento de carga[cite: 3]:
+   $<span class="arithmatex">\(LC = \frac{F_{\min}}{A}\)</span>$</li>
+<li><strong>Punto c (Comportamiento Plástico / Deformación Permanente):</strong> Tramo no lineal por encima del límite elástico. Al retirar la fuerza en esta zona, el material conserva un estiramiento remanente[cite: 3].</li>
+<li><strong>Límite de Resistencia a la Rotura (<span class="arithmatex">\(LRR\)</span>):</strong> Esfuerzo máximo absoluto que puede soportar el material antes de colapsar[cite: 3]:
+   $<span class="arithmatex">\(LRR = \frac{F_{\max}}{A}\)</span>$</li>
+<li><strong>Punto d (Punto de Ruptura):</strong> Instante en el que el material se fractura físicamente[cite: 3].</li>
+</ol>
+<hr />
+<h2 id="6-analisis-dimensional-y-cancelacion-de-unidades-paso-a-paso">6. Análisis Dimensional y Cancelación de Unidades Paso a Paso</h2>
+<p>En la cátedra de la UNCA es obligatorio justificar la eliminación algebraica de magnitudes para validar el resultado final[cite: 2, 3].</p>
+<h3 id="caso-1-demostracion-de-las-unidades-del-modulo-de-young-y">Caso 1: Demostración de las Unidades del Módulo de Young (<span class="arithmatex">\(Y\)</span>)</h3>
+<p>Partiendo de la definición:
+$<span class="arithmatex">\(Y = \frac{\frac{F_\perp}{A}}{\frac{\Delta L}{L_0}}\)</span>$</p>
+<ol>
+<li>
+<p><strong>Expresión de Unidades en el Sistema Internacional (SI):</strong>
+   $<span class="arithmatex">\([Y] = \frac{\frac{\text{N}}{\text{m}^2}}{\frac{\text{m}}{\text{m}}}\)</span>$</p>
+</li>
+<li>
+<p><strong>Cancelación Estricta en la Deformación Unitaria:</strong>
+   $<span class="arithmatex">\(\frac{\text{m}}{\text{m}} = \text{m}^{1-1} = \text{m}^0 = 1 \quad \implies \text{Adimensional}\)</span>$</p>
+</li>
+<li>
+<p><strong>Reemplazo en la Fracción Principal:</strong>
+   $<span class="arithmatex">\([Y] = \frac{\frac{\text{N}}{\text{m}^2}}{1} = \frac{\text{N}}{\text{m}^2} = \text{Pa}\)</span>$</p>
+</li>
+<li>
+<p><strong>Descomposición a Unidades Fundamentales del SI (<span class="arithmatex">\(\text{kg}, \text{m}, \text{s}\)</span>):</strong>
+   Como <span class="arithmatex">\(1\,\text{N} = 1\,\text{kg} \cdot \text{m} \cdot \text{s}^{-2}\)</span>:
+   $<span class="arithmatex">\([Y] = \frac{\text{kg} \cdot \text{m} \cdot \text{s}^{-2}}{\text{m}^2} = \text{kg} \cdot \text{m}^{1-2} \cdot \text{s}^{-2} = \text{kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h3 id="caso-2-unidades-del-coeficiente-de-compresibilidad-k">Caso 2: Unidades del Coeficiente de Compresibilidad (<span class="arithmatex">\(k\)</span>)</h3>
+<div class="arithmatex">\[k = \frac{1}{B} \implies [k] = \frac{1}{[B]} = \frac{1}{\frac{\text{N}}{\text{m}^2}} = \frac{\text{m}^2}{\text{N}} = \text{Pa}^{-1}\]</div>
+<p>Descomposición fundamental:
+$<span class="arithmatex">\([k] = \frac{\text{m}^2}{\text{kg} \cdot \text{m} \cdot \text{s}^{-2}} = \text{kg}^{-1} \cdot \text{m}^{2-1} \cdot \text{s}^2 = \text{kg}^{-1} \cdot \text{m} \cdot \text{s}^2\)</span>$</p>
+<hr />
+<h2 id="7-trampas-y-errores-tipicos-en-examenes-unca">⚠️ 7. Trampas y Errores Típicos en Exámenes (UNCA)</h2>
+<blockquote>
+<p>⚠️ <strong>Trampa 1: Conversión Incompleta de Milímetros Cuadrados (<span class="arithmatex">\(\text{mm}^2\)</span>) a Metros Cuadrados (<span class="arithmatex">\(\text{m}^2\)</span>)</strong><br />
+<strong>Error común:</strong> Escribir <span class="arithmatex">\(15\,\text{mm}^2 = 15 \times 10^{-3}\,\text{m}^2\)</span>.<br />
+<strong>Por qué se invalida:</strong> El prefijo mili (<span class="arithmatex">\(10^{-3}\)</span>) debe elevarse al cuadrado:<br />
+$<span class="arithmatex">\(1\,\text{mm} = 10^{-3}\,\text{m} \implies 1\,\text{mm}^2 = (10^{-3}\,\text{m})^2 = 10^{-6}\,\text{m}^2\)</span>$<br />
+<strong>Regla Inviolable:</strong> <span class="arithmatex">\(15\,\text{mm}^2 = 15 \times 10^{-6}\,\text{m}^2\)</span>.</p>
+<p>⚠️ <strong>Trampa 2: Área de Corte en Punzonado de Placas vs. Área Transversal de Pernos</strong><br />
+<strong>Error de cizalladura:</strong> Al calcular la fuerza para perforar una placa de espesor <span class="arithmatex">\(t\)</span> con un punzón circular de diámetro <span class="arithmatex">\(d\)</span>, usar el área del círculo (<span class="arithmatex">\(A = \pi d^2 / 4\)</span>)[cite: 3].<br />
+<strong>Corrección:</strong> El corte de la placa ocurre en la <strong>superficie lateral del cilindro extraído</strong>[cite: 3]:<br />
+$<span class="arithmatex">\(A_{\text{lateral}} = \text{Perímetro} \times \text{Espesor} = (\pi \cdot d) \cdot t\)</span>$</p>
+<p>⚠️ <strong>Trampa 3: Confundir Deformación Unitaria con Porcentaje de Deformación</strong><br />
+<strong>Error:</strong> Reemplazar un alargamiento del <span class="arithmatex">\(0,125\%\)</span> como <span class="arithmatex">\(\delta = 0,125\)</span>.<br />
+<strong>Corrección:</strong> El porcentaje incluye un factor <span class="arithmatex">\(100\)</span>. La deformación unitaria pura es[cite: 3]:<br />
+$<span class="arithmatex">\(\delta = \frac{0,125}{100} = 1,25 \times 10^{-3}\)</span>$</p>
+<p>⚠️ <strong>Trampa 4: Omitir la Masa o Masa por Gravedad (<span class="arithmatex">\(F = m \cdot g\)</span>)</strong><br />
+<strong>Error:</strong> Usar la masa <span class="arithmatex">\(M = 454\,\text{kg}\)</span> directamente en la fórmula de esfuerzo <span class="arithmatex">\(\epsilon = F/A\)</span>.<br />
+<strong>Corrección:</strong> Convertir siempre la masa suspendida a Fuerza Peso (en Newtons)[cite: 3]:<br />
+$<span class="arithmatex">\(F = M \cdot g = 454\,\text{kg} \times 9,8\,\text{m/s}^2 = 4449,2\,\text{N}\)</span>$</p>
+</blockquote>
+<hr />
+<h2 id="8-ejercicios-resueltos-paso-a-paso-de-parcial">📝 8. Ejercicios Resueltos Paso a Paso de Parcial</h2>
+<blockquote>
+<p><strong>Ejercicio 1 (Cálculo del Módulo de Young - Apunte Cátedra UNCA):</strong><br />
+<em>Una carga de <span class="arithmatex">\(M = 454\,\text{kg}\)</span> se suspende de un alambre de acero de <span class="arithmatex">\(L_0 = 2,4\,\text{m}\)</span> de longitud y <span class="arithmatex">\(A = 15\,\text{mm}^2\)</span> de sección transversal.</em><br />
+<em>Produce un alargamiento de <span class="arithmatex">\(\Delta L = 3\,\text{mm}\)</span>.</em><br />
+<em>Calcular: a) El esfuerzo (<span class="arithmatex">\(\epsilon\)</span>), b) La deformación unitaria (<span class="arithmatex">\(\delta\)</span>), c) El Módulo de Young (<span class="arithmatex">\(Y\)</span>).</em>[cite: 3]</p>
+</blockquote>
+<h3 id="desarrollo-paso-a-paso-ejercicio-1">Desarrollo Paso a Paso (Ejercicio 1):</h3>
+<ul>
+<li><strong>Paso 1: Conversión de datos al SI</strong></li>
+<li><span class="arithmatex">\(F_\perp = M \cdot g = 454\,\text{kg} \times 9,8\,\frac{\text{m}}{\text{s}^2} = 4449,2\,\text{N}\)</span>[cite: 3]</li>
+<li><span class="arithmatex">\(A = 15\,\text{mm}^2 = 15 \times 10^{-6}\,\text{m}^2\)</span>[cite: 3]</li>
+<li>
+<p><span class="arithmatex">\(\Delta L = 3\,\text{mm} = 3 \times 10^{-3}\,\text{m}\)</span>[cite: 3]</p>
+</li>
+<li>
+<p><strong>Paso 2: Cálculo del Esfuerzo (<span class="arithmatex">\(\epsilon\)</span>)</strong>
+  $<span class="arithmatex">\(\epsilon = \frac{F_\perp}{A} = \frac{4449,2\,\text{N}}{15 \times 10^{-6}\,\text{m}^2} = 2,966 \times 10^8\,\frac{\text{N}}{\text{m}^2} \approx 2,97 \times 10^8\,\text{Pa}\)</span>$[cite: 3]</p>
+</li>
+<li>
+<p><strong>Paso 3: Cálculo de la Deformación Unitaria (<span class="arithmatex">\(\delta\)</span>)</strong>
+  $<span class="arithmatex">\(\delta = \frac{\Delta L}{L_0} = \frac{3 \times 10^{-3}\,\text{m}}{2,4\,\text{m}} = 1,25 \times 10^{-3} \quad (0,125\%)\)</span>$[cite: 3]</p>
+</li>
+<li>
+<p><strong>Paso 4: Cálculo del Módulo de Young (<span class="arithmatex">\(Y\)</span>)</strong>
+  $<span class="arithmatex">\(Y = \frac{\epsilon}{\delta} = \frac{2,97 \times 10^8\,\frac{\text{N}}{\text{m}^2}}{1,25 \times 10^{-3}} = 2,376 \times 10^{11}\,\frac{\text{N}}{\text{m}^2} \approx 2,38 \times 10^{11}\,\text{Pa}\)</span>$[cite: 3]</p>
+</li>
+</ul>
+<hr />
+<blockquote>
+<p><strong>Ejercicio 2 (Esfuerzo de Corte y Punzonado - Apunte Cátedra UNCA):</strong><br />
+<em>El esfuerzo de corte máximo para romper el acero es de <span class="arithmatex">\(4,00 \times 10^8\,\text{N/m}^2\)</span>.</em>[cite: 3]<br />
+<em>Determinar la fuerza de corte necesaria para:</em><br />
+<em>a) Cortar un perno de acero de <span class="arithmatex">\(d = 1,00\,\text{cm}\)</span> de diámetro.</em>[cite: 3]<br />
+<em>b) Hacer un orificio de <span class="arithmatex">\(d = 1,00\,\text{cm}\)</span> de diámetro en una placa de acero de <span class="arithmatex">\(t = 0,500\,\text{cm}\)</span> de espesor.</em>[cite: 3]</p>
+</blockquote>
+<h3 id="desarrollo-paso-a-paso-ejercicio-2">Desarrollo Paso a Paso (Ejercicio 2):</h3>
+<ul>
+<li>
+<p><strong>Paso 1: Parte a) Corte de Perno (Área de Sección Transversal Circular)</strong>
+  $<span class="arithmatex">\(A_{\text{perno}} = \pi \frac{d^2}{4} = \pi \frac{(1,00 \times 10^{-2}\,\text{m})^2}{4} = \frac{\pi}{4} \times 10^{-4}\,\text{m}^2\)</span>$[cite: 3]
+  $<span class="arithmatex">\(F = M_{\text{ruptura}} \cdot A_{\text{perno}} = (4,00 \times 10^8\,\frac{\text{N}}{\text{m}^2}) \cdot \left(\frac{\pi}{4} \times 10^{-4}\,\text{m}^2\right) = \pi \times 10^4\,\text{N} \approx 31.416\,\text{N}\)</span>$[cite: 3]</p>
+</li>
+<li>
+<p><strong>Paso 2: Parte b) Punzonado de Placa (Área Lateral Cilíndrica)</strong>
+  $<span class="arithmatex">\(A_{\text{lateral}} = \pi \cdot d \cdot t = \pi \cdot (1,00 \times 10^{-2}\,\text{m}) \cdot (0,500 \times 10^{-2}\,\text{m}) = 0,500\pi \times 10^{-4}\,\text{m}^2\)</span>$[cite: 3]
+  $<span class="arithmatex">\(F = M_{\text{ruptura}} \cdot A_{\text{lateral}} = (4,00 \times 10^8\,\frac{\text{N}}{\text{m}^2}) \cdot (0,500\pi \times 10^{-4}\,\text{m}^2) = 2\pi \times 10^4\,\text{N} \approx 62.832\,\text{N}\)</span>$[cite: 3]</p>
+</li>
+</ul>
+<hr />
+<h2 id="9-conexion-con-el-siguiente-tema">9. Conexión con el Siguiente Tema</h2>
+<p>El estudio de las deformaciones elásticas bajo la Ley de Hooke (<span class="arithmatex">\(F = -k \Delta x\)</span>) sienta las bases dinámicas y energéticas directas para:
+* <strong>Tema 2.2:</strong> Integrar la fuerza recuperadora para definir el Trabajo (<span class="arithmatex">\(W = \int F dx\)</span>) y la <strong>Energía Potencial Elástica (<span class="arithmatex">\(U = \frac{1}{2} k x^2\)</span>)</strong> acumulada en los cuerpos deformados[cite: 2].
+* <strong>Unidad III:</strong> Formular la ecuación diferencial del <strong>Movimiento Armónico Simple (M.A.S.)</strong> a partir de la constante elástica <span class="arithmatex">\(k\)</span> y la masa <span class="arithmatex">\(m\)</span>[cite: 2, 3].</p>
+<hr />
+<h2 id="enlaces-relacionados">🔗 Enlaces Relacionados</h2>
+<ul>
+<li><a href="../2.2-Energia-Potencial-Elastica-y-Trabajo/">➡️ Tema 2.2: Energía Potencial Elástica y Trabajo</a></li>
+<li><a href="../../Unidad III/3.1-Movimiento-Armonico-Simple-MAS-Ecuaciones">➡️ Unidad III: Movimiento Armónico Simple</a></li>
+<li><a href="../../README">📚 Menú Principal de Física II</a></li>
+</ul>
+<h2 id="referencias">Referencias</h2>
+<ul>
+<li><em>Cátedra:</em> Física II – UNCA (Unidad 2: Elasticidad de Cuerpos Sólidos, Módulos y Ley de Hooke).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
