@@ -501,6 +501,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -558,6 +564,90 @@
     
   
     3.1 Ecuaciones del MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2-Energia-en-el-MAS-y-Sistemas-Oscilantes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 Energía en el MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.3-Sistemas-Oscilantes-Reales-y-Avanzados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Sistemas Oscilantes Reales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad III/3.4-Oscilaciones-Amortiguadas-Forzadas-y-Resonancia.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 Amortiguamiento y Resonancia
   
 
     
@@ -780,39 +870,39 @@
 <h1 id="34-oscilaciones-amortiguadas-forzadas-resonancia-y-superposicion">3.4 Oscilaciones Amortiguadas, Forzadas, Resonancia y Superposición</h1>
 <hr />
 <h2 id="1-la-intuicion-fisica-sistemas-oscilantes-reales-y-complejos">1. La Intuición Física: Sistemas Oscilantes Reales y Complejos</h2>
-<p>En los temas anteriores analizamos el oscilador ideal (MAS), donde la energía total se conservaba indefinidamente[cite: 54, 94]. En los sistemas reales de ingeniería y arquitectura, la fricción y la viscosidad disipan energía continuamente[cite: 94, 95].</p>
+<p>En los temas anteriores analizamos el oscilador ideal (MAS), donde la energía total se conservaba indefinidamente. En los sistemas reales de ingeniería y arquitectura, la fricción y la viscosidad disipan energía continuamente.</p>
 <ul>
-<li><strong>Oscilaciones Amortiguadas:</strong> Ocurren cuando actúan fuerzas disipativas (como la resistencia del aire o el rozamiento viscoso de un fluido)[cite: 94]. La amplitud del movimiento decrece exponencialmente con el tiempo hasta detenerse[cite: 94]. Un ejemplo práctico son los amortiguadores de la suspensión de un vehículo[cite: 31, 88].</li>
-<li><strong>Oscilaciones Forzadas:</strong> Para evitar que el movimiento muera por amortiguamiento, se aplica una fuerza impulsora externa periódica que inyecta energía al sistema[cite: 95]. Un ejemplo simple es empujar rítmicamente a alguien en una hamaca[cite: 89].</li>
-<li><strong>Resonancia:</strong> Ocurre cuando la frecuencia de la fuerza impulsora externa (<span class="arithmatex">\(\omega\)</span>) coincide exactamente o está muy cerca de la frecuencia natural del sistema (<span class="arithmatex">\(\omega_0\)</span>)[cite: 95, 96]. En ese instante, la transferencia de energía es máxima y la amplitud se dispara drásticamente[cite: 95, 96]. Un ejemplo histórico dramático fue el colapso del puente Tacoma Narrows en 1940[cite: 97].</li>
-<li><strong>Superposición de MAS:</strong> Cuando un cuerpo se ve sometido a dos o más fuerzas oscilatorias simultáneas, el movimiento resultante es la suma vectorial de los movimientos componentes[cite: 93].</li>
+<li><strong>Oscilaciones Amortiguadas:</strong> Ocurren cuando actúan fuerzas disipativas (como la resistencia del aire o el rozamiento viscoso de un fluido). La amplitud del movimiento decrece exponencialmente con el tiempo hasta detenerse. Un ejemplo práctico son los amortiguadores de la suspensión de un vehículo.</li>
+<li><strong>Oscilaciones Forzadas:</strong> Para evitar que el movimiento muera por amortiguamiento, se aplica una fuerza impulsora externa periódica que inyecta energía al sistema. Un ejemplo simple es empujar rítmicamente a alguien en una hamaca.</li>
+<li><strong>Resonancia:</strong> Ocurre cuando la frecuencia de la fuerza impulsora externa (<span class="arithmatex">\(\omega\)</span>) coincide exactamente o está muy cerca de la frecuencia natural del sistema (<span class="arithmatex">\(\omega_0\)</span>). En ese instante, la transferencia de energía es máxima y la amplitud se dispara drásticamente. Un ejemplo histórico dramático fue el colapso del puente Tacoma Narrows en 1940.</li>
+<li><strong>Superposición de MAS:</strong> Cuando un cuerpo se ve sometido a dos o más fuerzas oscilatorias simultáneas, el movimiento resultante es la suma vectorial de los movimientos componentes.</li>
 </ul>
 <hr />
 <h2 id="2-desarrollo-matematico-y-expresiones-clave">2. Desarrollo Matemático y Expresiones Clave</h2>
 <h3 id="a-movimiento-armonico-amortiguado">A. Movimiento Armónico Amortiguado</h3>
-<p>Considerando una fuerza de rozamiento viscoso proporcional a la velocidad: <span class="arithmatex">\(F_R = -b v\)</span> (donde <span class="arithmatex">\(b\)</span> es el coeficiente de amortiguamiento en <span class="arithmatex">\(\text{kg/s}\)</span> o <span class="arithmatex">\(\text{N}\cdot\text{s/m}\)</span>)[cite: 94]. </p>
+<p>Considerando una fuerza de rozamiento viscoso proporcional a la velocidad: <span class="arithmatex">\(F_R = -b v\)</span> (donde <span class="arithmatex">\(b\)</span> es el coeficiente de amortiguamiento en <span class="arithmatex">\(\text{kg/s}\)</span> o <span class="arithmatex">\(\text{N}\cdot\text{s/m}\)</span>). </p>
 <p>Aplicando la Segunda Ley de Newton:</p>
 <div class="arithmatex">\[\sum F = -k x - b v = m a \implies m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + k x = 0\]</div>
-<p>Para amortiguamiento débil (<span class="arithmatex">\(b &lt; 2\sqrt{m k}\)</span>), la solución de posición es[cite: 94]:</p>
-<p>$<span class="arithmatex">\(x(t) = \left(A_0 e^{-\frac{b}{2m}t}\right) \cos(\omega t + \phi)\)</span>$[cite: 94]</p>
+<p>Para amortiguamiento débil (<span class="arithmatex">\(b &lt; 2\sqrt{m k}\)</span>), la solución de posición es:</p>
+<div class="arithmatex">\[x(t) = \left(A_0 e^{-\frac{b}{2m}t}\right) \cos(\omega t + \phi)\]</div>
 <p>Donde:
-* <strong>Envolvente de la amplitud:</strong> <span class="arithmatex">\(A(t) = A_0 e^{-\frac{b}{2m}t}\)</span>[cite: 94]
-* <strong>Frecuencia angular amortiguada:</strong> <span class="arithmatex">\(\omega = \sqrt{\omega_0^2 - \left(\frac{b}{2m}\right)^2}\)</span>, siendo <span class="arithmatex">\(\omega_0 = \sqrt{\frac{k}{m}}\)</span> la frecuencia natural sin amortiguamiento[cite: 89, 94].</p>
+* <strong>Envolvente de la amplitud:</strong> <span class="arithmatex">\(A(t) = A_0 e^{-\frac{b}{2m}t}\)</span>
+* <strong>Frecuencia angular amortiguada:</strong> <span class="arithmatex">\(\omega = \sqrt{\omega_0^2 - \left(\frac{b}{2m}\right)^2}\)</span>, siendo <span class="arithmatex">\(\omega_0 = \sqrt{\frac{k}{m}}\)</span> la frecuencia natural sin amortiguamiento.</p>
 <hr />
 <h3 id="b-oscilaciones-forzadas-y-resonancia">B. Oscilaciones Forzadas y Resonancia</h3>
-<p>Si aplicamos una fuerza impulsora senoidal <span class="arithmatex">\(F(t) = F_0 \cos(\omega t)\)</span>[cite: 95]:</p>
+<p>Si aplicamos una fuerza impulsora senoidal <span class="arithmatex">\(F(t) = F_0 \cos(\omega t)\)</span>:</p>
 <div class="arithmatex">\[m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + k x = F_0 \cos(\omega t)\]</div>
-<p>En estado estacionario, el sistema oscila a la frecuencia <span class="arithmatex">\(\omega\)</span> de la fuerza impulsora, con una <strong>Amplitud (<span class="arithmatex">\(A\)</span>)</strong> dada por[cite: 95]:</p>
-<p>$<span class="arithmatex">\(A = \frac{\frac{F_0}{m}}{\sqrt{(\omega^2 - \omega_0^2)^2 + \left(\frac{b \omega}{m}\right)^2}}\)</span>$[cite: 95]</p>
+<p>En estado estacionario, el sistema oscila a la frecuencia <span class="arithmatex">\(\omega\)</span> de la fuerza impulsora, con una <strong>Amplitud (<span class="arithmatex">\(A\)</span>)</strong> dada por:</p>
+<div class="arithmatex">\[A = \frac{\frac{F_0}{m}}{\sqrt{(\omega^2 - \omega_0^2)^2 + \left(\frac{b \omega}{m}\right)^2}}\]</div>
 <blockquote>
 <p><strong>Condición de Resonancia:</strong><br />
-Cuando <span class="arithmatex">\(\omega \approx \omega_0\)</span>, el término <span class="arithmatex">\((\omega^2 - \omega_0^2)^2 \to 0\)</span>, por lo que la amplitud alcanza su valor pico <span class="arithmatex">\(A_{\text{máx}} \approx \frac{F_0}{b \omega_0}\)</span>[cite: 95, 96].</p>
+Cuando <span class="arithmatex">\(\omega \approx \omega_0\)</span>, el término <span class="arithmatex">\((\omega^2 - \omega_0^2)^2 \to 0\)</span>, por lo que la amplitud alcanza su valor pico <span class="arithmatex">\(A_{\text{máx}} \approx \frac{F_0}{b \omega_0}\)</span>.</p>
 </blockquote>
 <hr />
 <h3 id="c-superposicion-de-dos-mas-de-la-misma-frecuencia">C. Superposición de dos MAS de la misma Frecuencia</h3>
 <p>Si una partícula recibe simultáneamente dos oscilaciones en el mismo eje:<br />
-<span class="arithmatex">\(x_1(t) = A_1 \cos(\omega t + \phi_1)\)</span> y <span class="arithmatex">\(x_2(t) = A_2 \cos(\omega t + \phi_2)\)</span>[cite: 93].</p>
-<p>El movimiento resultante es <span class="arithmatex">\(x(t) = x_1(t) + x_2(t) = A \cos(\omega t + \phi)\)</span>[cite: 93], donde la amplitud total <span class="arithmatex">\(A\)</span> se calcula mediante suma de fasores (vectores rotantes)[cite: 93]:</p>
+<span class="arithmatex">\(x_1(t) = A_1 \cos(\omega t + \phi_1)\)</span> y <span class="arithmatex">\(x_2(t) = A_2 \cos(\omega t + \phi_2)\)</span>.</p>
+<p>El movimiento resultante es <span class="arithmatex">\(x(t) = x_1(t) + x_2(t) = A \cos(\omega t + \phi)\)</span>, donde la amplitud total <span class="arithmatex">\(A\)</span> se calcula mediante suma de fasores (vectores rotantes):</p>
 <div class="arithmatex">\[A = \sqrt{A_1^2 + A_2^2 + 2 A_1 A_2 \cos(\phi_2 - \phi_1)}\]</div>
 <hr />
 <h2 id="3-detector-de-trampas-de-parcial">3. Detector de Trampas de Parcial</h2>
@@ -828,17 +918,17 @@ Cuando <span class="arithmatex">\(\omega \approx \omega_0\)</span>, el término 
 <tr>
 <td style="text-align: left;"><strong>Frecuencia en Amortiguado:</strong> Asumir que oscila a la frecuencia natural <span class="arithmatex">\(\omega_0\)</span>.</td>
 <td style="text-align: left;">Usar <span class="arithmatex">\(\omega = \sqrt{k/m}\)</span> en sistemas con rozamiento.</td>
-<td style="text-align: left;">La fricción ralentiza el movimiento: la frecuencia amortiguada es siempre menor (<span class="arithmatex">\(\omega = \sqrt{\omega_0^2 - (b/2m)^2}\)</span>)[cite: 89, 94].</td>
+<td style="text-align: left;">La fricción ralentiza el movimiento: la frecuencia amortiguada es siempre menor (<span class="arithmatex">\(\omega = \sqrt{\omega_0^2 - (b/2m)^2}\)</span>).</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Exponente de la Envolvente:</strong> Olvidar el factor <span class="arithmatex">\(2\)</span> en el denominador.</td>
 <td style="text-align: left;">Escribir <span class="arithmatex">\(e^{-\frac{b}{m}t}\)</span>.</td>
-<td style="text-align: left;">El exponente correcto de la amplitud es <span class="arithmatex">\(-\frac{b}{2m}t\)</span>[cite: 88, 94].</td>
+<td style="text-align: left;">El exponente correcto de la amplitud es <span class="arithmatex">\(-\frac{b}{2m}t\)</span>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Resonancia Indefinida:</strong> Pensar que en la resonancia la amplitud es siempre infinita.</td>
 <td style="text-align: left;">Ignorar el coeficiente de amortiguamiento <span class="arithmatex">\(b\)</span>.</td>
-<td style="text-align: left;">La amplitud en resonancia solo sería infinita si <span class="arithmatex">\(b = 0\)</span>. Con rozamiento real (<span class="arithmatex">\(b &gt; 0\)</span>), la amplitud máxima es finita (<span class="arithmatex">\(A_{\text{máx}} = \frac{F_0}{b \omega_0}\)</span>)[cite: 95, 96].</td>
+<td style="text-align: left;">La amplitud en resonancia solo sería infinita si <span class="arithmatex">\(b = 0\)</span>. Con rozamiento real (<span class="arithmatex">\(b &gt; 0\)</span>), la amplitud máxima es finita (<span class="arithmatex">\(A_{\text{máx}} = \frac{F_0}{b \omega_0}\)</span>).</td>
 </tr>
 </tbody>
 </table>
@@ -849,12 +939,12 @@ Cuando <span class="arithmatex">\(\omega \approx \omega_0\)</span>, el término 
 <hr />
 <h2 id="5-ejercicios-resueltos-con-analisis-dimensional-explicito">5. Ejercicios Resueltos con Análisis Dimensional Explícito</h2>
 <h3 id="ejercicio-1-perdida-de-amplitud-en-oscilacion-amortiguada">Ejercicio 1: Pérdida de Amplitud en Oscilación Amortiguada</h3>
-<p><strong>Consigna:</strong> Un objeto de masa <span class="arithmatex">\(m = 0.25 \text{ kg}\)</span> se conecta a un resorte de <span class="arithmatex">\(k = 100 \text{ N/m}\)</span> y se sumerge en un fluido con constante de amortiguamiento <span class="arithmatex">\(b = 0.10 \text{ kg/s}\)</span>[cite: 94].<br />
-a) Calcule el tiempo necesario para que la amplitud se reduzca a la mitad de su valor inicial (<span class="arithmatex">\(A(t) = \frac{1}{2} A_0\)</span>)[cite: 94].<br />
+<p><strong>Consigna:</strong> Un objeto de masa <span class="arithmatex">\(m = 0.25 \text{ kg}\)</span> se conecta a un resorte de <span class="arithmatex">\(k = 100 \text{ N/m}\)</span> y se sumerge en un fluido con constante de amortiguamiento <span class="arithmatex">\(b = 0.10 \text{ kg/s}\)</span>.<br />
+a) Calcule el tiempo necesario para que la amplitud se reduzca a la mitad de su valor inicial (<span class="arithmatex">\(A(t) = \frac{1}{2} A_0\)</span>).<br />
 b) Calcule la frecuencia angular amortiguada <span class="arithmatex">\(\omega\)</span>.</p>
 <h4 id="desarrollo-y-cancelacion-de-unidades">Desarrollo y Cancelación de Unidades:</h4>
 <p><strong>Paso a): Tiempo para reducir la amplitud a la mitad (<span class="arithmatex">\(t_{1/2}\)</span>)</strong></p>
-<p>Igualamos la expresión de la envolvente a <span class="arithmatex">\(\frac{1}{2} A_0\)</span>[cite: 94]:</p>
+<p>Igualamos la expresión de la envolvente a <span class="arithmatex">\(\frac{1}{2} A_0\)</span>:</p>
 <div class="arithmatex">\[A_0 e^{-\frac{b}{2m}t} = \frac{1}{2} A_0 \implies e^{-\frac{b}{2m}t} = 0.5\]</div>
 <p>Aplicando logaritmo natural (<span class="arithmatex">\(\ln\)</span>) a ambos lados:</p>
 <div class="arithmatex">\[-\frac{b}{2m}t = \ln(0.5) \implies t = \frac{-2 m \ln(0.5)}{b} = \frac{2 m \ln(2)}{b}\]</div>
@@ -876,17 +966,17 @@ b) Calcule la frecuencia angular amortiguada <span class="arithmatex">\(\omega\)
 <p>Calculamos <span class="arithmatex">\(\omega\)</span>:</p>
 <div class="arithmatex">\[\omega = \sqrt{\omega_0^2 - \left(\frac{b}{2m}\right)^2} = \sqrt{400 \text{ s}^{-2} - 0.04 \text{ s}^{-2}} = \sqrt{399.96 \text{ s}^{-2}} \approx 19.999 \text{ rad/s}\]</div>
 <blockquote>
-<p><strong>Conclusión del ejercicio:</strong> Como el amortiguamiento es pequeño (<span class="arithmatex">\(b\)</span> bajo), la frecuencia angular prácticamente no se altera respecto a la frecuencia natural sin fricción (<span class="arithmatex">\(\omega \approx \omega_0 = 20 \text{ rad/s}\)</span>)[cite: 94].</p>
+<p><strong>Conclusión del ejercicio:</strong> Como el amortiguamiento es pequeño (<span class="arithmatex">\(b\)</span> bajo), la frecuencia angular prácticamente no se altera respecto a la frecuencia natural sin fricción (<span class="arithmatex">\(\omega \approx \omega_0 = 20 \text{ rad/s}\)</span>).</p>
 </blockquote>
 <hr />
 <h3 id="ejercicio-2-amplitud-en-resonancia-oscilacion-forzada">Ejercicio 2: Amplitud en Resonancia (Oscilación Forzada)</h3>
-<p><strong>Consigna:</strong> Un motor mecánico de masa <span class="arithmatex">\(m = 2.0 \text{ kg}\)</span> sujeto a un soporte de constante <span class="arithmatex">\(k = 800 \text{ N/m}\)</span> experimenta una fuerza impulsora periódica de amplitud <span class="arithmatex">\(F_0 = 12.0 \text{ N}\)</span>[cite: 95]. El coeficiente de fricción es <span class="arithmatex">\(b = 4.0 \text{ kg/s}\)</span>[cite: 94]. Calcule la amplitud de movimiento <span class="arithmatex">\(A\)</span> cuando la frecuencia impulsora está exactamente en resonancia (<span class="arithmatex">\(\omega = \omega_0\)</span>)[cite: 95, 96].</p>
+<p><strong>Consigna:</strong> Un motor mecánico de masa <span class="arithmatex">\(m = 2.0 \text{ kg}\)</span> sujeto a un soporte de constante <span class="arithmatex">\(k = 800 \text{ N/m}\)</span> experimenta una fuerza impulsora periódica de amplitud <span class="arithmatex">\(F_0 = 12.0 \text{ N}\)</span>. El coeficiente de fricción es <span class="arithmatex">\(b = 4.0 \text{ kg/s}\)</span>. Calcule la amplitud de movimiento <span class="arithmatex">\(A\)</span> cuando la frecuencia impulsora está exactamente en resonancia (<span class="arithmatex">\(\omega = \omega_0\)</span>).</p>
 <h4 id="desarrollo-y-cancelacion-de-unidades_1">Desarrollo y Cancelación de Unidades:</h4>
 <p><strong>Paso 1: Frecuencia de resonancia (<span class="arithmatex">\(\omega_0\)</span>)</strong></p>
 <div class="arithmatex">\[\omega_0 = \sqrt{\frac{k}{m}} = \sqrt{\frac{800 \frac{\text{N}}{\text{m}}}{2.0 \text{ kg}}} = \sqrt{400 \text{ s}^{-2}} = 20 \text{ rad/s}\]</div>
 <p><strong>Paso 2: Amplitud en Resonancia</strong></p>
-<p>Como estamos en resonancia exacta (<span class="arithmatex">\(\omega = \omega_0\)</span>), el término <span class="arithmatex">\((\omega^2 - \omega_0^2)^2 = 0\)</span> en la fórmula general de amplitud[cite: 95]:</p>
-<p>$<span class="arithmatex">\(A_{\text{res}} = \frac{\frac{F_0}{m}}{\sqrt{0 + \left(\frac{b \omega_0}{m}\right)^2}} = \frac{\frac{F_0}{m}}{\frac{b \omega_0}{m}} = \frac{F_0}{b \omega_0}\)</span>$[cite: 95]</p>
+<p>Como estamos en resonancia exacta (<span class="arithmatex">\(\omega = \omega_0\)</span>), el término <span class="arithmatex">\((\omega^2 - \omega_0^2)^2 = 0\)</span> en la fórmula general de amplitud:</p>
+<div class="arithmatex">\[A_{\text{res}} = \frac{\frac{F_0}{m}}{\sqrt{0 + \left(\frac{b \omega_0}{m}\right)^2}} = \frac{\frac{F_0}{m}}{\frac{b \omega_0}{m}} = \frac{F_0}{b \omega_0}\]</div>
 <p>Sustituyendo magnitudes:</p>
 <div class="arithmatex">\[A_{\text{res}} = \frac{12.0 \text{ N}}{\left(4.0 \frac{\text{kg}}{\text{s}}\right) \cdot \left(20 \frac{1}{\text{s}}\right)}\]</div>
 <p>Desglose dimensional de unidades:</p>
