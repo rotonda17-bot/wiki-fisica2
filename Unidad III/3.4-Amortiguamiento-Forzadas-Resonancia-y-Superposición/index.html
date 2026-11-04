@@ -1,0 +1,958 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes, fórmulas y gráficos interactivos de la materia">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>3.4 Oscilaciones Amortiguadas, Forzadas, Resonancia y Superposición - Wiki de Física II</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#34-oscilaciones-amortiguadas-forzadas-resonancia-y-superposicion" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Wiki de Física II" class="md-header__button md-logo" aria-label="Wiki de Física II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wiki de Física II
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3.4 Oscilaciones Amortiguadas, Forzadas, Resonancia y Superposición
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Wiki de Física II" class="md-nav__button md-logo" aria-label="Wiki de Física II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Wiki de Física II
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.1-Gravitacion-Universal-y-Leyes-de-Kepler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Leyes de Kepler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.2-Campo-y-Potencial-Gravitatorio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Campo y Potencial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.3-Satelites-Movimiento-Orbital-y-Energia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Satélites y Órbitas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.1-Elasticidad-Modulos-y-Ley-de-Hooke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Elasticidad y Ley de Hooke
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.2-Energia-Potencial-Elastica-y-Trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Energía Potencial Elástica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad III
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad III
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.1-Movimiento-Armonico-Simple-MAS-Ecuaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Ecuaciones del MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-la-intuicion-fisica-sistemas-oscilantes-reales-y-complejos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. La Intuición Física: Sistemas Oscilantes Reales y Complejos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-desarrollo-matematico-y-expresiones-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Desarrollo Matemático y Expresiones Clave
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Desarrollo Matemático y Expresiones Clave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-movimiento-armonico-amortiguado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Movimiento Armónico Amortiguado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-oscilaciones-forzadas-y-resonancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Oscilaciones Forzadas y Resonancia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-superposicion-de-dos-mas-de-la-misma-frecuencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Superposición de dos MAS de la misma Frecuencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-detector-de-trampas-de-parcial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Detector de Trampas de Parcial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-esquemas-graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Esquemas Gráficos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ejercicios-resueltos-con-analisis-dimensional-explicito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ejercicios Resueltos con Análisis Dimensional Explícito
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Ejercicios Resueltos con Análisis Dimensional Explícito">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-1-perdida-de-amplitud-en-oscilacion-amortiguada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 1: Pérdida de Amplitud en Oscilación Amortiguada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 1: Pérdida de Amplitud en Oscilación Amortiguada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-y-cancelacion-de-unidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo y Cancelación de Unidades:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-2-amplitud-en-resonancia-oscilacion-forzada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 2: Amplitud en Resonancia (Oscilación Forzada)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 2: Amplitud en Resonancia (Oscilación Forzada)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-y-cancelacion-de-unidades_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo y Cancelación de Unidades:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="34-oscilaciones-amortiguadas-forzadas-resonancia-y-superposicion">3.4 Oscilaciones Amortiguadas, Forzadas, Resonancia y Superposición</h1>
+<hr />
+<h2 id="1-la-intuicion-fisica-sistemas-oscilantes-reales-y-complejos">1. La Intuición Física: Sistemas Oscilantes Reales y Complejos</h2>
+<p>En los temas anteriores analizamos el oscilador ideal (MAS), donde la energía total se conservaba indefinidamente[cite: 54, 94]. En los sistemas reales de ingeniería y arquitectura, la fricción y la viscosidad disipan energía continuamente[cite: 94, 95].</p>
+<ul>
+<li><strong>Oscilaciones Amortiguadas:</strong> Ocurren cuando actúan fuerzas disipativas (como la resistencia del aire o el rozamiento viscoso de un fluido)[cite: 94]. La amplitud del movimiento decrece exponencialmente con el tiempo hasta detenerse[cite: 94]. Un ejemplo práctico son los amortiguadores de la suspensión de un vehículo[cite: 31, 88].</li>
+<li><strong>Oscilaciones Forzadas:</strong> Para evitar que el movimiento muera por amortiguamiento, se aplica una fuerza impulsora externa periódica que inyecta energía al sistema[cite: 95]. Un ejemplo simple es empujar rítmicamente a alguien en una hamaca[cite: 89].</li>
+<li><strong>Resonancia:</strong> Ocurre cuando la frecuencia de la fuerza impulsora externa (<span class="arithmatex">\(\omega\)</span>) coincide exactamente o está muy cerca de la frecuencia natural del sistema (<span class="arithmatex">\(\omega_0\)</span>)[cite: 95, 96]. En ese instante, la transferencia de energía es máxima y la amplitud se dispara drásticamente[cite: 95, 96]. Un ejemplo histórico dramático fue el colapso del puente Tacoma Narrows en 1940[cite: 97].</li>
+<li><strong>Superposición de MAS:</strong> Cuando un cuerpo se ve sometido a dos o más fuerzas oscilatorias simultáneas, el movimiento resultante es la suma vectorial de los movimientos componentes[cite: 93].</li>
+</ul>
+<hr />
+<h2 id="2-desarrollo-matematico-y-expresiones-clave">2. Desarrollo Matemático y Expresiones Clave</h2>
+<h3 id="a-movimiento-armonico-amortiguado">A. Movimiento Armónico Amortiguado</h3>
+<p>Considerando una fuerza de rozamiento viscoso proporcional a la velocidad: <span class="arithmatex">\(F_R = -b v\)</span> (donde <span class="arithmatex">\(b\)</span> es el coeficiente de amortiguamiento en <span class="arithmatex">\(\text{kg/s}\)</span> o <span class="arithmatex">\(\text{N}\cdot\text{s/m}\)</span>)[cite: 94]. </p>
+<p>Aplicando la Segunda Ley de Newton:</p>
+<div class="arithmatex">\[\sum F = -k x - b v = m a \implies m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + k x = 0\]</div>
+<p>Para amortiguamiento débil (<span class="arithmatex">\(b &lt; 2\sqrt{m k}\)</span>), la solución de posición es[cite: 94]:</p>
+<p>$<span class="arithmatex">\(x(t) = \left(A_0 e^{-\frac{b}{2m}t}\right) \cos(\omega t + \phi)\)</span>$[cite: 94]</p>
+<p>Donde:
+* <strong>Envolvente de la amplitud:</strong> <span class="arithmatex">\(A(t) = A_0 e^{-\frac{b}{2m}t}\)</span>[cite: 94]
+* <strong>Frecuencia angular amortiguada:</strong> <span class="arithmatex">\(\omega = \sqrt{\omega_0^2 - \left(\frac{b}{2m}\right)^2}\)</span>, siendo <span class="arithmatex">\(\omega_0 = \sqrt{\frac{k}{m}}\)</span> la frecuencia natural sin amortiguamiento[cite: 89, 94].</p>
+<hr />
+<h3 id="b-oscilaciones-forzadas-y-resonancia">B. Oscilaciones Forzadas y Resonancia</h3>
+<p>Si aplicamos una fuerza impulsora senoidal <span class="arithmatex">\(F(t) = F_0 \cos(\omega t)\)</span>[cite: 95]:</p>
+<div class="arithmatex">\[m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + k x = F_0 \cos(\omega t)\]</div>
+<p>En estado estacionario, el sistema oscila a la frecuencia <span class="arithmatex">\(\omega\)</span> de la fuerza impulsora, con una <strong>Amplitud (<span class="arithmatex">\(A\)</span>)</strong> dada por[cite: 95]:</p>
+<p>$<span class="arithmatex">\(A = \frac{\frac{F_0}{m}}{\sqrt{(\omega^2 - \omega_0^2)^2 + \left(\frac{b \omega}{m}\right)^2}}\)</span>$[cite: 95]</p>
+<blockquote>
+<p><strong>Condición de Resonancia:</strong><br />
+Cuando <span class="arithmatex">\(\omega \approx \omega_0\)</span>, el término <span class="arithmatex">\((\omega^2 - \omega_0^2)^2 \to 0\)</span>, por lo que la amplitud alcanza su valor pico <span class="arithmatex">\(A_{\text{máx}} \approx \frac{F_0}{b \omega_0}\)</span>[cite: 95, 96].</p>
+</blockquote>
+<hr />
+<h3 id="c-superposicion-de-dos-mas-de-la-misma-frecuencia">C. Superposición de dos MAS de la misma Frecuencia</h3>
+<p>Si una partícula recibe simultáneamente dos oscilaciones en el mismo eje:<br />
+<span class="arithmatex">\(x_1(t) = A_1 \cos(\omega t + \phi_1)\)</span> y <span class="arithmatex">\(x_2(t) = A_2 \cos(\omega t + \phi_2)\)</span>[cite: 93].</p>
+<p>El movimiento resultante es <span class="arithmatex">\(x(t) = x_1(t) + x_2(t) = A \cos(\omega t + \phi)\)</span>[cite: 93], donde la amplitud total <span class="arithmatex">\(A\)</span> se calcula mediante suma de fasores (vectores rotantes)[cite: 93]:</p>
+<div class="arithmatex">\[A = \sqrt{A_1^2 + A_2^2 + 2 A_1 A_2 \cos(\phi_2 - \phi_1)}\]</div>
+<hr />
+<h2 id="3-detector-de-trampas-de-parcial">3. Detector de Trampas de Parcial</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">La Trampa del Profesor</th>
+<th style="text-align: left;">El Error Típico</th>
+<th style="text-align: left;">La Verdad Física</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Frecuencia en Amortiguado:</strong> Asumir que oscila a la frecuencia natural <span class="arithmatex">\(\omega_0\)</span>.</td>
+<td style="text-align: left;">Usar <span class="arithmatex">\(\omega = \sqrt{k/m}\)</span> en sistemas con rozamiento.</td>
+<td style="text-align: left;">La fricción ralentiza el movimiento: la frecuencia amortiguada es siempre menor (<span class="arithmatex">\(\omega = \sqrt{\omega_0^2 - (b/2m)^2}\)</span>)[cite: 89, 94].</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Exponente de la Envolvente:</strong> Olvidar el factor <span class="arithmatex">\(2\)</span> en el denominador.</td>
+<td style="text-align: left;">Escribir <span class="arithmatex">\(e^{-\frac{b}{m}t}\)</span>.</td>
+<td style="text-align: left;">El exponente correcto de la amplitud es <span class="arithmatex">\(-\frac{b}{2m}t\)</span>[cite: 88, 94].</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Resonancia Indefinida:</strong> Pensar que en la resonancia la amplitud es siempre infinita.</td>
+<td style="text-align: left;">Ignorar el coeficiente de amortiguamiento <span class="arithmatex">\(b\)</span>.</td>
+<td style="text-align: left;">La amplitud en resonancia solo sería infinita si <span class="arithmatex">\(b = 0\)</span>. Con rozamiento real (<span class="arithmatex">\(b &gt; 0\)</span>), la amplitud máxima es finita (<span class="arithmatex">\(A_{\text{máx}} = \frac{F_0}{b \omega_0}\)</span>)[cite: 95, 96].</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-esquemas-graficos">4. Esquemas Gráficos</h2>
+<p><img alt="Decaimiento Amortiguado" src="../../assets/Imagenes-3/3.4-oscilacion-amortiguada.png" /></p>
+<p><img alt="Curva de Resonancia" src="../../assets/Imagenes-3/3.4-curva-resonancia.png" /></p>
+<hr />
+<h2 id="5-ejercicios-resueltos-con-analisis-dimensional-explicito">5. Ejercicios Resueltos con Análisis Dimensional Explícito</h2>
+<h3 id="ejercicio-1-perdida-de-amplitud-en-oscilacion-amortiguada">Ejercicio 1: Pérdida de Amplitud en Oscilación Amortiguada</h3>
+<p><strong>Consigna:</strong> Un objeto de masa <span class="arithmatex">\(m = 0.25 \text{ kg}\)</span> se conecta a un resorte de <span class="arithmatex">\(k = 100 \text{ N/m}\)</span> y se sumerge en un fluido con constante de amortiguamiento <span class="arithmatex">\(b = 0.10 \text{ kg/s}\)</span>[cite: 94].<br />
+a) Calcule el tiempo necesario para que la amplitud se reduzca a la mitad de su valor inicial (<span class="arithmatex">\(A(t) = \frac{1}{2} A_0\)</span>)[cite: 94].<br />
+b) Calcule la frecuencia angular amortiguada <span class="arithmatex">\(\omega\)</span>.</p>
+<h4 id="desarrollo-y-cancelacion-de-unidades">Desarrollo y Cancelación de Unidades:</h4>
+<p><strong>Paso a): Tiempo para reducir la amplitud a la mitad (<span class="arithmatex">\(t_{1/2}\)</span>)</strong></p>
+<p>Igualamos la expresión de la envolvente a <span class="arithmatex">\(\frac{1}{2} A_0\)</span>[cite: 94]:</p>
+<div class="arithmatex">\[A_0 e^{-\frac{b}{2m}t} = \frac{1}{2} A_0 \implies e^{-\frac{b}{2m}t} = 0.5\]</div>
+<p>Aplicando logaritmo natural (<span class="arithmatex">\(\ln\)</span>) a ambos lados:</p>
+<div class="arithmatex">\[-\frac{b}{2m}t = \ln(0.5) \implies t = \frac{-2 m \ln(0.5)}{b} = \frac{2 m \ln(2)}{b}\]</div>
+<p>Sustituyendo con magnitudes físicas:</p>
+<div class="arithmatex">\[t = \frac{2 \cdot (0.25 \text{ kg}) \cdot 0.69315}{0.10 \frac{\text{kg}}{\text{s}}}\]</div>
+<p>Desglose dimensional de unidades:</p>
+<div class="arithmatex">\[[\text{Unidades}] = \frac{[\text{kg}]}{\left[\frac{\text{kg}}{\text{s}}\right]} = \frac{\cancel{\text{kg}} \cdot \text{s}}{\cancel{\text{kg}}} = \text{s}\]</div>
+<p>Operación numérica:</p>
+<div class="arithmatex">\[t = \frac{0.34657 \text{ kg}}{0.10 \frac{\text{kg}}{\text{s}}} = 3.4657 \text{ s} \approx 3.47 \text{ s}\]</div>
+<hr />
+<p><strong>Paso b): Frecuencia angular amortiguada (<span class="arithmatex">\(\omega\)</span>)</strong></p>
+<p>Primero calculamos <span class="arithmatex">\(\omega_0^2\)</span> y la constante de atenucación <span class="arithmatex">\(\left(\frac{b}{2m}\right)^2\)</span>:</p>
+<div class="arithmatex">\[\omega_0^2 = \frac{k}{m} = \frac{100 \frac{\text{N}}{\text{m}}}{0.25 \text{ kg}} = 400 \frac{\text{rad}^2}{\text{s}^2}\]</div>
+<p>Verificación dimensional de <span class="arithmatex">\(\frac{k}{m}\)</span>:</p>
+<div class="arithmatex">\[\left[\frac{\text{N}}{\text{m} \cdot \text{kg}}\right] = \left[\frac{\frac{\text{kg}\cdot\text{m}}{\text{s}^2}}{\text{m} \cdot \text{kg}}\right] = \frac{\cancel{\text{kg}}\cdot\cancel{\text{m}}}{\text{s}^2 \cdot \cancel{\text{m}} \cdot \cancel{\text{kg}}} = \frac{1}{\text{s}^2} = \text{s}^{-2}\]</div>
+<p>Ahora calculamos <span class="arithmatex">\(\frac{b}{2m}\)</span>:</p>
+<div class="arithmatex">\[\frac{b}{2m} = \frac{0.10 \frac{\text{kg}}{\text{s}}}{2 \cdot 0.25 \text{ kg}} = \frac{0.10 \frac{\text{kg}}{\text{s}}}{0.50 \text{ kg}} = 0.20 \text{ s}^{-1}\]</div>
+<div class="arithmatex">\[\left(\frac{b}{2m}\right)^2 = (0.20 \text{ s}^{-1})^2 = 0.04 \text{ s}^{-2}\]</div>
+<p>Calculamos <span class="arithmatex">\(\omega\)</span>:</p>
+<div class="arithmatex">\[\omega = \sqrt{\omega_0^2 - \left(\frac{b}{2m}\right)^2} = \sqrt{400 \text{ s}^{-2} - 0.04 \text{ s}^{-2}} = \sqrt{399.96 \text{ s}^{-2}} \approx 19.999 \text{ rad/s}\]</div>
+<blockquote>
+<p><strong>Conclusión del ejercicio:</strong> Como el amortiguamiento es pequeño (<span class="arithmatex">\(b\)</span> bajo), la frecuencia angular prácticamente no se altera respecto a la frecuencia natural sin fricción (<span class="arithmatex">\(\omega \approx \omega_0 = 20 \text{ rad/s}\)</span>)[cite: 94].</p>
+</blockquote>
+<hr />
+<h3 id="ejercicio-2-amplitud-en-resonancia-oscilacion-forzada">Ejercicio 2: Amplitud en Resonancia (Oscilación Forzada)</h3>
+<p><strong>Consigna:</strong> Un motor mecánico de masa <span class="arithmatex">\(m = 2.0 \text{ kg}\)</span> sujeto a un soporte de constante <span class="arithmatex">\(k = 800 \text{ N/m}\)</span> experimenta una fuerza impulsora periódica de amplitud <span class="arithmatex">\(F_0 = 12.0 \text{ N}\)</span>[cite: 95]. El coeficiente de fricción es <span class="arithmatex">\(b = 4.0 \text{ kg/s}\)</span>[cite: 94]. Calcule la amplitud de movimiento <span class="arithmatex">\(A\)</span> cuando la frecuencia impulsora está exactamente en resonancia (<span class="arithmatex">\(\omega = \omega_0\)</span>)[cite: 95, 96].</p>
+<h4 id="desarrollo-y-cancelacion-de-unidades_1">Desarrollo y Cancelación de Unidades:</h4>
+<p><strong>Paso 1: Frecuencia de resonancia (<span class="arithmatex">\(\omega_0\)</span>)</strong></p>
+<div class="arithmatex">\[\omega_0 = \sqrt{\frac{k}{m}} = \sqrt{\frac{800 \frac{\text{N}}{\text{m}}}{2.0 \text{ kg}}} = \sqrt{400 \text{ s}^{-2}} = 20 \text{ rad/s}\]</div>
+<p><strong>Paso 2: Amplitud en Resonancia</strong></p>
+<p>Como estamos en resonancia exacta (<span class="arithmatex">\(\omega = \omega_0\)</span>), el término <span class="arithmatex">\((\omega^2 - \omega_0^2)^2 = 0\)</span> en la fórmula general de amplitud[cite: 95]:</p>
+<p>$<span class="arithmatex">\(A_{\text{res}} = \frac{\frac{F_0}{m}}{\sqrt{0 + \left(\frac{b \omega_0}{m}\right)^2}} = \frac{\frac{F_0}{m}}{\frac{b \omega_0}{m}} = \frac{F_0}{b \omega_0}\)</span>$[cite: 95]</p>
+<p>Sustituyendo magnitudes:</p>
+<div class="arithmatex">\[A_{\text{res}} = \frac{12.0 \text{ N}}{\left(4.0 \frac{\text{kg}}{\text{s}}\right) \cdot \left(20 \frac{1}{\text{s}}\right)}\]</div>
+<p>Desglose dimensional de unidades:</p>
+<div class="arithmatex">\[[\text{Unidades}] = \frac{[\text{N}]}{\left[\frac{\text{kg}}{\text{s}}\right] \cdot \left[\frac{1}{\text{s}}\right]} = \frac{\frac{\text{kg}\cdot\text{m}}{\text{s}^2}}{\frac{\text{kg}}{\text{s}^2}} = \frac{\cancel{\text{kg}}\cdot\text{m}}{\cancel{\text{s}^2}} \cdot \frac{\cancel{\text{s}^2}}{\cancel{\text{kg}}} = \text{m}\]</div>
+<p>Operación numérica:</p>
+<div class="arithmatex">\[A_{\text{res}} = \frac{12.0 \text{ N}}{80.0 \frac{\text{kg}}{\text{s}^2}} = 0.15 \text{ m} = 15 \text{ cm}\]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
