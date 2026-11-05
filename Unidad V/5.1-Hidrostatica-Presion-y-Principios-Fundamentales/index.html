@@ -1,0 +1,1760 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes, fórmulas y gráficos interactivos de la materia">
+      
+      
+      
+      
+        <link rel="prev" href="../../Unidad%20IV/4.2-Ecuacion-de-Onda-Energia-e-Interferencia/">
+      
+      
+        <link rel="next" href="../5.2-Equilibrio-Quimico-y-Principio-de-Le-Chatelier/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>5.1 Cinética Química / Hidrostática - Wiki de Física y Química</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#51-cinetica-quimica-y-velocidad-de-reaccion" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Wiki de Física y Química" class="md-header__button md-logo" aria-label="Wiki de Física y Química" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wiki de Física y Química
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              5.1 Cinética Química / Hidrostática
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Wiki de Física y Química" class="md-nav__button md-logo" aria-label="Wiki de Física y Química" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Wiki de Física y Química
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.1-Gravitacion-Universal-y-Leyes-de-Kepler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Leyes de Kepler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.2-Campo-y-Potencial-Gravitatorio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Campo y Potencial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.3-Satelites-Movimiento-Orbital-y-Energia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Satélites y Órbitas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.1-Elasticidad-Modulos-y-Ley-de-Hooke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Elasticidad y Ley de Hooke
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.2-Energia-Potencial-Elastica-y-Trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Energía Potencial Elástica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad III
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad III
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.1-Movimiento-Armonico-Simple-MAS-Ecuaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Ecuaciones del MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.2-Energia-en-el-MAS-y-Sistemas-Oscilantes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 Energía en el MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.3-Sistemas-Oscilantes-Reales-y-Avanzados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Sistemas Oscilantes Reales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.4-Oscilaciones-Amortiguamiento-Forzadas-Resonancia-y-Superposici%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 Amortiguamiento y Resonancia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad IV
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad IV
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20IV/4.1-Ondas-Mecanicas-Transversales-y-Longitudinales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Ondas Mecánicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20IV/4.2-Ecuacion-de-Onda-Energia-e-Interferencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Ecuación de Onda e Interferencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad V
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad V
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 Cinética Química / Hidrostática
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 Cinética Química / Hidrostática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-marco-teorico-y-definiciones-fundamentales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Marco Teórico y Definiciones Fundamentales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Marco Teórico y Definiciones Fundamentales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-concepto-de-velocidad-de-reaccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Concepto de Velocidad de Reacción
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ley-de-velocidad-y-orden-de-reaccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ley de Velocidad y Orden de Reacción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Ley de Velocidad y Orden de Reacción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clasificacion-de-ordenes-de-reaccion-e-integracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clasificación de Órdenes de Reacción E Integración
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-energia-de-activacion-y-ecuacion-de-arrhenius" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Energía de Activación y Ecuación de Arrhenius
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Energía de Activación y Ecuación de Arrhenius">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecuacion-de-arrhenius" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ecuación de Arrhenius
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ejercicios-resueltos-del-tp-de-cinetica-quimica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ejercicios Resueltos del TP de Cinética Química
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Ejercicios Resueltos del TP de Cinética Química">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-1-determinacion-de-la-ley-de-velocidad-por-metodo-de-velocidades-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 1: Determinación de la Ley de Velocidad por Método de Velocidades Iniciales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 1: Determinación de la Ley de Velocidad por Método de Velocidades Iniciales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-analitico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Analítico:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-2-aplicacion-de-ley-de-velocidad-integrada-de-primer-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 2: Aplicación de Ley de Velocidad Integrada de Primer Orden
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 2: Aplicación de Ley de Velocidad Integrada de Primer Orden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-analitico_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Analítico:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ejercicio-tipico-de-parcial-explicado-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ejercicio Típico de Parcial Explicado Paso a Paso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Ejercicio Típico de Parcial Explicado Paso a Paso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resolucion-explicada-para-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resolución Explicada para Examen:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.2-Equilibrio-Quimico-y-Principio-de-Le-Chatelier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.2 Equilibrio Químico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad VI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad VI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20VI/6.1-Soluciones-y-Propiedades-Coligativas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.1 Soluciones y Propiedades Coligativas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20VI/6.2-Equilibrio-Acido-Base-y-Electroquimica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.2 Ácido-Base y Electroquímica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-marco-teorico-y-definiciones-fundamentales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Marco Teórico y Definiciones Fundamentales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Marco Teórico y Definiciones Fundamentales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-concepto-de-velocidad-de-reaccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Concepto de Velocidad de Reacción
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ley-de-velocidad-y-orden-de-reaccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ley de Velocidad y Orden de Reacción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Ley de Velocidad y Orden de Reacción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clasificacion-de-ordenes-de-reaccion-e-integracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clasificación de Órdenes de Reacción E Integración
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-energia-de-activacion-y-ecuacion-de-arrhenius" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Energía de Activación y Ecuación de Arrhenius
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Energía de Activación y Ecuación de Arrhenius">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecuacion-de-arrhenius" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ecuación de Arrhenius
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ejercicios-resueltos-del-tp-de-cinetica-quimica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ejercicios Resueltos del TP de Cinética Química
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Ejercicios Resueltos del TP de Cinética Química">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-1-determinacion-de-la-ley-de-velocidad-por-metodo-de-velocidades-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 1: Determinación de la Ley de Velocidad por Método de Velocidades Iniciales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 1: Determinación de la Ley de Velocidad por Método de Velocidades Iniciales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-analitico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Analítico:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-2-aplicacion-de-ley-de-velocidad-integrada-de-primer-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejercicio 2: Aplicación de Ley de Velocidad Integrada de Primer Orden
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicio 2: Aplicación de Ley de Velocidad Integrada de Primer Orden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desarrollo-analitico_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desarrollo Analítico:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ejercicio-tipico-de-parcial-explicado-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ejercicio Típico de Parcial Explicado Paso a Paso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Ejercicio Típico de Parcial Explicado Paso a Paso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resolucion-explicada-para-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resolución Explicada para Examen:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="51-cinetica-quimica-y-velocidad-de-reaccion">5.1 Cinética Química y Velocidad de Reacción</h1>
+<hr />
+<h2 id="1-marco-teorico-y-definiciones-fundamentales">1. Marco Teórico y Definiciones Fundamentales</h2>
+<p>La <strong>Cinética Química</strong> es la parte de la química que estudia la velocidad a la que ocurren las reacciones químicas, los factores que la afectan y los mecanismos detallados a través de los cuales los reactivos se transforman en productos.</p>
+<h3 id="a-concepto-de-velocidad-de-reaccion">A. Concepto de Velocidad de Reacción</h3>
+<p>La velocidad de una reacción química expresa el cambio en la concentración de un reactivo o producto por unidad de tiempo.</p>
+<p>Para una reacción general del tipo:
+$<span class="arithmatex">\(a\text{A} + b\text{B} \rightarrow c\text{C} + d\text{D}\)</span>$</p>
+<p>La <strong>velocidad media</strong> se define formalmente relacionando las variaciones de concentración (<span class="arithmatex">\(\Delta [\text{X}]\)</span>) y el intervalo de tiempo (<span class="arithmatex">\(\Delta t\)</span>):</p>
+<div class="arithmatex">\[\text{Velocidad} = -\frac{1}{a}\frac{\Delta[\text{A}]}{\Delta t} = -\frac{1}{b}\frac{\Delta[\text{B}]}{\Delta t} = \frac{1}{c}\frac{\Delta[\text{C}]}{\Delta t} = \frac{1}{d}\frac{\Delta[\text{D}]}{\Delta t}\]</div>
+<ul>
+<li>Los signos negativos en los reactivos <span class="arithmatex">\(\text{A}\)</span> y <span class="arithmatex">\(\text{B}\)</span> aseguran que la velocidad sea siempre una magnitud positiva, ya que su concentración disminuye con el tiempo (<span class="arithmatex">\(\Delta [\text{A}] &lt; 0\)</span>).</li>
+<li>La <strong>velocidad instantánea</strong> corresponde al límite cuando <span class="arithmatex">\(\Delta t \to 0\)</span> (la derivada de la concentración respecto al tiempo):</li>
+</ul>
+<div class="arithmatex">\[v = -\frac{1}{a}\frac{d[\text{A}]}{dt} = \frac{1}{c}\frac{d[\text{C}]}{dt} \quad \left[\frac{\text{mol}}{\text{L} \cdot \text{s}} \text{ o } \text{M} \cdot \text{s}^{-1}\right]\]</div>
+<p><img alt="Medición de la velocidad instantánea y media mediante tangentes en gráfica Concentración vs Tiempo" src="../../assets/Imagenes-5/5.1-grafico-concentracion-tiempo.png" /></p>
+<hr />
+<h2 id="2-ley-de-velocidad-y-orden-de-reaccion">2. Ley de Velocidad y Orden de Reacción</h2>
+<p>La <strong>ley de velocidad</strong> expresa la relación entre la velocidad de reacción y las concentraciones de los reactivos elevadas a ciertas potencias.</p>
+<div class="arithmatex">\[v = k \cdot [\text{A}]^m \cdot [\text{B}]^n\]</div>
+<ul>
+<li><span class="arithmatex">\(k\)</span>: Constante de velocidad (depende de la temperatura).</li>
+<li><span class="arithmatex">\(m, n\)</span>: <strong>Órdenes parciales de reacción</strong> respecto a cada reactivo. No coinciden necesariamente con los coeficientes estequiométricos <span class="arithmatex">\(a\)</span> y <span class="arithmatex">\(b\)</span>; deben determinarse experimentalmente.</li>
+<li><span class="arithmatex">\(m + n\)</span>: <strong>Orden global de reacción</strong>.</li>
+</ul>
+<h3 id="clasificacion-de-ordenes-de-reaccion-e-integracion">Clasificación de Órdenes de Reacción E Integración</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Orden</th>
+<th style="text-align: center;">Ley Diferencial</th>
+<th style="text-align: center;">Ley Integrada</th>
+<th style="text-align: center;">Vida Media (<span class="arithmatex">\(t_{1/2}\)</span>)</th>
+<th style="text-align: center;">Unidades de <span class="arithmatex">\(k\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><span class="arithmatex">\(v = k\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\([\text{A}]_t = [\text{A}]_0 - k t\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(t_{1/2} = \frac{[\text{A}]_0}{2k}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{M} \cdot \text{s}^{-1}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><span class="arithmatex">\(v = k[\text{A}]\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\ln[\text{A}]_t = \ln[\text{A}]_0 - k t\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(t_{1/2} = \frac{\ln(2)}{k} \approx \frac{0.693}{k}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{s}^{-1}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><span class="arithmatex">\(v = k[\text{A}]^2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\frac{1}{[\text{A}]_t} = \frac{1}{[\text{A}]_0} + k t\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(t_{1/2} = \frac{1}{k[\text{A}]_0}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\text{M}^{-1} \cdot \text{s}^{-1}\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-energia-de-activacion-y-ecuacion-de-arrhenius">3. Energía de Activación y Ecuación de Arrhenius</h2>
+<p>Para que ocurra una reacción, las moléculas reactivas deben chocar con una orientación adecuada y con una energía mínima suficiente denominada <strong>Energía de Activación (<span class="arithmatex">\(E_a\)</span>)</strong>.</p>
+<p><img alt="Diagrama de energía potencial vs coordenada de reacción mostrando el Complejo Activado" src="../../assets/Imagenes-5/5.1-diagrama-energia-activacion.png" /></p>
+<h3 id="ecuacion-de-arrhenius">Ecuación de Arrhenius</h3>
+<p>La dependencia de la constante de velocidad con la temperatura viene dada por:</p>
+<div class="arithmatex">\[k = A \cdot e^{-\frac{E_a}{R T}}\]</div>
+<p>Tomando logaritmo natural en ambos miembros:</p>
+<div class="arithmatex">\[\ln(k) = \ln(A) - \frac{E_a}{R} \left(\frac{1}{T}\right)\]</div>
+<p>Forma de dos puntos para calcular <span class="arithmatex">\(E_a\)</span> a partir de dos temperaturas <span class="arithmatex">\(T_1\)</span> y <span class="arithmatex">\(T_2\)</span>:</p>
+<div class="arithmatex">\[\ln\left(\frac{k_2}{k_1}\right) = \frac{E_a}{R} \left( \frac{1}{T_1} - \frac{1}{T_2} \right)\]</div>
+<p>Donde <span class="arithmatex">\(R = 8.314 \frac{\text{J}}{\text{mol} \cdot \text{K}}\)</span> y <span class="arithmatex">\(T\)</span> en Kelvin (<span class="arithmatex">\(\text{K}\)</span>).</p>
+<hr />
+<h2 id="4-ejercicios-resueltos-del-tp-de-cinetica-quimica">4. Ejercicios Resueltos del TP de Cinética Química</h2>
+<h3 id="ejercicio-1-determinacion-de-la-ley-de-velocidad-por-metodo-de-velocidades-iniciales">Ejercicio 1: Determinación de la Ley de Velocidad por Método de Velocidades Iniciales</h3>
+<p><strong>Enunciado:</strong> Para la reacción <span class="arithmatex">\(2\text{NO}(g) + \text{O}_2(g) \rightarrow 2\text{NO}_2(g)\)</span>, se obtuvieron los siguientes datos a <span class="arithmatex">\(25^\circ\text{C}\)</span>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Experimento</th>
+<th style="text-align: center;"><span class="arithmatex">\([\text{NO}]_0 \text{ (M)}\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\([\text{O}_2]_0 \text{ (M)}\)</span></th>
+<th style="text-align: center;">Velocidad Inicial (<span class="arithmatex">\(\text{M/s}\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0.012</td>
+<td style="text-align: center;">0.024</td>
+<td style="text-align: center;"><span class="arithmatex">\(2.8 \times 10^{-5}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0.024</td>
+<td style="text-align: center;">0.024</td>
+<td style="text-align: center;"><span class="arithmatex">\(1.12 \times 10^{-4}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0.012</td>
+<td style="text-align: center;">0.048</td>
+<td style="text-align: center;"><span class="arithmatex">\(5.6 \times 10^{-5}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Determinar:
+a) El orden de reacción respecto a cada reactivo y el orden total.<br />
+b) La constante de velocidad <span class="arithmatex">\(k\)</span>.</p>
+<h4 id="desarrollo-analitico">Desarrollo Analítico:</h4>
+<ol>
+<li>
+<p><strong>Planteo general de la ley de velocidad:</strong>
+   $<span class="arithmatex">\(v = k \cdot [\text{NO}]^m \cdot [\text{O}_2]^n\)</span>$</p>
+</li>
+<li>
+<p><strong>Cálculo del orden <span class="arithmatex">\(m\)</span> (respecto a <span class="arithmatex">\(\text{NO}\)</span>):</strong><br />
+   Comparamos el Exp. 2 y el Exp. 1 (donde <span class="arithmatex">\([\text{O}_2]\)</span> se mantiene constante):
+   $<span class="arithmatex">\(\frac{v_2}{v_1} = \frac{k (0.024)^m (0.024)^n}{k (0.012)^m (0.024)^n} \implies \frac{1.12 \times 10^{-4}}{2.8 \times 10^{-5}} = \left(\frac{0.024}{0.012}\right)^m\)</span>$
+   $<span class="arithmatex">\(4 = (2)^m \implies m = 2\)</span>$</p>
+</li>
+<li>
+<p><strong>Cálculo del orden <span class="arithmatex">\(n\)</span> (respecto a <span class="arithmatex">\(\text{O}_2\)</span>):</strong><br />
+   Comparamos el Exp. 3 y el Exp. 1 (donde <span class="arithmatex">\([\text{NO}]\)</span> se mantiene constante):
+   $<span class="arithmatex">\(\frac{v_3}{v_1} = \frac{k (0.012)^m (0.048)^n}{k (0.012)^m (0.024)^n} \implies \frac{5.6 \times 10^{-5}}{2.8 \times 10^{-5}} = \left(\frac{0.048}{0.024}\right)^n\)</span>$
+   $<span class="arithmatex">\(2 = (2)^n \implies n = 1\)</span>$</p>
+</li>
+<li>
+<p><strong>Ley de Velocidad y Orden Global:</strong>
+   $<span class="arithmatex">\(v = k \cdot [\text{NO}]^2 \cdot [\text{O}_2]\)</span>$
+   $<span class="arithmatex">\(\text{Orden Total} = m + n = 2 + 1 = 3\)</span>$</p>
+</li>
+<li>
+<p><strong>Cálculo de la Constante <span class="arithmatex">\(k\)</span> (usando Exp. 1):</strong>
+   $<span class="arithmatex">\(k = \frac{v}{[\text{NO}]^2 [\text{O}_2]} = \frac{2.8 \times 10^{-5} \text{ M/s}}{(0.012 \text{ M})^2 (0.024 \text{ M})} = 8.10 \text{ M}^{-2} \cdot \text{s}^{-1}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h3 id="ejercicio-2-aplicacion-de-ley-de-velocidad-integrada-de-primer-orden">Ejercicio 2: Aplicación de Ley de Velocidad Integrada de Primer Orden</h3>
+<p><strong>Enunciado:</strong> La descomposición del compuesto <span class="arithmatex">\(\text{A}\)</span> es de primer orden con una constante de velocidad <span class="arithmatex">\(k = 4.5 \times 10^{-3} \text{ s}^{-1}\)</span> a <span class="arithmatex">\(300\text{ K}\)</span>. Si la concentración inicial es <span class="arithmatex">\([\text{A}]_0 = 0.80 \text{ M}\)</span>:<br />
+a) ¿Cuál será la concentración al cabo de <span class="arithmatex">\(5 \text{ minutos}\)</span>?<br />
+b) ¿Cuánto tiempo se requiere para que la concentración se reduzca al <span class="arithmatex">\(25\%\)</span> de su valor inicial?</p>
+<h4 id="desarrollo-analitico_1">Desarrollo Analítico:</h4>
+<ol>
+<li>
+<p><strong>Paso a): Concentración a <span class="arithmatex">\(t = 5 \text{ min} = 300 \text{ s}\)</span></strong>
+   $<span class="arithmatex">\(\ln[\text{A}]_t = \ln[\text{A}]_0 - k t\)</span>$
+   $<span class="arithmatex">\(\ln[\text{A}]_t = \ln(0.80) - (4.5 \times 10^{-3} \text{ s}^{-1})(300 \text{ s})\)</span>$
+   $<span class="arithmatex">\(\ln[\text{A}]_t = -0.2231 - 1.35 = -1.5731\)</span>$
+   $<span class="arithmatex">\([\text{A}]_t = e^{-1.5731} \approx 0.207 \text{ M}\)</span>$</p>
+</li>
+<li>
+<p><strong>Paso b): Tiempo para el <span class="arithmatex">\(25\%\)</span> (<span class="arithmatex">\([\text{A}]_t = 0.25 [\text{A}]_0 = 0.20 \text{ M}\)</span>)</strong>
+   $<span class="arithmatex">\(\ln\left(\frac{[\text{A}]_t}{[\text{A}]_0}\right) = -k t \implies \ln(0.25) = - (4.5 \times 10^{-3}) \cdot t\)</span>$
+   $<span class="arithmatex">\(-1.3863 = - (4.5 \times 10^{-3}) \cdot t \implies t = \frac{1.3863}{4.5 \times 10^{-3}} \approx 308.06 \text{ s} \approx 5.13 \text{ min}\)</span>$</p>
+</li>
+</ol>
+<hr />
+<h2 id="5-ejercicio-tipico-de-parcial-explicado-paso-a-paso">5. Ejercicio Típico de Parcial Explicado Paso a Paso</h2>
+<p><strong>Enunciado:</strong> Se estudia la variación de la velocidad con la temperatura para la descomposición de una muestra orgánica. A <span class="arithmatex">\(T_1 = 20^\circ\text{C}\)</span> (<span class="arithmatex">\(293.15\text{ K}\)</span>) la constante de velocidad es <span class="arithmatex">\(k_1 = 2.0 \times 10^{-4} \text{ s}^{-1}\)</span>, mientras que a <span class="arithmatex">\(T_2 = 50^\circ\text{C}\)</span> (<span class="arithmatex">\(323.15\text{ K}\)</span>) <span class="arithmatex">\(k_2 = 8.0 \times 10^{-3} \text{ s}^{-1}\)</span>.<br />
+Calcule la <strong>Energía de Activación (<span class="arithmatex">\(E_a\)</span>)</strong> y el valor de la constante a <span class="arithmatex">\(T_3 = 100^\circ\text{C}\)</span> (<span class="arithmatex">\(373.15\text{ K}\)</span>).</p>
+<h4 id="resolucion-explicada-para-examen">Resolución Explicada para Examen:</h4>
+<ol>
+<li><strong>Conversión de Unidades a Kelvin (Obligatorio en Termodinámica y Cinética):</strong></li>
+<li><span class="arithmatex">\(T_1 = 20 + 273.15 = 293.15 \text{ K}\)</span></li>
+<li><span class="arithmatex">\(T_2 = 50 + 273.15 = 323.15 \text{ K}\)</span></li>
+<li>
+<p><span class="arithmatex">\(T_3 = 100 + 273.15 = 373.15 \text{ K}\)</span></p>
+</li>
+<li>
+<p><strong>Cálculo de la Energía de Activación (<span class="arithmatex">\(E_a\)</span>):</strong>
+   Usamos la forma de 2 puntos de la Ecuación de Arrhenius:
+   $<span class="arithmatex">\(\ln\left(\frac{k_2}{k_1}\right) = \frac{E_a}{R} \left( \frac{1}{T_1} - \frac{1}{T_2} \right)\)</span>$</p>
+</li>
+</ol>
+<p>Sustituyendo los datos:
+   $<span class="arithmatex">\(\ln\left(\frac{8.0 \times 10^{-3}}{2.0 \times 10^{-4}}\right) = \frac{E_a}{8.314} \left( \frac{1}{293.15} - \frac{1}{323.15} \right)\)</span>$
+   $<span class="arithmatex">\(\ln(40) = \frac{E_a}{8.314} \left( 3.4112 \times 10^{-3} - 3.0945 \times 10^{-3} \right)\)</span>$
+   $<span class="arithmatex">\(3.6889 = \frac{E_a}{8.314} \left( 3.167 \times 10^{-4} \right)\)</span>$
+   $<span class="arithmatex">\(E_a = \frac{3.6889 \times 8.314}{3.167 \times 10^{-4}} = 96844.7 \text{ J/mol} \approx 96.84 \text{ kJ/mol}\)</span>$</p>
+<ol>
+<li><strong>Cálculo de <span class="arithmatex">\(k_3\)</span> a <span class="arithmatex">\(T_3 = 373.15 \text{ K}\)</span>:</strong>
+   Relacionando <span class="arithmatex">\(T_1\)</span> con <span class="arithmatex">\(T_3\)</span>:
+   $<span class="arithmatex">\(\ln\left(\frac{k_3}{k_1}\right) = \frac{E_a}{R} \left( \frac{1}{T_1} - \frac{1}{T_3} \right)\)</span>$
+   $<span class="arithmatex">\(\ln\left(\frac{k_3}{2.0 \times 10^{-4}}\right) = \frac{96844.7}{8.314} \left( \frac{1}{293.15} - \frac{1}{373.15} \right)\)</span>$
+   $<span class="arithmatex">\(\ln\left(\frac{k_3}{2.0 \times 10^{-4}}\right) = 11648.38 \times (3.4112 \times 10^{-3} - 2.6799 \times 10^{-3}) = 8.518\)</span>$
+   $<span class="arithmatex">\(\frac{k_3}{2.0 \times 10^{-4}} = e^{8.518} \approx 5004.0\)</span>$
+   $<span class="arithmatex">\(k_3 = 5004.0 \times (2.0 \times 10^{-4}) \approx 1.00 \text{ s}^{-1}\)</span>$</li>
+</ol>
+<hr />
+<pre class="mermaid"><code>graph TD
+    A[Inicio: Análisis de Reacción Química] --&gt; B[Obtención de Datos de Concentración vs Tiempo]
+    B --&gt; C{¿Determinación de Velocidad?}
+    C --&gt;|Velocidad Media| D[ΔC / Δt]
+    C --&gt;|Velocidad Instantánea| E[dC / dt - Tangente en la curva]
+
+    B --&gt; F[Determinación de Ley de Velocidad]
+    F --&gt; G[Método de Velocidades Iniciales]
+    G --&gt; H[Hallar órdenes m, n y constante k]
+
+    H --&gt; I[Integración de Ecuaciones de Velocidad]
+    I --&gt;|Orden 0| J[C = C0 - kt]
+    I --&gt;|Orden 1| K[ln C = ln C0 - kt]
+    I --&gt;|Orden 2| L[1/C = 1/C0 + kt]
+
+    H --&gt; M[Efecto de la Temperatura]
+    M --&gt; N[Ecuación de Arrhenius: k = A * exp-Ea/RT]
+    N --&gt; O[Cálculo de Ea y Factor de Frecuencia A]</code></pre>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
