@@ -1,0 +1,54 @@
+/* ==========================================================================
+   1. PALETA ERGONÓMICA PARA LECTURA PROLONGADA (Slate & Teal)
+   ========================================================================== */
+
+[data-md-color-scheme="slate"] {
+  /* 1. Barra superior (Header) */
+  --md-primary-fg-color:        #1E293B; /* Azul noche mate */
+  --md-primary-fg-color--light: #334155; 
+  --md-primary-fg-color--dark:  #0F172A;
+
+  /* 2. Fondo general de la pantalla */
+  --md-default-bg-color:        #0F172A; /* Fondo profundo antirreflectante */
+
+  /* 3. Contenedores de texto y tarjetas */
+  --md-code-bg-color:           #1E293B; /* Fondo de bloques de código y fórmulas */
+
+  /* 4. Letras y Acentos de lectura */
+  --md-default-fg-color:        #E2E8F0; /* Blanco hueso suave (evita encandilar) */
+  --md-accent-fg-color:         #0D9488; /* Verde azulado / Teal fácil de enfocar */
+}
+
+/* ==========================================================================
+   2. ESTILOS DE GALERÍA E IMÁGENES
+   ========================================================================== */
+
+/* Transición suave, bordes redondeados y sombra descansada */
+.md-content img {
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover interactivo al pasar el cursor */
+.md-content img:hover {
+  transform: scale(1.015);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+/* ==========================================================================
+   3. DIAGRAMAS INTERACTIVOS (MERMAID)
+   ========================================================================== */
+
+/* Tarjeta limpia para diagramas de flujo y esquemas */
+.mermaid {
+  display: flex;
+  justify-content: center;
+  background: var(--md-code-bg-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  border: 1px solid var(--md-default-foreground--lighter);
+}
