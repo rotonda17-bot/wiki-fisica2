@@ -21,7 +21,7 @@
 /* ==========================================================================
    2. ESTILOS DE NAVEGACIÓN LATERAL (Menú Izquierdo Limpio)
    ========================================================================== */
-/* Scrollbar ultra fino y semi-transparente */
+/* Barra de scroll ultra fina y discreta */
 .md-sidebar__scrollwrap {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
@@ -77,7 +77,7 @@
 }
 
 /* ==========================================================================
-   3. RECUADRO FLOTANTE DE TÍTULOS DE LA NOTA (Índice Derecho / Minimapa)
+   3. RECUADRO FLOTANTE DE TÍTULOS (Índice Derecho / Minimapa H2)
    ========================================================================== */
 .md-sidebar--secondary {
   position: sticky;
@@ -107,6 +107,11 @@
   background-color: rgba(13, 148, 136, 0.15);
 }
 
+/* Ocultar cualquier subtítulo por debajo de H2 en el recuadro flotante */
+.md-nav--secondary .md-nav__item .md-nav {
+  display: none !important;
+}
+
 /* ==========================================================================
    4. ESTILOS DE GALERÍA E IMÁGENES
    ========================================================================== */
@@ -134,4 +139,20 @@
   border-radius: 10px;
   margin: 1.5rem 0;
   border: 1px solid var(--md-default-foreground--lighter);
+}
+
+/* Hacer que el recuadro de la derecha sea flotante (Sticky) */
+.md-sidebar--secondary {
+  position: sticky;       /* 👈 Hace que el recuadro flotante te siga al hacer scroll */
+  top: 5rem;              /* Distancia desde el borde superior de la pantalla */
+  max-height: calc(100vh - 7rem); /* Evita que el recuadro sobrepase el alto de la pantalla */
+}
+
+/* Tarjeta visual para el recuadro */
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  background-color: var(--md-code-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
