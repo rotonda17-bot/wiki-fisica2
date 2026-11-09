@@ -1,0 +1,1734 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes, fórmulas y gráficos interactivos de la materia">
+      
+      
+      
+        <link rel="canonical" href="https://rotonda17-bot.github.io/wiki-fisica2/Unidad%20VI/6.2-Equilibrio-Acido-Base-y-Electroquimica/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>6.2 Calorimetría, Primera Ley de la Termodinámica y Transferencia de Calor - Wiki Física II</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#62-calorimetria-primera-ley-de-la-termodinamica-y-transferencia-de-calor" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Wiki Física II" class="md-header__button md-logo" aria-label="Wiki Física II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wiki Física II
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6.2 Calorimetría, Primera Ley de la Termodinámica y Transferencia de Calor
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Wiki Física II" class="md-nav__button md-logo" aria-label="Wiki Física II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Wiki Física II
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.1-Gravitacion-Universal-y-Leyes-de-Kepler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Leyes de Kepler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.2-Campo-y-Potencial-Gravitatorio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Campo y Potencial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.3-Satelites-Movimiento-Orbital-y-Energia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Satélites y Órbitas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.1-Elasticidad-Modulos-y-Ley-de-Hooke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Elasticidad y Ley de Hooke
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.2-Energia-Potencial-Elastica-y-Trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Energía Potencial Elástica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad III
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad III
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.1-Movimiento-Armonico-Simple-MAS-Ecuaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Ecuaciones del MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.2-Energia-en-el-MAS-y-Sistemas-Oscilantes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 Energía en el MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.3-Sistemas-Oscilantes-Reales-y-Avanzados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Sistemas Oscilantes Reales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.4-Oscilaciones-Amortiguamiento-Forzadas-Resonancia-y-Superposici%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 Amortiguamiento y Resonancia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad IV
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad IV
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20IV/4.1-Ondas-Mecanicas-Transversales-y-Longitudinales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Ondas Mecánicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20IV/4.2-Ecuacion-de-Onda-Energia-e-Interferencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Ecuación de Onda e Interferencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad V
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad V
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5.1-Hidrostatica-Presion-y-Principios-Fundamentales.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 Hidrostática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5.2-Hidrodinamica-Ecuacion-de-Continuidad-y-Bernoulli.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.2 Hidrodinámica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad VI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad VI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6.1-Termometria-Dilatacion-y-Gas-Ideal.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.1 Termometría, Dilatación y Gas Ideal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6.2-Calorimetria-Primera-Ley-y-Transferencia.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.2 Calorimetría, Primera Ley y Transferencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-calorimetria-calor-sensible-y-cambios-de-fase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Calorimetría, Calor Sensible y Cambios de Fase
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Calorimetría, Calor Sensible y Cambios de Fase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-calor-sensible-y-capacidad-calorifica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Calor Sensible y Capacidad Calorífica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-transiciones-de-fase-y-calor-latente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Transiciones de Fase y Calor Latente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-practicos-aplicados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Ejemplos Prácticos Aplicados:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Ejemplos Prácticos Aplicados:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-incremento-de-temperatura-corporal-por-fiebre-ejemplo-176-sears-zemansky" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Incremento de Temperatura Corporal por Fiebre (Ejemplo 17.6 Sears-Zemansky)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-sobrecurso-termico-en-microelectronica-ejemplo-177-sears-zemansky" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Sobrecurso Térmico en Microelectrónica (Ejemplo 17.7 Sears-Zemansky)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-calor-especifico-de-una-barra-de-plata-tp10-ejercicio-b7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Calor Específico de una Barra de Plata (TP10 - Ejercicio B7)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-conservacion-de-energia-y-equilibrio-termico-en-calorimetros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Conservación de Energía y Equilibrio Térmico en Calorímetros
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Conservación de Energía y Equilibrio Térmico en Calorímetros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-practicos-aplicados_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Ejemplos Prácticos Aplicados:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Ejemplos Prácticos Aplicados:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-enfriamiento-de-un-lingote-metalico-tp10-ejercicio-b8-ejemplo-202-serway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Enfriamiento de un Lingote Metálico (TP10 - Ejercicio B8 / Ejemplo 20.2 Serway)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-calorimetria-con-cambio-de-fase-vapor-inyectado-en-agua-ejemplo-204-serway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Calorimetría con Cambio de Fase: Vapor Inyectado en Agua (Ejemplo 20.4 Serway)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-primera-ley-de-la-termodinamica-y-trabajo-de-expansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Primera Ley de la Termodinámica y Trabajo de Expansión
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Primera Ley de la Termodinámica y Trabajo de Expansión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-trabajo-cuasiestatico-de-expansioncompresion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Trabajo Cuasiestático de Expansión/Compresión
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-procesos-termodinamicos-particulares-y-ciclos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Procesos Termodinámicos Particulares y Ciclos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Procesos Termodinámicos Particulares y Ciclos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-practicos-aplicados_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Ejemplos Prácticos Aplicados:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Ejemplos Prácticos Aplicados:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-expansion-isobarica-de-oxigeno-en-cilindro-con-piston-tp10-ejercicio-b9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Expansión Isobárica de Oxígeno en Cilindro con Pistón (TP10 - Ejercicio B9)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-analisis-comparativo-de-ciclo-termodinamico-ejemplo-194-sears-tp10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Análisis Comparativo de Ciclo Termodinámico (Ejemplo 19.4 Sears / TP10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-mecanismos-de-transferencia-de-calor-y-aplicaciones-tecnicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Mecanismos de Transferencia de Calor y Aplicaciones Técnicas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Mecanismos de Transferencia de Calor y Aplicaciones Técnicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-conduccion-termica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Conducción Térmica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-convection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Convection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-radiacion-termica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Radiación Térmica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-trabajo-practico-integrador-de-cierre-de-la-materia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Trabajo Práctico Integrador de Cierre de la Materia
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Trabajo Práctico Integrador de Cierre de la Materia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enunciado-del-problema-complejo-tipo-examen-parcial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 Enunciado del Problema Complejo (Tipo Examen Parcial)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolucion-analitica-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📐 Resolución Analítica Paso a Paso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📐 Resolución Analítica Paso a Paso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-calculo-de-temperaturas-en-los-nodos-del-ciclo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1: Cálculo de Temperaturas en los Nodos del Ciclo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-balance-energetico-por-etapas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2: Balance Energético por Etapas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-aplicacion-calorimetrica-con-el-calor-cedido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3: Aplicación Calorimétrica con el Calor Cedido
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="62-calorimetria-primera-ley-de-la-termodinamica-y-transferencia-de-calor">6.2 Calorimetría, Primera Ley de la Termodinámica y Transferencia de Calor</h1>
+<hr />
+<h2 id="1-calorimetria-calor-sensible-y-cambios-de-fase">1. Calorimetría, Calor Sensible y Cambios de Fase</h2>
+<p>El <strong>calor (<span class="arithmatex">\(Q\)</span>)</strong> es la energía en tránsito que se transfiere a través de la frontera de un sistema debido exclusivamente a una diferencia de temperatura entre el sistema y su entorno.</p>
+<p><img alt="Calorimetria" src="../../assets/Imagenes-6/esquema_calorimetro.png" /></p>
+<h3 id="a-calor-sensible-y-capacidad-calorifica">A. Calor Sensible y Capacidad Calorífica</h3>
+<p>Cuando se añade o extrae calor a una sustancia sin que esta cambie su estado de agregación, su temperatura varía de forma proporcional a la cantidad de energía transferida:</p>
+<div class="arithmatex">\[Q = m \cdot c_e \cdot \Delta T = m \cdot c_e \cdot (T_f - T_0)\]</div>
+<ul>
+<li><span class="arithmatex">\(Q\)</span>: Cantidad de calor transferido en Joules <span class="arithmatex">\([\text{J}]\)</span> o calorías <span class="arithmatex">\([\text{cal}]\)</span> (<span class="arithmatex">\(1\text{ cal} = 4.186\text{ J}\)</span>).</li>
+<li><span class="arithmatex">\(m\)</span>: Masa de la sustancia en <span class="arithmatex">\([\text{kg}]\)</span> o <span class="arithmatex">\([\text{g}]\)</span>.</li>
+<li><span class="arithmatex">\(c_e\)</span>: <strong>Calor específico</strong>, propiedad intensiva que indica la energía requerida para elevar <span class="arithmatex">\(1\text{ K}\)</span> (o <span class="arithmatex">\(1^\circ\text{C}\)</span>) la temperatura de <span class="arithmatex">\(1\text{ kg}\)</span> de sustancia <span class="arithmatex">\([\text{J/(kg}\cdot\text{K)}]\)</span>.</li>
+<li>Si <span class="arithmatex">\(Q &gt; 0\)</span>, el sistema <strong>absorbe calor</strong> (<span class="arithmatex">\(\Delta T &gt; 0\)</span>). Si <span class="arithmatex">\(Q &lt; 0\)</span>, el sistema <strong>cede calor</strong> (<span class="arithmatex">\(\Delta T &lt; 0\)</span>).</li>
+</ul>
+<pre class="mermaid"><code>graph TD
+    subgraph S_Calor["Tipos de Calor y Efectos Termodinámicos"]
+        Q["Energía Térmica en Tránsito (Q)"] --&gt; QS["Calor Sensible&lt;br&gt;Q = m · c_e · ΔT"]
+        Q --&gt; QL["Calor Latente&lt;br&gt;Q = ± m · L"]
+
+        QS --&gt; EF_S["Produce Variación de Temperatura&lt;br&gt;(ΔT ≠ 0)"]
+        QS --&gt; EF_S2["Sin cambio de estado de agregación"]
+
+        QL --&gt; EF_L["Temperatura Constante&lt;br&gt;(ΔT = 0)"]
+        QL --&gt; EF_L2["Cambio de Fase / Estado&lt;br&gt;(Fusión, Vaporización, etc.)"]
+    end</code></pre>
+<h3 id="b-transiciones-de-fase-y-calor-latente">B. Transiciones de Fase y Calor Latente</h3>
+<p>Durante un cambio de fase (sólido-líquido, líquido-gas), la energía transferida no incrementa la energía cinética media de las moléculas, sino que interviene en la formación o ruptura de enlaces intermoleculares. Por lo tanto, <strong>la temperatura permanece estrictamente constante</strong> durante todo el proceso de transición.</p>
+<div class="arithmatex">\[Q = \pm m \cdot L\]</div>
+<ul>
+<li><span class="arithmatex">\(L_f\)</span>: <strong>Calor latente de fusión</strong> (para agua: <span class="arithmatex">\(L_f = 3.34 \times 10^5\text{ J/kg} = 79.7\text{ cal/g}\)</span>).</li>
+<li><span class="arithmatex">\(L_v\)</span>: <strong>Calor latente de vaporización</strong> (para agua: <span class="arithmatex">\(L_v = 2.256 \times 10^6\text{ J/kg} = 539\text{ cal/g}\)</span>).</li>
+<li>Signo <span class="arithmatex">\((+)\)</span> si absorbe calor (fusión, vaporización); signo <span class="arithmatex">\((-)\)</span> si cede calor (solidificación, condensación).</li>
+</ul>
+<p><img alt="Agua caliente" src="../../assets/Imagenes-6/grafico_curva_calentamiento_agua.png" /></p>
+<hr />
+<h3 id="ejemplos-practicos-aplicados">🛠️ Ejemplos Prácticos Aplicados:</h3>
+<h4 id="1-incremento-de-temperatura-corporal-por-fiebre-ejemplo-176-sears-zemansky">1. Incremento de Temperatura Corporal por Fiebre (Ejemplo 17.6 Sears-Zemansky)</h4>
+<p><strong>Enunciado:</strong> Un hombre de <span class="arithmatex">\(80\text{ kg}\)</span> aquejado de gripe presenta una fiebre de <span class="arithmatex">\(39.0^\circ\text{C}\)</span> en lugar de su temperatura normal de <span class="arithmatex">\(37.0^\circ\text{C}\)</span>. Suponiendo que el cuerpo humano está compuesto principalmente por agua (<span class="arithmatex">\(c_e \approx 4190\text{ J/(kg}\cdot\text{K)}\)</span>), ¿cuánto calor se requirió para elevar su temperatura esa cantidad?</p>
+<p><strong>Resolución Analítica:</strong>
+$<span class="arithmatex">\(\Delta T = 39.0^\circ\text{C} - 37.0^\circ\text{C} = 2.0\text{ K}\)</span>$
+$<span class="arithmatex">\(Q = m c_e \Delta T = (80\text{ kg})(4190\text{ J/(kg}\cdot\text{K)})(2.0\text{ K}) = 6.704 \times 10^5\text{ J} = \mathbf{670.4\text{ kJ}} \quad (160\text{ kcal})\)</span>$</p>
+<h4 id="2-sobrecurso-termico-en-microelectronica-ejemplo-177-sears-zemansky">2. Sobrecurso Térmico en Microelectrónica (Ejemplo 17.7 Sears-Zemansky)</h4>
+<p><strong>Enunciado:</strong> Un elemento de circuito electrónico de silicio de <span class="arithmatex">\(m = 23\text{ mg}\)</span> disipa energía a razón de <span class="arithmatex">\(P = 7.4\text{ mW} = 7.4 \times 10^{-3}\text{ J/s}\)</span>. Si no se contempla disipación de calor al exterior, ¿con qué rapidez aumentará su temperatura? (<span class="arithmatex">\(c_{e,\text{silicio}} = 705\text{ J/(kg}\cdot\text{K)}\)</span>).</p>
+<p><strong>Resolución Analítica:</strong>
+Derivando la ecuación de calor sensible respecto al tiempo <span class="arithmatex">\(t\)</span>:
+$<span class="arithmatex">\(\frac{dQ}{dt} = P = m \cdot c_e \cdot \frac{dT}{dt} \implies \frac{dT}{dt} = \frac{P}{m \cdot c_e}\)</span>$
+$<span class="arithmatex">\(\frac{dT}{dt} = \frac{7.4 \times 10^{-3}\text{ J/s}}{(23 \times 10^{-6}\text{ kg})(705\text{ J/(kg}\cdot\text{K)})} = \mathbf{0.456\text{ K/s}} \quad (\approx 27.4^\circ\text{C/min})\)</span>$</p>
+<h4 id="3-calor-especifico-de-una-barra-de-plata-tp10-ejercicio-b7">3. Calor Específico de una Barra de Plata (TP10 - Ejercicio B7)</h4>
+<p><strong>Enunciado:</strong> La temperatura de una barra de plata de <span class="arithmatex">\(525\text{ g}\)</span> aumenta <span class="arithmatex">\(10^\circ\text{C}\)</span> cuando absorbe <span class="arithmatex">\(1.23\text{ kJ}\)</span> de calor. Determine el calor específico de la plata.</p>
+<p><strong>Resolución Analítica:</strong>
+$<span class="arithmatex">\(c_e = \frac{Q}{m \cdot \Delta T} = \frac{1230\text{ J}}{(0.525\text{ kg})(10\text{ K})} = \mathbf{234.28\text{ J/(kg}\cdot\text{K)}}\)</span>$</p>
+<hr />
+<h2 id="2-conservacion-de-energia-y-equilibrio-termico-en-calorimetros">2. Conservación de Energía y Equilibrio Térmico en Calorímetros</h2>
+<p>En un sistema aislado de sus alrededores (calorímetro ideal), la cantidad total de calor absorbida por los componentes fríos debe ser exactamente igual a la cantidad de calor cedida por los componentes calientes:</p>
+<div class="arithmatex">\[Q_{\text{ganado}} = -Q_{\text{cedido}} \implies \sum_{i=1}^n Q_i = 0\]</div>
+<hr />
+<h3 id="ejemplos-practicos-aplicados_1">🛠️ Ejemplos Prácticos Aplicados:</h3>
+<h4 id="1-enfriamiento-de-un-lingote-metalico-tp10-ejercicio-b8-ejemplo-202-serway">1. Enfriamiento de un Lingote Metálico (TP10 - Ejercicio B8 / Ejemplo 20.2 Serway)</h4>
+<p><strong>Enunciado:</strong> Un lingote metálico de <span class="arithmatex">\(0.100\text{ kg}\)</span> a <span class="arithmatex">\(100^\circ\text{C}\)</span> (<span class="arithmatex">\(212^\circ\text{F}\)</span>) se coloca en un calorímetro de aluminio de <span class="arithmatex">\(0.200\text{ kg}\)</span> que contiene <span class="arithmatex">\(0.500\text{ kg}\)</span> de agua a <span class="arithmatex">\(20.0^\circ\text{C}\)</span>. La temperatura final de equilibrio es <span class="arithmatex">\(21.4^\circ\text{C}\)</span>. Determine el calor específico del metal (<span class="arithmatex">\(c_{e,\text{agua}} = 4186\text{ J/(kg}\cdot\text{K)}\)</span>, <span class="arithmatex">\(c_{e,\text{Al}} = 900\text{ J/(kg}\cdot\text{K)}\)</span>).</p>
+<p><strong>Resolución Analítica:</strong>
+1. Balance de calor:
+   $<span class="arithmatex">\(Q_{\text{metal}} + Q_{\text{agua}} + Q_{\text{calorímetro}} = 0\)</span>$
+2. Sustitución de expresiones:
+   $<span class="arithmatex">\(m_m c_m (T_f - T_{m0}) + m_w c_w (T_f - T_{w0}) + m_{\text{Al}} c_{\text{Al}} (T_f - T_{w0}) = 0\)</span>$
+   $<span class="arithmatex">\((0.100) c_m (21.4 - 100) + (0.500)(4186)(21.4 - 20.0) + (0.200)(900)(21.4 - 20.0) = 0\)</span>$
+   $<span class="arithmatex">\(-7.86 \cdot c_m + 2930.2 + 252.0 = 0 \implies 7.86 \cdot c_m = 3182.2\)</span>$
+   $<span class="arithmatex">\(c_m = \frac{3182.2}{7.86} = \mathbf{404.86\text{ J/(kg}\cdot\text{K)}}\)</span>$ <em>(Correspondiente a una aleación de latón/cobre).</em></p>
+<h4 id="2-calorimetria-con-cambio-de-fase-vapor-inyectado-en-agua-ejemplo-204-serway">2. Calorimetría con Cambio de Fase: Vapor Inyectado en Agua (Ejemplo 20.4 Serway)</h4>
+<p><strong>Enunciado:</strong> ¿Qué masa de vapor de agua <span class="arithmatex">\(m_v\)</span> inicialmente a <span class="arithmatex">\(130^\circ\text{C}\)</span> se necesita inyectar para calentar <span class="arithmatex">\(200\text{ g}\)</span> de agua en un recipiente de vidrio de <span class="arithmatex">\(100\text{ g}\)</span> de <span class="arithmatex">\(20.0^\circ\text{C}\)</span> a <span class="arithmatex">\(50.0^\circ\text{C}\)</span>? (<span class="arithmatex">\(c_{e,\text{vapor}} = 2010\text{ J/(kg}\cdot\text{K)}\)</span>, <span class="arithmatex">\(L_v = 2.26 \times 10^6\text{ J/kg}\)</span>, <span class="arithmatex">\(c_{e,\text{vidrio}} = 837\text{ J/(kg}\cdot\text{K)}\)</span>).</p>
+<p><strong>Resolución Analítica:</strong>
+1. <strong>Calor absorbido por agua fría y vidrio:</strong>
+   $<span class="arithmatex">\(Q_{\text{frio}} = (0.200)(4186)(50 - 20) + (0.100)(837)(50 - 20) = 25116 + 2511 = 27627\text{ J}\)</span>$
+2. <strong>Calor cedido por el vapor (3 etapas):</strong>
+   * Enfriamiento del vapor (<span class="arithmatex">\(130^\circ\text{C} \rightarrow 100^\circ\text{C}\)</span>): <span class="arithmatex">\(Q_1 = m_v (2010)(-30) = -60300 \cdot m_v\)</span>
+   * Condensación a <span class="arithmatex">\(100^\circ\text{C}\)</span>: <span class="arithmatex">\(Q_2 = -m_v (2.26 \times 10^6) = -2260000 \cdot m_v\)</span>
+   * Enfriamiento del agua condensada (<span class="arithmatex">\(100^\circ\text{C} \rightarrow 50^\circ\text{C}\)</span>): <span class="arithmatex">\(Q_3 = m_v (4186)(-50) = -209300 \cdot m_v\)</span>
+   * <span class="arithmatex">\(Q_{\text{cedido}} = -m_v (60300 + 2260000 + 209300) = -2.5296 \times 10^6 \cdot m_v\)</span>
+3. <strong>Igualación:</strong>
+   $<span class="arithmatex">\(27627 = 2.5296 \times 10^6 \cdot m_v \implies m_v = \mathbf{0.01092\text{ kg} = 10.92\text{ g}}\)</span>$</p>
+<hr />
+<h2 id="3-primera-ley-de-la-termodinamica-y-trabajo-de-expansion">3. Primera Ley de la Termodinámica y Trabajo de Expansión</h2>
+<p>La <strong>Primera Ley de la Termodinámica</strong> es el principio universal de conservación de la energía aplicado a sistemas térmicos:</p>
+<div class="arithmatex">\[\Delta U = Q - W\]</div>
+<ul>
+<li><span class="arithmatex">\(\Delta U = U_f - U_0\)</span>: Cambio en la <strong>energía interna</strong> del sistema (función de estado), en Joules <span class="arithmatex">\([\text{J}]\)</span>.</li>
+<li><span class="arithmatex">\(Q\)</span>: Calor neto transferido hacia el sistema (positivo si entra, negativo si sale).</li>
+<li><span class="arithmatex">\(W\)</span>: Trabajo neto realizado <strong>por</strong> el sistema sobre sus alrededores (positivo en expansión, negativo en compresión).</li>
+</ul>
+<h3 id="a-trabajo-cuasiestatico-de-expansioncompresion">A. Trabajo Cuasiestático de Expansión/Compresión</h3>
+<p>El trabajo realizado por un fluido al desplazar un pistón con fuerza <span class="arithmatex">\(F = P \cdot A\)</span> una distancia infinitesimal <span class="arithmatex">\(dx\)</span> es:</p>
+<div class="arithmatex">\[dW = P \cdot A \cdot dx = P \cdot dV \implies W = \int_{V_i}^{V_f} P \, dV\]</div>
+<p>Geométricamente, <strong>el trabajo <span class="arithmatex">\(W\)</span> equivale al área bajo la curva del proceso en un diagrama <span class="arithmatex">\(P-V\)</span></strong>. Dado que el trabajo depende de la trayectoria seguida entre los estados inicial y final, <span class="arithmatex">\(W\)</span> y <span class="arithmatex">\(Q\)</span> no son funciones de estado.</p>
+<p><img alt="trabajo" src="../../assets/Imagenes-6/grafico_trabajo_diagrama_pv.png" /></p>
+<hr />
+<h2 id="4-procesos-termodinamicos-particulares-y-ciclos">4. Procesos Termodinámicos Particulares y Ciclos</h2>
+<pre class="mermaid"><code>graph TD
+    subgraph S_Procesos["Resumen de Procesos Termodinámicos (1° Ley: ΔU = Q - W)"]
+        Isobarico["Proceso Isobárico&lt;br&gt;(P = constante)"] --&gt; W_Isobar["W = P · ΔV&lt;br&gt;Q = n · C_p · ΔT"]
+        Isocorico["Proceso Isocórico&lt;br&gt;(V = constante)"] --&gt; W_Isocor["W = 0&lt;br&gt;ΔU = Q = n · C_v · ΔT"]
+        Isotermico["Proceso Isotérmico&lt;br&gt;(T = constante)"] --&gt; W_Isoterm["ΔU = 0&lt;br&gt;Q = W = nRT ln(V_f / V_i)"]
+        Adiabatico["Proceso Adiabático&lt;br&gt;(Q = 0)"] --&gt; W_Adiab["Q = 0&lt;br&gt;ΔU = -W&lt;br&gt;P · V^γ = constante"]
+    end</code></pre>
+<ol>
+<li>
+<p><strong>Proceso Isobárico (<span class="arithmatex">\(P = \text{constante}\)</span>):</strong>
+   $<span class="arithmatex">\(W = P (V_f - V_i) = P \Delta V\)</span>$
+   $<span class="arithmatex">\(Q = n \cdot C_p \cdot \Delta T\)</span>$
+   $<span class="arithmatex">\(\Delta U = n \cdot C_v \cdot \Delta T\)</span>$</p>
+</li>
+<li>
+<p><strong>Proceso Isocórico o Isovolumétrico (<span class="arithmatex">\(V = \text{constante}\)</span>):</strong>
+   $<span class="arithmatex">\(W = 0 \implies \Delta U = Q = n \cdot C_v \cdot \Delta T\)</span>$</p>
+</li>
+<li>
+<p><strong>Proceso Isotérmico (<span class="arithmatex">\(T = \text{constante}\)</span>):</strong>
+   Para un gas ideal, al no variar la temperatura, <span class="arithmatex">\(\Delta U = 0\)</span>:
+   $<span class="arithmatex">\(Q = W = n R T \ln \left(\frac{V_f}{V_i}\right) = n R T \ln \left(\frac{P_i}{P_f}\right)\)</span>$</p>
+</li>
+<li>
+<p><strong>Proceso Adiabático (<span class="arithmatex">\(Q = 0\)</span>):</strong>
+   Sin intercambio de calor con el entorno:
+   $<span class="arithmatex">\(\Delta U = -W \implies P \cdot V^\gamma = \text{constante}, \quad T \cdot V^{\gamma-1} = \text{constante}\)</span>$
+   $<span class="arithmatex">\(W = \frac{P_i V_i - P_f V_f}{\gamma - 1} = \frac{n R (T_i - T_f)}{\gamma - 1}\)</span>$</p>
+</li>
+<li>Dónde <span class="arithmatex">\(\gamma = \frac{C_p}{C_v}\)</span> es el coeficiente de expansión adiabática (<span class="arithmatex">\(\gamma \approx 1.67\)</span> monoatómico, <span class="arithmatex">\(\gamma \approx 1.40\)</span> diatómico).</li>
+</ol>
+<p><img alt="Termodinamica" src="../../assets/Imagenes-6/grafico_procesos_termodinamicos_pv.png" /></p>
+<hr />
+<h3 id="ejemplos-practicos-aplicados_2">🛠️ Ejemplos Prácticos Aplicados:</h3>
+<h4 id="1-expansion-isobarica-de-oxigeno-en-cilindro-con-piston-tp10-ejercicio-b9">1. Expansión Isobárica de Oxígeno en Cilindro con Pistón (TP10 - Ejercicio B9)</h4>
+<p><strong>Enunciado:</strong> Un cilindro contiene <span class="arithmatex">\(1.00\text{ mol}\)</span> de oxígeno (<span class="arithmatex">\(\text{O}_2\)</span>, gas diatómico <span class="arithmatex">\(C_v = \frac{5}{2}R\)</span>, <span class="arithmatex">\(C_p = \frac{7}{2}R\)</span>) a <span class="arithmatex">\(T_1 = 27^\circ\text{C} = 300.15\text{ K}\)</span> sujeto a una presión constante de <span class="arithmatex">\(1.00\text{ atm} = 101.325\text{ kPa}\)</span>. Se calienta hasta <span class="arithmatex">\(T_2 = 127^\circ\text{C} = 400.15\text{ K}\)</span>.
+a) Calcule el trabajo realizado por el gas.
+b) Calcule la variación de energía interna.
+c) Calcule el calor suministrado.</p>
+<p><strong>Resolución Analítica:</strong>
+$<span class="arithmatex">\(\Delta T = 400.15 - 300.15 = 100.0\text{ K}\)</span>$
+* <strong>Parte a) Trabajo <span class="arithmatex">\(W\)</span>:</strong>
+  $<span class="arithmatex">\(W = P \Delta V = n R \Delta T = (1.00\text{ mol})(8.3145\text{ J/(mol}\cdot\text{K)})(100.0\text{ K}) = \mathbf{831.45\text{ J}}\)</span>$
+* <strong>Parte b) Energía interna <span class="arithmatex">\(\Delta U\)</span>:</strong>
+  $<span class="arithmatex">\(\Delta U = n C_v \Delta T = n \left(\frac{5}{2}R\right) \Delta T = \frac{5}{2} (831.45\text{ J}) = \mathbf{2078.63\text{ J}}\)</span>$
+* <strong>Parte c) Calor suministrado <span class="arithmatex">\(Q\)</span>:</strong>
+  $<span class="arithmatex">\(Q = \Delta U + W = 2078.63 + 831.45 = \mathbf{2910.08\text{ J}} \quad \left(Q = n C_p \Delta T = \frac{7}{2} (831.45) = 2910.08\text{ J}\right)\)</span>$</p>
+<h4 id="2-analisis-comparativo-de-ciclo-termodinamico-ejemplo-194-sears-tp10">2. Análisis Comparativo de Ciclo Termodinámico (Ejemplo 19.4 Sears / TP10)</h4>
+<p><strong>Enunciado:</strong> En la gráfica <span class="arithmatex">\(P-V\)</span> del ciclo <span class="arithmatex">\(abcd\)</span>, se agregan <span class="arithmatex">\(150\text{ J}\)</span> de calor en el proceso <span class="arithmatex">\(ab\)</span> y <span class="arithmatex">\(600\text{ J}\)</span> en el proceso <span class="arithmatex">\(bd\)</span>. Los estados son <span class="arithmatex">\(P_a = P_c = 3.0 \times 10^4\text{ Pa}\)</span>, <span class="arithmatex">\(P_b = P_d = 8.0 \times 10^4\text{ Pa}\)</span>, <span class="arithmatex">\(V_a = V_b = 2.0 \times 10^{-3}\text{ m}^3\)</span>, <span class="arithmatex">\(V_c = V_d = 5.0 \times 10^{-3}\text{ m}^3\)</span>. Calcule:
+a) <span class="arithmatex">\(\Delta U_{ab}\)</span>, b) <span class="arithmatex">\(\Delta U_{abd}\)</span> y c) El calor total <span class="arithmatex">\(Q_{acd}\)</span>.</p>
+<p><img alt="Ciclo" src="../../assets/Imagenes-6/grafico_ciclo_termodinamico_abcd.png" /></p>
+<p><strong>Resolución Analítica:</strong>
+* <strong>Parte a) Proceso <span class="arithmatex">\(ab\)</span> (Isocórico, <span class="arithmatex">\(V_a = V_b\)</span>):</strong>
+  $<span class="arithmatex">\(W_{ab} = 0 \implies \Delta U_{ab} = Q_{ab} = \mathbf{150\text{ J}}\)</span>$
+* <strong>Parte b) Proceso <span class="arithmatex">\(abd\)</span>:</strong>
+  * Trabajo en <span class="arithmatex">\(bd\)</span> (Isobárico a <span class="arithmatex">\(8.0 \times 10^4\text{ Pa}\)</span>):
+    $<span class="arithmatex">\(W_{bd} = P_b (V_d - V_b) = (8.0 \times 10^4\text{ Pa})(5.0 \times 10^{-3} - 2.0 \times 10^{-3}\text{ m}^3) = 240\text{ J}\)</span>$
+  * Trabajo total <span class="arithmatex">\(W_{abd} = W_{ab} + W_{bd} = 0 + 240 = 240\text{ J}\)</span>.
+  * Calor total <span class="arithmatex">\(Q_{abd} = Q_{ab} + Q_{bd} = 150 + 600 = 750\text{ J}\)</span>.
+  * Energía interna: <span class="arithmatex">\(\Delta U_{abd} = Q_{abd} - W_{abd} = 750 - 240 = \mathbf{510\text{ J}}\)</span>.
+* <strong>Parte c) Trayectoria <span class="arithmatex">\(acd\)</span>:</strong>
+  * Al ser la energía interna una función de estado: <span class="arithmatex">\(\Delta U_{acd} = \Delta U_{abd} = 510\text{ J}\)</span>.
+  * Trabajo en <span class="arithmatex">\(ac\)</span> (Isobárico a <span class="arithmatex">\(3.0 \times 10^4\text{ Pa}\)</span>):
+    $<span class="arithmatex">\(W_{ac} = P_a (V_c - V_a) = (3.0 \times 10^4\text{ Pa})(3.0 \times 10^{-3}\text{ m}^3) = 90\text{ J}\)</span>$
+  * Trabajo en <span class="arithmatex">\(cd\)</span> (Isocórico): <span class="arithmatex">\(W_{cd} = 0 \implies W_{acd} = 90\text{ J}\)</span>.
+  * Calor total: <span class="arithmatex">\(Q_{acd} = \Delta U_{acd} + W_{acd} = 510 + 90 = \mathbf{600\text{ J}}\)</span>.</p>
+<hr />
+<h2 id="5-mecanismos-de-transferencia-de-calor-y-aplicaciones-tecnicas">5. Mecanismos de Transferencia de Calor y Aplicaciones Técnicas</h2>
+<p>La transferencia de calor ocurre a través de tres mecanismos físicos fundamentales:</p>
+<h3 id="a-conduccion-termica">A. Conducción Térmica</h3>
+<p>Transmisión de energía a nivel atómico en sólidos por gradiente de temperatura sin transporte de materia. Rigida por la <strong>Ley de Fourier</strong>:</p>
+<div class="arithmatex">\[H = \frac{dQ}{dt} = k \cdot A \cdot \frac{T_H - T_C}{L}\]</div>
+<ul>
+<li><span class="arithmatex">\(H\)</span>: Corriente de calor o flujo térmico <span class="arithmatex">\([\text{J/s}]\)</span> o <span class="arithmatex">\([\text{W}]\)</span>.</li>
+<li><span class="arithmatex">\(k\)</span>: Conductividad térmica del material <span class="arithmatex">\([\text{W/(m}\cdot\text{K)}]\)</span>.</li>
+<li><span class="arithmatex">\(A\)</span>: Área transversal perpendicular al flujo <span class="arithmatex">\([\text{m}^2]\)</span>.</li>
+<li><span class="arithmatex">\(L\)</span>: Espesor del conductor <span class="arithmatex">\([\text{m}]\)</span>.</li>
+</ul>
+<h3 id="b-convection">B. Convection</h3>
+<p>Mecanismo propio de fluidos (líquidos y gases) donde el calor se transporta mediante el movimiento macroscópico de masa debido a diferencias de densidad creadas por gradientes de temperatura (convección natural o forzada).</p>
+<p align="center">
+  <img src="../assets/Imagenes-6/Conveccion.png" style="max-height: 480px; height: auto;" />
+</p>
+
+<h3 id="c-radiacion-termica">C. Radiación Térmica</h3>
+<p>Emisión continua de energía en forma de ondas electromagnéticas por todo cuerpo debido a su temperatura. Descrita por la <strong>Ley de Stefan-Boltzmann</strong>:</p>
+<div class="arithmatex">\[H_{\text{emitido}} = e \cdot \sigma \cdot A \cdot T^4\]</div>
+<ul>
+<li><span class="arithmatex">\(\sigma = 5.6704 \times 10^{-8}\text{ W/(m}^2\cdot\text{K}^4\text{)}\)</span>: Constante de Stefan-Boltzmann.</li>
+<li><span class="arithmatex">\(e\)</span>: Emisividad de la superficie (<span class="arithmatex">\(0 \le e \le 1\)</span>).</li>
+</ul>
+<p><img alt="radaicion" src="../../assets/Imagenes-6/Radiacion.png" />{: style="display: block; margin: 0 auto; max-width: 80%; height: auto;" }</p>
+<hr />
+<h2 id="6-trabajo-practico-integrador-de-cierre-de-la-materia">6. Trabajo Práctico Integrador de Cierre de la Materia</h2>
+<h3 id="enunciado-del-problema-complejo-tipo-examen-parcial">📋 Enunciado del Problema Complejo (Tipo Examen Parcial)</h3>
+<p>Un sistema termodinámico compuesto por <span class="arithmatex">\(n = 1.50\text{ moles}\)</span> de un gas ideal monoatómico (<span class="arithmatex">\(C_v = \frac{3}{2}R\)</span>, <span class="arithmatex">\(C_p = \frac{5}{2}R\)</span>) parte de un estado inicial <span class="arithmatex">\(A\)</span> con <span class="arithmatex">\(P_A = 100\text{ kPa}\)</span> y <span class="arithmatex">\(V_A = 0.020\text{ m}^3\)</span>. El gas recorre un ciclo termodinámico cerrado <span class="arithmatex">\(A \rightarrow B \rightarrow C \rightarrow A\)</span>:
+1. <strong>Etapa <span class="arithmatex">\(A \rightarrow B\)</span>:</strong> Expansión isobárica a <span class="arithmatex">\(100\text{ kPa}\)</span> hasta duplicar su volumen (<span class="arithmatex">\(V_B = 0.040\text{ m}^3\)</span>).
+2. <strong>Etapa <span class="arithmatex">\(B \rightarrow C\)</span>:</strong> Enfriamiento isocórico hasta reducir su presión a la mitad (<span class="arithmatex">\(P_C = 50\text{ kPa}\)</span>).
+3. <strong>Etapa <span class="arithmatex">\(C \rightarrow A\)</span>:</strong> Compresión siguiendo una trayectoria en línea recta en el plano <span class="arithmatex">\(P-V\)</span> hasta retornar al estado inicial <span class="arithmatex">\(A\)</span>.</p>
+<p>Se solicita:
+1. Calcular las temperaturas absolutas <span class="arithmatex">\(T_A\)</span>, <span class="arithmatex">\(T_B\)</span> y <span class="arithmatex">\(T_C\)</span>.
+2. Calcular <span class="arithmatex">\(W\)</span>, <span class="arithmatex">\(\Delta U\)</span> y <span class="arithmatex">\(Q\)</span> para cada una de las 3 etapas y para el ciclo completo.
+3. Si la cantidad de calor cedida por el gas en la etapa <span class="arithmatex">\(B \rightarrow C\)</span> se aprovecha en un calorímetro aislado para fundir un bloque de hielo a <span class="arithmatex">\(0^\circ\text{C}\)</span> (<span class="arithmatex">\(L_f = 3.34 \times 10^5\text{ J/kg}\)</span>), determine qué masa de hielo <span class="arithmatex">\(m_{\text{hielo}}\)</span> se logrará derretir.</p>
+<hr />
+<h3 id="resolucion-analitica-paso-a-paso">📐 Resolución Analítica Paso a Paso</h3>
+<h4 id="paso-1-calculo-de-temperaturas-en-los-nodos-del-ciclo">Paso 1: Cálculo de Temperaturas en los Nodos del Ciclo</h4>
+<ul>
+<li><strong>Estado A:</strong>
+  $<span class="arithmatex">\(T_A = \frac{P_A V_A}{n R} = \frac{(100 \times 10^3\text{ Pa})(0.020\text{ m}^3)}{(1.50\text{ mol})(8.3145\text{ J/(mol}\cdot\text{K)})} = \mathbf{160.37\text{ K}}\)</span>$</li>
+<li><strong>Estado B (<span class="arithmatex">\(V_B = 2 V_A = 0.040\text{ m}^3\)</span>, <span class="arithmatex">\(P_B = P_A\)</span>):</strong>
+  $<span class="arithmatex">\(T_B = \frac{P_B V_B}{n R} = 2 \cdot T_A = \mathbf{320.74\text{ K}}\)</span>$</li>
+<li><strong>Estado C (<span class="arithmatex">\(V_C = V_B = 0.040\text{ m}^3\)</span>, <span class="arithmatex">\(P_C = 0.5 P_B = 50\text{ kPa}\)</span>):</strong>
+  $<span class="arithmatex">\(T_C = \frac{P_C V_C}{n R} = \frac{(50 \times 10^3\text{ Pa})(0.040\text{ m}^3)}{(1.50)(8.3145)} = \mathbf{160.37\text{ K}} \quad (T_C = T_A)\)</span>$</li>
+</ul>
+<h4 id="paso-2-balance-energetico-por-etapas">Paso 2: Balance Energético por Etapas</h4>
+<ul>
+<li><strong>Etapa <span class="arithmatex">\(A \rightarrow B\)</span> (Isobárica):</strong></li>
+<li><span class="arithmatex">\(W_{AB} = P_A (V_B - V_A) = (100 \times 10^3\text{ Pa})(0.040 - 0.020\text{ m}^3) = \mathbf{2000.0\text{ J}}\)</span></li>
+<li><span class="arithmatex">\(\Delta U_{AB} = n C_v (T_B - T_A) = (1.50) \left(\frac{3}{2} \cdot 8.3145\right) (320.74 - 160.37) = \mathbf{3000.0\text{ J}}\)</span></li>
+<li>
+<p><span class="arithmatex">\(Q_{AB} = \Delta U_{AB} + W_{AB} = 3000 + 2000 = \mathbf{5000.0\text{ J}}\)</span></p>
+</li>
+<li>
+<p><strong>Etapa <span class="arithmatex">\(B \rightarrow C\)</span> (Isocórica):</strong></p>
+</li>
+<li><span class="arithmatex">\(W_{BC} = \mathbf{0\text{ J}}\)</span></li>
+<li><span class="arithmatex">\(\Delta U_{BC} = n C_v (T_C - T_B) = (1.50) \left(\frac{3}{2} \cdot 8.3145\right) (160.37 - 320.74) = \mathbf{-3000.0\text{ J}}\)</span></li>
+<li>
+<p><span class="arithmatex">\(Q_{BC} = \Delta U_{BC} = \mathbf{-3000.0\text{ J}}\)</span> <em>(El gas cede <span class="arithmatex">\(3000\text{ J}\)</span> de calor)</em></p>
+</li>
+<li>
+<p><strong>Etapa <span class="arithmatex">\(C \rightarrow A\)</span> (Compresión Lineal en <span class="arithmatex">\(P-V\)</span>):</strong></p>
+</li>
+<li>Como <span class="arithmatex">\(T_A = T_C\)</span>, el cambio de energía interna es nulo: <span class="arithmatex">\(\Delta U_{CA} = \mathbf{0\text{ J}}\)</span>.</li>
+<li>Trabajo <span class="arithmatex">\(W_{CA}\)</span> = Área del trapecio bajo la recta en <span class="arithmatex">\(P-V\)</span> (con signo negativo por compresión):
+    $<span class="arithmatex">\(W_{CA} = -\frac{P_C + P_A}{2} (V_C - V_A) = -\frac{50 \times 10^3 + 100 \times 10^3}{2} (0.040 - 0.020) = \mathbf{-1500.0\text{ J}}\)</span>$</li>
+<li>
+<p><span class="arithmatex">\(Q_{CA} = \Delta U_{CA} + W_{CA} = 0 - 1500 = \mathbf{-1500.0\text{ J}}\)</span></p>
+</li>
+<li>
+<p><strong>Neto del Ciclo Completo:</strong></p>
+</li>
+<li><span class="arithmatex">\(W_{\text{neto}} = W_{AB} + W_{BC} + W_{CA} = 2000 + 0 - 1500 = \mathbf{500.0\text{ J}}\)</span></li>
+<li><span class="arithmatex">\(\Delta U_{\text{neto}} = 3000 - 3000 + 0 = \mathbf{0\text{ J}}\)</span></li>
+<li><span class="arithmatex">\(Q_{\text{neto}} = 5000 - 3000 - 1500 = \mathbf{500.0\text{ J}}\)</span></li>
+</ul>
+<h4 id="paso-3-aplicacion-calorimetrica-con-el-calor-cedido">Paso 3: Aplicación Calorimétrica con el Calor Cedido</h4>
+<p>El calor cedido por el gas en la etapa <span class="arithmatex">\(B \rightarrow C\)</span> es <span class="arithmatex">\(|Q_{BC}| = 3000\text{ J}\)</span>. Igualando a la ecuación de fusión del hielo a <span class="arithmatex">\(0^\circ\text{C}\)</span>:</p>
+<div class="arithmatex">\[|Q_{BC}| = m_{\text{hielo}} \cdot L_f \implies m_{\text{hielo}} = \frac{|Q_{BC}|}{L_f}$$
+$$m_{\text{hielo}} = \frac{3000\text{ J}}{3.34 \times 10^5\text{ J/kg}} = 8.982 \times 10^{-3}\text{ kg} = \mathbf{8.98\text{ gramos}}\]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
