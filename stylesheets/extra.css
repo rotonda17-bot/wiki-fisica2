@@ -1,29 +1,115 @@
 /* ==========================================================================
-   1. PALETA ERGONÓMICA PARA LECTURA PROLONGADA (Slate & Teal)
+   1. PALETA DE COLORES ERGONÓMICA (Slate & Teal)
    ========================================================================== */
-
 [data-md-color-scheme="slate"] {
-  /* 1. Barra superior (Header) */
-  --md-primary-fg-color:        #1E293B; /* Azul noche mate */
+  /* Barra superior (Header) */
+  --md-primary-fg-color:        #1E293B;
   --md-primary-fg-color--light: #334155; 
   --md-primary-fg-color--dark:  #0F172A;
 
-  /* 2. Fondo general de la pantalla */
-  --md-default-bg-color:        #0F172A; /* Fondo profundo antirreflectante */
+  /* Fondo general de la pantalla */
+  --md-default-bg-color:        #0F172A;
 
-  /* 3. Contenedores de texto y tarjetas */
-  --md-code-bg-color:           #1E293B; /* Fondo de bloques de código y fórmulas */
+  /* Fondo de contenedores y bloques de código */
+  --md-code-bg-color:           #1E293B;
 
-  /* 4. Letras y Acentos de lectura */
-  --md-default-fg-color:        #E2E8F0; /* Blanco hueso suave (evita encandilar) */
-  --md-accent-fg-color:         #0D9488; /* Verde azulado / Teal fácil de enfocar */
+  /* Texto principal y enlaces acentuados */
+  --md-default-fg-color:        #E2E8F0;
+  --md-accent-fg-color:         #0D9488;
 }
 
 /* ==========================================================================
-   2. ESTILOS DE GALERÍA E IMÁGENES
+   2. ESTILOS DE NAVEGACIÓN LATERAL (Menú Izquierdo Limpio)
    ========================================================================== */
+/* Scrollbar ultra fino y semi-transparente */
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
 
-/* Transición suave, bordes redondeados y sombra descansada */
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 4px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
+  background-color: var(--md-accent-fg-color);
+}
+
+/* Enlaces del menú lateral */
+.md-nav__link {
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-size: 0.82rem;
+}
+
+.md-nav__link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+/* Resaltado destacado para el tema en lectura activa */
+.md-nav__item--active > .md-nav__link {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 700;
+  background-color: rgba(13, 148, 136, 0.12);
+  border-left: 3px solid var(--md-accent-fg-color);
+  padding-left: 0.8rem;
+}
+
+/* Títulos principales de Unidades */
+.md-nav__item--nested > .md-nav__link {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  color: #94A3B8;
+  margin-top: 0.5rem;
+}
+
+/* ==========================================================================
+   3. RECUADRO FLOTANTE DE TÍTULOS DE LA NOTA (Índice Derecho / Minimapa)
+   ========================================================================== */
+.md-sidebar--secondary {
+  position: sticky;
+  top: 5rem;
+  max-height: calc(100vh - 7rem);
+}
+
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  background-color: var(--md-code-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.md-nav--secondary .md-nav__link {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  padding: 0.25rem 0.4rem;
+  border-radius: 4px;
+  color: #94A3B8;
+}
+
+.md-nav--secondary .md-nav__link--active {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 700;
+  background-color: rgba(13, 148, 136, 0.15);
+}
+
+/* ==========================================================================
+   4. ESTILOS DE GALERÍA E IMÁGENES
+   ========================================================================== */
 .md-content img {
   display: block;
   margin: 1.5rem auto;
@@ -32,17 +118,14 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto hover interactivo al pasar el cursor */
 .md-content img:hover {
   transform: scale(1.015);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
 }
 
 /* ==========================================================================
-   3. DIAGRAMAS INTERACTIVOS (MERMAID)
+   5. DIAGRAMAS INTERACTIVOS (MERMAID)
    ========================================================================== */
-
-/* Tarjeta limpia para diagramas de flujo y esquemas */
 .mermaid {
   display: flex;
   justify-content: center;
