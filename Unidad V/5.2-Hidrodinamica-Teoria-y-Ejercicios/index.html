@@ -1,0 +1,1983 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes, fórmulas y gráficos interactivos de la materia">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>5.2 Hidrodinámica: Teoría, Principios e Integración Práctica - Wiki de Física y Química</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#52-hidrodinamica-teoria-principios-e-integracion-practica" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Wiki de Física y Química" class="md-header__button md-logo" aria-label="Wiki de Física y Química" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wiki de Física y Química
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              5.2 Hidrodinámica: Teoría, Principios e Integración Práctica
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Wiki de Física y Química" class="md-nav__button md-logo" aria-label="Wiki de Física y Química" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Wiki de Física y Química
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad I
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad I
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.1-Gravitacion-Universal-y-Leyes-de-Kepler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Leyes de Kepler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.2-Campo-y-Potencial-Gravitatorio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Campo y Potencial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20I/1.3-Satelites-Movimiento-Orbital-y-Energia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Satélites y Órbitas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad II
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad II
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.1-Elasticidad-Modulos-y-Ley-de-Hooke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Elasticidad y Ley de Hooke
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20II/2.2-Energia-Potencial-Elastica-y-Trabajo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Energía Potencial Elástica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad III
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad III
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.1-Movimiento-Armonico-Simple-MAS-Ecuaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Ecuaciones del MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.2-Energia-en-el-MAS-y-Sistemas-Oscilantes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 Energía en el MAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.3-Sistemas-Oscilantes-Reales-y-Avanzados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Sistemas Oscilantes Reales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20III/3.4-Oscilaciones-Amortiguamiento-Forzadas-Resonancia-y-Superposici%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 Amortiguamiento y Resonancia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad IV
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad IV
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20IV/4.1-Ondas-Mecanicas-Transversales-y-Longitudinales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Ondas Mecánicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20IV/4.2-Ecuacion-de-Onda-Energia-e-Interferencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Ecuación de Onda e Interferencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad V
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad V
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad V/5.1-Hidrostatica-Presion-y-Principios-Fundamentales.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 Hidrostática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad V/5.2-Hidrodinamica-Ecuacion-de-Continuidad-y-Bernoulli.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.2 Hidrodinámica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad VI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad VI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad%20VI/6.1-Termometria-Dilatacion-y-Gas-Ideal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.1 Termometría, Dilatación y Gas Ideal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unidad VI/6.2-Calorimetria-Primera-Ley-y-Transferencia.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.2 Calorimetría, Primera Ley y Transferencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-clasificacion-del-flujo-y-modelo-del-fluido-ideal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Clasificación del Flujo y Modelo del Fluido Ideal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Clasificación del Flujo y Modelo del Fluido Ideal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-clasificacion-del-flujo-de-un-fluido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Clasificación del Flujo de un Fluido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-las-4-hipotesis-del-fluido-ideal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Las 4 Hipótesis del Fluido Ideal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-lineas-y-tubos-de-corriente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Líneas y Tubos de Corriente
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ecuacion-de-continuidad-y-caudal-gasto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ecuación de Continuidad y Caudal (Gasto)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Ecuación de Continuidad y Caudal (Gasto)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-deduccion-del-principio-de-conservacion-de-la-masa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Deducción del Principio de Conservación de la Masa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-caudal-volumetrico-o-gasto-q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Caudal Volumétrico o Gasto (\(Q\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-practicos-aplicados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Ejemplos Prácticos Aplicados:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Ejemplos Prácticos Aplicados:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-estrangulamiento-en-tuberia-tp-ejercicio-b1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Estrangulamiento en Tubería (TP - Ejercicio B1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-seccion-transversal-variable-tp-ejercicio-b2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Sección Transversal Variable (TP - Ejercicio B2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-angostamiento-del-chorro-de-agua-en-un-grifo-ejemplo-resnick-halliday" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Angostamiento del Chorro de Agua en un Grifo (Ejemplo Resnick-Halliday)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-regar-un-jardin-y-alcance-parabolico-ejemplo-147-serway-jewett" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Regar un Jardín y Alcance Parabólico (Ejemplo 14.7 Serway-Jewett)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ecuacion-de-bernoulli-conservacion-de-la-energia-mecanica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ecuación de Bernoulli (Conservación de la Energía Mecánica)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Ecuación de Bernoulli (Conservación de la Energía Mecánica)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-deduccion-formal-por-trabajo-y-energia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Deducción Formal por Trabajo y Energía
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-interpretacion-de-terminos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Interpretación de Términos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-practicos-aplicados_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Ejemplos Prácticos Aplicados:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Ejemplos Prácticos Aplicados:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-tuberia-descendente-tp-ejercicio-b3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Tubería Descendente (TP - Ejercicio B3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-tanque-elevado-y-red-domestica-ejemplo-2-resnick-halliday" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Tanque Elevado y Red Doméstica (Ejemplo 2 Resnick-Halliday)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-aplicaciones-especiales-e-instrumentacion-hidrodinamica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Aplicaciones Especiales e Instrumentación Hidrodinámica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Aplicaciones Especiales e Instrumentación Hidrodinámica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-teorema-de-torricelli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Teorema de Torricelli
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A. Teorema de Torricelli">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deduccion-general-para-recipientes-presurizados-y-abiertos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deducción General para Recipientes Presurizados y Abiertos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-practicos-aplicados-torricelli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Ejemplos Prácticos Aplicados (Torricelli):
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Ejemplos Prácticos Aplicados (Torricelli):">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-fuga-en-tanque-abierto-tp-ejercicio-b4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Fuga en Tanque Abierto (TP - Ejercicio B4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-recipiente-circular-descargando-tp-ejercicio-b5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Recipiente Circular Descargando (TP - Ejercicio B5)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-deposito-hermetico-presurizado-tp-ejercicio-b6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Depósito Hermético Presurizado (TP - Ejercicio B6)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-descarga-en-compuerta-de-dique-tp-ejercicio-b7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Descarga en Compuerta de Dique (TP - Ejercicio B7)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-tanque-presurizado-con-empuje-de-retroceso-tp-ejercicio-b8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Tanque Presurizado con Empuje de Retroceso (TP - Ejercicio B8)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-descarga-por-orificio-a-5text-m-ejemplo-bueche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Descarga por Orificio a \(5\text{ m}\) (Ejemplo Bueche)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-tubo-de-venturi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Tubo de Venturi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B. Tubo de Venturi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deduccion-analitica-completa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deducción Analítica Completa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integracion-con-manometro-diferencial-de-mercurio-rho_texthg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integración con Manómetro Diferencial de Mercurio (\(\rho_{\text{Hg}}\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-practicos-aplicados-venturi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Ejemplos Prácticos Aplicados (Venturi):
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Ejemplos Prácticos Aplicados (Venturi):">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-venturi-simple-en-caneria-tp-ejercicio-b9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Venturi Simple en Cañería (TP - Ejercicio B9)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-venturi-con-manometro-de-mercurio-ejemplo-san-juan-tp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Venturi con Manómetro de Mercurio (Ejemplo San Juan / TP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-tubo-de-pitot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Tubo de Pitot
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. Tubo de Pitot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deduccion-analitica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deducción Analítica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-practico-aplicado-pitot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Ejemplo Práctico Aplicado (Pitot):
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Ejemplo Práctico Aplicado (Pitot):">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-velocidad-de-aeroplano-tp-ejercicio-b10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Velocidad de Aeroplano (TP - Ejercicio B10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-introduccion-a-fluidos-reales-viscosidad-y-regimen-de-flujo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Introducción a Fluidos Reales: Viscosidad y Régimen de Flujo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Introducción a Fluidos Reales: Viscosidad y Régimen de Flujo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-viscosidad-dinamica-eta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Viscosidad Dinámica (\(\eta\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-numero-de-reynolds-n_r-y-regimenes-de-flujo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Número de Reynolds (\(N_R\)) y Regímenes de Flujo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B. Número de Reynolds (\(N_R\)) y Regímenes de Flujo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-clasificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Criterios de Clasificación:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="52-hidrodinamica-teoria-principios-e-integracion-practica">5.2 Hidrodinámica: Teoría, Principios e Integración Práctica</h1>
+<hr />
+<h2 id="1-clasificacion-del-flujo-y-modelo-del-fluido-ideal">1. Clasificación del Flujo y Modelo del Fluido Ideal</h2>
+<p>La <strong>hidrodinámica</strong> es la rama de la física que estudia el comportamiento y las leyes que rigen el movimiento de los fluidos (líquidos y gases). Dado que el movimiento de un fluido real involucra fenómenos complejos como fricción interna y turbulencias, se utiliza el <strong>modelo de fluido ideal</strong> mediante suposiciones simplificadoras.</p>
+<h3 id="a-clasificacion-del-flujo-de-un-fluido">A. Clasificación del Flujo de un Fluido</h3>
+<p>El flujo de un fluido se clasifica atendiendo a cuatro criterios fundamentales:</p>
+<ol>
+<li><strong>Atendiendo a la velocidad de las partículas en el tiempo:</strong></li>
+<li><strong>Flujo Estacionario (Laminar):</strong> La velocidad de las partículas de fluido que pasan por un punto dado es constante en todo instante de tiempo.</li>
+<li><strong>Flujo No Estacionario:</strong> La velocidad de las partículas en cualquier punto depende del tiempo.</li>
+<li><strong>Atendiendo a la velocidad angular neta:</strong></li>
+<li><strong>Flujo Irrotacional:</strong> El elemento de fluido no tiene velocidad angular neta alrededor de ningún punto.</li>
+<li><strong>Flujo Rotacional:</strong> Las partículas del fluido poseen velocidad angular neta no nula.</li>
+<li><strong>Atendiendo a las variaciones de densidad:</strong></li>
+<li><strong>Flujo Incompresible:</strong> La densidad <span class="arithmatex">\(\rho\)</span> permanece constante en todo el espacio (característico de los líquidos).</li>
+<li><strong>Flujo Compresible:</strong> La densidad varía de punto a punto en función de la posición o la presión.</li>
+<li><strong>Atendiendo a los rozamientos internos:</strong></li>
+<li><strong>Flujo No Viscoso:</strong> Ausencia total de rozamiento interno; no hay disipación de energía mecánica.</li>
+<li><strong>Flujo Viscoso:</strong> Existen fuerzas tangenciales entre las distintas capas de fluido que disipan energía en forma de calor.</li>
+</ol>
+<h3 id="b-las-4-hipotesis-del-fluido-ideal">B. Las 4 Hipótesis del Fluido Ideal</h3>
+<p>Para el análisis teórico en este nivel académico, se asume un <strong>fluido ideal</strong> que cumple cuatro hipótesis simplificadoras:</p>
+<div class="arithmatex">\[\text{Fluido Ideal} \iff \begin{cases} \text{1. Flujo Estacionario} &amp; \text{(Velocidad en cada punto constante con el tiempo)} \\ \text{2. Fluido Incompresible} &amp; \text{(Densidad } \rho = \text{constante)} \\ \text{3. Fluido No Viscoso} &amp; \text{(Sin resistencia o fricción al flujo)} \\ \text{4. Flujo Irrotacional} &amp; \text{(Sin momento angular ellinos)} \end{cases}\]</div>
+<h3 id="c-lineas-y-tubos-de-corriente">C. Líneas y Tubos de Corriente</h3>
+<ul>
+<li><strong>Líneas de Corriente (o de flujo):</strong> Son líneas imaginarias dibujadas a través del fluido en movimiento cuya tangente en cualquier punto indica la dirección instantánea del vector velocidad <span class="arithmatex">\(\vec{v}\)</span> de las partículas. En un flujo estacionario, las líneas de corriente no se cruzan.</li>
+<li><strong>Tubo de Corriente (o de flujo):</strong> Es la región del fluido delimitada por un haz de líneas de corriente. Ninguna partícula de fluido puede cruzar las paredes laterales de un tubo de corriente.</li>
+</ul>
+<p><img alt="Conductor" src="../../assets/Imagenes-5/image-6.png" />{: style="display: block; margin: 0 auto; max-width: 80%; height: auto;" }</p>
+<hr />
+<h2 id="2-ecuacion-de-continuidad-y-caudal-gasto">2. Ecuación de Continuidad y Caudal (Gasto)</h2>
+<h3 id="a-deduccion-del-principio-de-conservacion-de-la-masa">A. Deducción del Principio de Conservación de la Masa</h3>
+<p>Consideremos el flujo de un fluido ideal a través de un tubo de sección transversal variable <span class="arithmatex">\(A_1\)</span> y <span class="arithmatex">\(A_2\)</span>. En un intervalo de tiempo <span class="arithmatex">\(\Delta t\)</span>, la masa <span class="arithmatex">\(\Delta m_1\)</span> que ingresa por el extremo 1 debe ser igual a la masa <span class="arithmatex">\(\Delta m_2\)</span> que sale por el extremo 2:</p>
+<div class="arithmatex">\[\Delta m_1 = \Delta m_2 \implies \rho_1 \cdot \Delta V_1 = \rho_2 \cdot \Delta V_2\]</div>
+<p>Como el volumen es <span class="arithmatex">\(\Delta V = A \cdot \Delta x\)</span> y el desplazamiento es <span class="arithmatex">\(\Delta x = v \cdot \Delta t\)</span>:</p>
+<div class="arithmatex">\[\rho_1 \cdot A_1 \cdot v_1 \cdot \Delta t = \rho_2 \cdot A_2 \cdot v_2 \cdot \Delta t\]</div>
+<p>Para un <strong>fluido incompresible</strong> (<span class="arithmatex">\(\rho_1 = \rho_2 = \rho\)</span>), la densidad se cancela obteniéndose la <strong>Ecuación de Continuidad</strong>:</p>
+<div class="arithmatex">\[A_1 \cdot v_1 = A_2 \cdot v_2 = \text{constante}\]</div>
+<blockquote>
+<p><strong>Interpretación:</strong> La velocidad de flujo es inversamente proporcional al área de la sección transversal de la tubería. Cuando el área disminuye (estrangulamiento), la velocidad del fluido aumenta proporcionalmente.
+<pre class="mermaid"><code>graph LR
+    subgraph S_Continuidad["Ecuación de Continuidad: Conservación de la Masa"]
+        Entrada["Entrada: Sección Mayor A₁&lt;br&gt;(Velocidad v₁ menor)"] --&gt;|Masa constante Δm/Δt| Salida["Salida: Sección Menor A₂&lt;br&gt;(Velocidad v₂ mayor)"]
+        Relacion["A₁ · v₁ = A₂ · v₂ = Caudal Q (Constante)"]
+    end</code></pre></p>
+</blockquote>
+<h3 id="b-caudal-volumetrico-o-gasto-q">B. Caudal Volumétrico o Gasto (<span class="arithmatex">\(Q\)</span>)</h3>
+<p>El producto del área por la velocidad representa la tasa de flujo de volumen por unidad de tiempo, denominada <strong>Caudal (<span class="arithmatex">\(Q\)</span>)</strong>:</p>
+<div class="arithmatex">\[Q = \frac{V}{\Delta t} = A \cdot v \quad \left[\frac{\text{m}^3}{\text{s}}\right]\]</div>
+<hr />
+<h3 id="ejemplos-practicos-aplicados">🛠️ Ejemplos Prácticos Aplicados:</h3>
+<h4 id="1-estrangulamiento-en-tuberia-tp-ejercicio-b1">1. Estrangulamiento en Tubería (TP - Ejercicio B1)</h4>
+<p><strong>Enunciado:</strong> Por una tubería de <span class="arithmatex">\(15\text{ cm}\)</span> de diámetro, circula agua a razón de <span class="arithmatex">\(75\text{ L/min}\)</span>. En un punto se tiene un estrangulamiento de <span class="arithmatex">\(5\text{ cm}\)</span> de diámetro. ¿Qué velocidad lleva el agua en ese punto?</p>
+<p><strong>Resolución Analítica:</strong>
+1. Conversión de unidades al SI:
+   * <span class="arithmatex">\(D_1 = 0.15\text{ m} \implies R_1 = 0.075\text{ m}\)</span>
+   * <span class="arithmatex">\(D_2 = 0.05\text{ m} \implies R_2 = 0.025\text{ m}\)</span>
+   * <span class="arithmatex">\(Q = 75\text{ L/min} = \frac{75 \times 10^{-3}\text{ m}^3}{60\text{ s}} = 1.25 \times 10^{-3}\text{ m}^3/\text{s}\)</span>
+2. Cálculo de la velocidad en el estrangulamiento (<span class="arithmatex">\(v_2\)</span>):
+   $<span class="arithmatex">\(Q = A_2 \cdot v_2 = \pi R_2^2 \cdot v_2 \implies v_2 = \frac{Q}{\pi R_2^2}\)</span>$
+   $<span class="arithmatex">\(v_2 = \frac{1.25 \times 10^{-3}\text{ m}^3/\text{s}}{\pi (0.025\text{ m})^2} = \mathbf{0.637\text{ m/s}}\)</span>$</p>
+<h4 id="2-seccion-transversal-variable-tp-ejercicio-b2">2. Sección Transversal Variable (TP - Ejercicio B2)</h4>
+<p><strong>Enunciado:</strong> Fluye agua por un tubo circular de sección transversal variable, llenándolo en todos sus puntos.
+a) En un punto, el radio del tubo es <span class="arithmatex">\(0.150\text{ m}\)</span>. ¿Qué rapidez tiene el agua si la tasa de flujo de volumen es <span class="arithmatex">\(1.20\text{ m}^3/\text{s}\)</span>?
+b) En otro punto, la rapidez del agua es <span class="arithmatex">\(3.80\text{ m/s}\)</span>. ¿Qué radio tiene el tubo en este punto?</p>
+<p><strong>Resolución Analítica:</strong>
+* <strong>Parte a):</strong>
+  $<span class="arithmatex">\(A_1 = \pi r_1^2 = \pi (0.150\text{ m})^2 = 0.070686\text{ m}^2\)</span>$
+  $<span class="arithmatex">\(v_1 = \frac{Q}{A_1} = \frac{1.20\text{ m}^3/\text{s}}{0.070686\text{ m}^2} = \mathbf{16.98\text{ m/s}}\)</span>$
+* <strong>Parte b):</strong>
+  $<span class="arithmatex">\(Q = A_2 \cdot v_2 \implies A_2 = \frac{Q}{v_2} = \frac{1.20\text{ m}^3/\text{s}}{3.80\text{ m/s}} = 0.3158\text{ m}^2\)</span>$
+  $<span class="arithmatex">\(A_2 = \pi r_2^2 \implies r_2 = \sqrt{\frac{A_2}{\pi}} = \sqrt{\frac{0.3158}{\pi}} = \mathbf{0.317\text{ m}}\)</span>$</p>
+<h4 id="3-angostamiento-del-chorro-de-agua-en-un-grifo-ejemplo-resnick-halliday">3. Angostamiento del Chorro de Agua en un Grifo (Ejemplo Resnick-Halliday)</h4>
+<p><strong>Enunciado:</strong> Al caer la corriente de agua que sale de un grifo, su sección se angosta. Sabiendo que <span class="arithmatex">\(A_0 = 1.2\text{ cm}^2\)</span> y <span class="arithmatex">\(A_1 = 0.35\text{ cm}^2\)</span>, separados por una distancia vertical <span class="arithmatex">\(h = 45\text{ mm}\)</span>, determine el caudal de agua que fluye de la llave.</p>
+<p><img alt="Grifo" src="../../assets/Imagenes-5/image-7.png" />{: style="display: block; margin: 0 auto; max-width: 80%; height: auto;" }</p>
+<p><strong>Resolución Analítica:</strong>
+1. Planteo de Ecuación de Continuidad y Cinemática de Caída Libre:
+   $<span class="arithmatex">\(A_0 \cdot v_0 = A_1 \cdot v_1 \implies v_1 = \frac{A_0}{A_1} v_0\)</span>$
+   $<span class="arithmatex">\(v_1^2 = v_0^2 + 2gh\)</span>$
+2. Sustitución y despeje de <span class="arithmatex">\(v_0\)</span>:
+   $<span class="arithmatex">\(v_0 = \sqrt{\frac{2 g h A_1^2}{A_0^2 - A_1^2}}\)</span>$
+3. Reemplazo numérico (<span class="arithmatex">\(g = 980 \text{ cm/s}^2\)</span>, <span class="arithmatex">\(h = 4.5 \text{ cm}\)</span>):
+   $<span class="arithmatex">\(v_0 = \sqrt{\frac{2 (980) (4.5) (0.35)^2}{(1.2)^2 - (0.35)^2}} = 28.6 \text{ cm/s}\)</span>$
+   $<span class="arithmatex">\(Q = A_0 \cdot v_0 = (1.2 \text{ cm}^2) (28.6 \text{ cm/s}) = \mathbf{34 \text{ cm}^3\text{/s}}\)</span>$</p>
+<h4 id="4-regar-un-jardin-y-alcance-parabolico-ejemplo-147-serway-jewett">4. Regar un Jardín y Alcance Parabólico (Ejemplo 14.7 Serway-Jewett)</h4>
+<p><strong>Enunciado:</strong> Un jardinero usa una manguera de <span class="arithmatex">\(2.50 \text{ cm}\)</span> de diámetro para llenar una cubeta de <span class="arithmatex">\(30.0 \text{ L}\)</span> en <span class="arithmatex">\(1.00 \text{ min}\)</span>. Luego acopla una boquilla de <span class="arithmatex">\(0.500 \text{ cm}^2\)</span> de área sosteniéndola horizontalmente a <span class="arithmatex">\(1.00 \text{ m}\)</span> sobre el suelo. ¿Sobre qué distancia horizontal se proyecta el agua?</p>
+<p><strong>Resolución Analítica:</strong>
+1. Caudal y velocidad inicial en la manguera (<span class="arithmatex">\(v_1\)</span>):
+   $<span class="arithmatex">\(Q = \frac{30.0 \times 10^3 \text{ cm}^3}{60.0 \text{ s}} = 500 \text{ cm}^3\text{/s}\)</span>$
+   $<span class="arithmatex">\(A_1 = \frac{\pi (2.50 \text{ cm})^2}{4} = 4.91 \text{ cm}^2 \implies v_1 = \frac{500 \text{ cm}^3\text{/s}}{4.91 \text{ cm}^2} = 1.02 \text{ m/s}\)</span>$
+2. Velocidad de salida por la boquilla (<span class="arithmatex">\(v_2 = v_{xi}\)</span>):
+   $<span class="arithmatex">\(v_2 = \left(\frac{A_1}{A_2}\right) v_1 = \left(\frac{4.91 \text{ cm}^2}{0.500 \text{ cm}^2}\right) (1.02 \text{ m/s}) = 10.0 \text{ m/s}\)</span>$
+3. Movimiento de proyectil (caída libre vertical):
+   $<span class="arithmatex">\(y_f = y_i - \frac{1}{2} g t^2 \implies -1.00 \text{ m} = -\frac{1}{2} (9.80 \text{ m/s}^2) t^2 \implies t = \sqrt{\frac{2(1.00)}{9.80}} = 0.452 \text{ s}\)</span>$
+4. Alcance horizontal (<span class="arithmatex">\(x_f\)</span>):
+   $<span class="arithmatex">\(x_f = v_{xi} \cdot t = (10.0 \text{ m/s}) (0.452 \text{ s}) = \mathbf{4.52 \text{ m}}\)</span>$</p>
+<hr />
+<h2 id="3-ecuacion-de-bernoulli-conservacion-de-la-energia-mecanica">3. Ecuación de Bernoulli (Conservación de la Energía Mecánica)</h2>
+<p>El Teorema de Bernoulli representa el principio de conservación de la energía mecánica aplicado a un flujo de fluido ideal (incompresible, no viscoso, estacionario e irrotacional).</p>
+<h3 id="a-deduccion-formal-por-trabajo-y-energia">A. Deducción Formal por Trabajo y Energía</h3>
+<p>Considerando el movimiento de un elemento de volumen <span class="arithmatex">\(\Delta V\)</span> a través de un tubo de corriente entre una posición 1 (altura <span class="arithmatex">\(y_1\)</span>) y una posición 2 (altura <span class="arithmatex">\(y_2\)</span>):</p>
+<ol>
+<li>Trabajo realizado por las fuerzas de presión netas:
+   $<span class="arithmatex">\(W = F_1 \Delta x_1 - F_2 \Delta x_2 = P_1 A_1 \Delta x_1 - P_2 A_2 \Delta x_2 = (P_1 - P_2) \Delta V\)</span>$</li>
+<li>Variación de la Energía Cinética (<span class="arithmatex">\(\Delta K\)</span>) y Potencial Gravitatoria (<span class="arithmatex">\(\Delta U\)</span>):
+   $<span class="arithmatex">\(\Delta K = \frac{1}{2} \Delta m (v_2^2 - v_1^2), \quad \Delta U = \Delta m \cdot g (y_2 - y_1)\)</span>$</li>
+<li>Aplicando el Teorema del Trabajo y la Energía (<span class="arithmatex">\(W = \Delta K + \Delta U\)</span>) y dividiendo por <span class="arithmatex">\(\Delta V\)</span> (<span class="arithmatex">\(\rho = \frac{\Delta m}{\Delta V}\)</span>):</li>
+</ol>
+<div class="arithmatex">\[P_1 + \frac{1}{2}\rho v_1^2 + \rho g y_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho g y_2 = \text{constante}\]</div>
+<p><img alt="Bernoulli" src="../../assets/Imagenes-5/image-8.png" />{: style="display: block; margin: 0 auto; max-width: 80%; height: auto;" }</p>
+<h3 id="b-interpretacion-de-terminos">B. Interpretación de Términos</h3>
+<ul>
+<li><strong><span class="arithmatex">\(P\)</span>:</strong> Presión estática del fluido (energía por unidad de volumen debida a las fuerzas de presión).</li>
+<li><strong><span class="arithmatex">\(\frac{1}{2}\rho v^2\)</span>:</strong> Presión dinámica (energía cinética por unidad de volumen).</li>
+<li><strong><span class="arithmatex">\(\rho g y\)</span>:</strong> Presión hidrostática o de elevación (energía potencial gravitatoria por unidad de volumen).</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Si el fluido se encuentra en reposo (<span class="arithmatex">\(v_1 = v_2 = 0\)</span>), la ecuación se reduce al Teorema General de la Hidrostática: <span class="arithmatex">\(P_1 - P_2 = \rho g (y_2 - y_1)\)</span>.</p>
+</blockquote>
+<hr />
+<h3 id="ejemplos-practicos-aplicados_1">🛠️ Ejemplos Prácticos Aplicados:</h3>
+<h4 id="1-tuberia-descendente-tp-ejercicio-b3">1. Tubería Descendente (TP - Ejercicio B3)</h4>
+<p><strong>Enunciado:</strong> El agua se desplaza a <span class="arithmatex">\(5.18 \text{ m/s}\)</span> por un tubo con superficie transversal de <span class="arithmatex">\(4.20 \text{ cm}^2\)</span>. Poco a poco desciende <span class="arithmatex">\(9.66 \text{ m}\)</span> al aumentar la superficie a <span class="arithmatex">\(7.60 \text{ cm}^2\)</span>.
+a) ¿Cuál es la rapidez de flujo en el nivel inferior?
+b) La presión en el nivel superior es <span class="arithmatex">\(152 \text{ kPa}\)</span>, calcule la presión en el nivel inferior.</p>
+<p><strong>Resolución Analítica:</strong>
+* <strong>Parte a):</strong> Por continuidad <span class="arithmatex">\(A_1 v_1 = A_2 v_2\)</span>:
+  $<span class="arithmatex">\(v_2 = \left(\frac{A_1}{A_2}\right) v_1 = \left(\frac{4.20 \text{ cm}^2}{7.60 \text{ cm}^2}\right) (5.18 \text{ m/s}) = \mathbf{2.863 \text{ m/s}}\)</span>$
+* <strong>Parte b):</strong> Ecuación de Bernoulli entre el nivel 1 (<span class="arithmatex">\(y_1 = 9.66 \text{ m}\)</span>) y el nivel 2 (<span class="arithmatex">\(y_2 = 0\)</span>):
+  $<span class="arithmatex">\(P_2 = P_1 + \frac{1}{2}\rho(v_1^2 - v_2^2) + \rho g (y_1 - y_2)\)</span>$
+  $<span class="arithmatex">\(P_2 = 152000 + \frac{1}{2}(1000)(5.18^2 - 2.863^2) + (1000)(9.8)(9.66) = \mathbf{256 \text{ kPa}}\)</span>$</p>
+<h4 id="2-tanque-elevado-y-red-domestica-ejemplo-2-resnick-halliday">2. Tanque Elevado y Red Doméstica (Ejemplo 2 Resnick-Halliday)</h4>
+<p><strong>Enunciado:</strong> Un tanque elevado de altura <span class="arithmatex">\(h = 32 \text{ m}\)</span> y diámetro <span class="arithmatex">\(D = 3.0 \text{ m}\)</span> abastece a una casa mediante un tubo horizontal de diámetro <span class="arithmatex">\(d = 2.54 \text{ cm}\)</span> con un caudal <span class="arithmatex">\(Q = 0.0025 \text{ m}^3\text{/s}\)</span>.
+a) Calcule la presión en la tubería en la base.
+b) Un tubo de <span class="arithmatex">\(d' = 1.27 \text{ cm}\)</span> abastece al tercer piso a <span class="arithmatex">\(y_C = 7.2 \text{ m}\)</span> sobre el suelo. Calcule la presión en este punto.</p>
+<p><img alt="Tanque" src="../../assets/Imagenes-5/image-9.png" />{: style="display: block; margin: 0 auto; max-width: 80%; height: auto;" }</p>
+<p><strong>Resolución Analítica:</strong>
+1. Velocidades en el tanque (<span class="arithmatex">\(A\)</span>), tubería base (<span class="arithmatex">\(B\)</span>) y tercer piso (<span class="arithmatex">\(C\)</span>):
+   * <span class="arithmatex">\(v_A \approx 0\)</span> (por ser <span class="arithmatex">\(D \gg d\)</span>).
+   * <span class="arithmatex">\(v_B = \frac{Q}{\pi (d/2)^2} = \frac{0.0025}{\pi (0.0127)^2} = 4.9 \text{ m/s}\)</span>
+   * <span class="arithmatex">\(v_C = \frac{Q}{\pi (d'/2)^2} = \frac{0.0025}{\pi (0.00635)^2} = 19.7 \text{ m/s}\)</span>
+2. Presión en la base (<span class="arithmatex">\(P_B\)</span>):
+   $<span class="arithmatex">\(P_B = P_0 + \rho g h - \frac{1}{2}\rho v_B^2 = 1.01 \times 10^5 + (1000)(9.8)(32) - \frac{1}{2}(1000)(4.9)^2 = \mathbf{4.03 \times 10^5 \text{ Pa}}\)</span>$
+3. Presión en el tercer piso (<span class="arithmatex">\(P_C\)</span>):
+   $<span class="arithmatex">\(P_C = P_0 + \rho g (h - y_C) - \frac{1}{2}\rho v_C^2 = 1.01 \times 10^5 + (1000)(9.8)(32 - 7.2) - \frac{1}{2}(1000)(19.7)^2 = \mathbf{1.49 \times 10^5 \text{ Pa}}\)</span>$</p>
+<hr />
+<h2 id="4-aplicaciones-especiales-e-instrumentacion-hidrodinamica">4. Aplicaciones Especiales e Instrumentación Hidrodinámica</h2>
+<h3 id="a-teorema-de-torricelli">A. Teorema de Torricelli</h3>
+<p>El Teorema de Torricelli es una aplicación particular de la Ecuación de Bernoulli que permite determinar la rapidez de salida de un líquido a través de un orificio practicado en un recipiente que lo contiene.</p>
+<h4 id="deduccion-general-para-recipientes-presurizados-y-abiertos">Deducción General para Recipientes Presurizados y Abiertos</h4>
+<p>Considerando un tanque con líquido de densidad <span class="arithmatex">\(\rho\)</span>, donde la superficie libre (punto 2, a una altura <span class="arithmatex">\(y_2\)</span>) se encuentra a una presión <span class="arithmatex">\(P\)</span>, y el orificio de salida (punto 1, a una altura <span class="arithmatex">\(y_1\)</span>) descarga a la atmósfera a presión <span class="arithmatex">\(P_0\)</span>:</p>
+<ol>
+<li>Ecuación de Bernoulli entre los puntos 1 y 2:
+   $<span class="arithmatex">\(P_0 + \frac{1}{2}\rho v_1^2 + \rho g y_1 = P + \frac{1}{2}\rho v_2^2 + \rho g y_2\)</span>$</li>
+<li>Hipótesis de recipiente grande (<span class="arithmatex">\(A_2 \gg A_1\)</span>): La velocidad de descenso del nivel libre es despreciable respecto a la velocidad de salida (<span class="arithmatex">\(v_2 \approx 0\)</span>).</li>
+<li>Definiendo la profundidad del orificio respecto a la superficie libre como <span class="arithmatex">\(h = y_2 - y_1\)</span>:</li>
+</ol>
+<div class="arithmatex">\[v_1 = \sqrt{\frac{2(P - P_0)}{\rho} + 2gh}\]</div>
+<ul>
+<li><strong>Caso Particular (Tanque Abierto a la Atmósfera <span class="arithmatex">\(P = P_0\)</span>):</strong> La velocidad de salida es idéntica a la adquirida por un cuerpo en caída libre desde una altura <span class="arithmatex">\(h\)</span>:</li>
+</ul>
+<p>$<span class="arithmatex">\(v = \sqrt{2gh}\)</span>$
+<pre class="mermaid"><code>graph TD
+    subgraph S_Torricelli["Teorema de Torricelli: Velocidad de Descarga"]
+        Origen["Ecuación de Bernoulli entre Superficie Librey Orificio"] --&gt; Caso1["Tanque Abierto (P = P₀)&lt;br&gt;v = √(2gh)"]
+        Origen --&gt; Caso2["Tanque Presurizado (P &gt; P₀)&lt;br&gt;v = √[2(P - P₀)/ρ + 2gh]"]
+        Caso1 --&gt; Salida1["Caída Libre Equivalente desde Profundidad h"]
+        Caso2 --&gt; Salida2["Velocidad Incrementada por Presión Neumática"]
+    end</code></pre></p>
+<p><img alt="Torricelli" src="../../assets/Imagenes-5/grafico_torricelli_alcance.png" /></p>
+<hr />
+<h3 id="ejemplos-practicos-aplicados-torricelli">🛠️ Ejemplos Prácticos Aplicados (Torricelli):</h3>
+<h4 id="1-fuga-en-tanque-abierto-tp-ejercicio-b4">1. Fuga en Tanque Abierto (TP - Ejercicio B4)</h4>
+<p><strong>Enunciado:</strong> Un gran tanque de almacenamiento abierto en la parte superior contiene agua. En su costado, a <span class="arithmatex">\(16\text{ m}\)</span> por debajo del nivel de agua, se produce un orificio pequeño con una tasa de fuga <span class="arithmatex">\(Q = 2.5 \times 10^{-3}\text{ m}^3/\text{min}\)</span>. Determine:
+a) La rapidez con la que el agua sale del orificio.
+b) El diámetro del orificio.</p>
+<p><strong>Resolución Analítica:</strong>
+* <strong>Parte a):</strong> Por Teorema de Torricelli para tanque abierto (<span class="arithmatex">\(h = 16\text{ m}\)</span>):
+  $<span class="arithmatex">\(v = \sqrt{2gh} = \sqrt{2(9.8\text{ m/s}^2)(16\text{ m})} = \mathbf{17.71\text{ m/s}}\)</span>$
+* <strong>Parte b):</strong> Relación entre Caudal y Área (<span class="arithmatex">\(Q = A \cdot v\)</span>):
+  $<span class="arithmatex">\(Q = \frac{2.5 \times 10^{-3}\text{ m}^3}{60\text{ s}} = 4.167 \times 10^{-5}\text{ m}^3/\text{s}\)</span>$
+  $<span class="arithmatex">\(A = \frac{Q}{v} = \frac{4.167 \times 10^{-5}}{17.71} = 2.353 \times 10^{-6}\text{ m}^2 \implies d = \sqrt{\frac{4A}{\pi}} = \mathbf{1.73\text{ mm}}\)</span>$</p>
+<h4 id="2-recipiente-circular-descargando-tp-ejercicio-b5">2. Recipiente Circular Descargando (TP - Ejercicio B5)</h4>
+<p><strong>Enunciado:</strong> En un recipiente de gran sección lleno de agua, a <span class="arithmatex">\(1.20\text{ m}\)</span> debajo de la superficie libre se realiza un agujero circular de <span class="arithmatex">\(5\text{ cm}\)</span> de radio. Calcular la velocidad de salida y el caudal.</p>
+<p><strong>Resolución Analítica:</strong>
+1. Velocidad de salida (<span class="arithmatex">\(h = 1.20\text{ m}\)</span>):
+   $<span class="arithmatex">\(v = \sqrt{2gh} = \sqrt{2(9.8)(1.20)} = \mathbf{4.85\text{ m/s}}\)</span>$
+2. Caudal (<span class="arithmatex">\(r = 0.05\text{ m} \implies A = \pi (0.05)^2 = 7.854 \times 10^{-3}\text{ m}^2\)</span>):
+   $<span class="arithmatex">\(Q = A \cdot v = (7.854 \times 10^{-3}\text{ m}^2)(4.85\text{ m/s}) = \mathbf{0.0381\text{ m}^3/\text{s}} \quad (38.1\text{ L/s})\)</span>$</p>
+<h4 id="3-deposito-hermetico-presurizado-tp-ejercicio-b6">3. Depósito Hermético Presurizado (TP - Ejercicio B6)</h4>
+<p><strong>Enunciado:</strong> Un depósito herméticamente cerrado contiene agua y en la parte superior interna la presión es <span class="arithmatex">\(3\text{ atm}\)</span> (<span class="arithmatex">\(1\text{ atm} = 101325\text{ Pa}\)</span>). Determinar:
+a) La presión a <span class="arithmatex">\(6\text{ m}\)</span> por debajo del nivel del agua.
+b) La velocidad inicial de salida por un orificio a <span class="arithmatex">\(6\text{ m}\)</span> de profundidad.
+c) La velocidad si se abriese la parte superior a la atmósfera.</p>
+<p><strong>Resolución Analítica:</strong>
+* <strong>Parte a):</strong> Presión absoluta a <span class="arithmatex">\(6\text{ m}\)</span> (<span class="arithmatex">\(P_{\text{sup}} = 3 \times 101325 = 303975\text{ Pa}\)</span>):
+  $<span class="arithmatex">\(P = P_{\text{sup}} + \rho g h = 303975 + (1000)(9.8)(6) = \mathbf{362775\text{ Pa}} \quad (3.58\text{ atm})\)</span>$
+* <strong>Parte b):</strong> Velocidad con aire presurizado (<span class="arithmatex">\(P_0 = 101325\text{ Pa}\)</span>):
+  $<span class="arithmatex">\(v = \sqrt{\frac{2(303975 - 101325)}{1000} + 2(9.8)(6)} = \sqrt{405.3 + 117.6} = \mathbf{22.87\text{ m/s}}\)</span>$
+* <strong>Parte c):</strong> Velocidad si estuviera abierto (<span class="arithmatex">\(P_{\text{sup}} = P_0\)</span>):
+  $<span class="arithmatex">\(v = \sqrt{2gh} = \sqrt{2(9.8)(6)} = \mathbf{10.84\text{ m/s}}\)</span>$</p>
+<h4 id="4-descarga-en-compuerta-de-dique-tp-ejercicio-b7">4. Descarga en Compuerta de Dique (TP - Ejercicio B7)</h4>
+<p><strong>Enunciado:</strong> El agua ingresa de manera continua en un dique de <span class="arithmatex">\(15.2\text{ m}\)</span> de profundidad. Un tubo horizontal de <span class="arithmatex">\(4.30\text{ cm}\)</span> de diámetro lo cruza a <span class="arithmatex">\(6.15\text{ m}\)</span> debajo de la superficie del agua protegida por una compuerta. Calcule:
+a) La fuerza de fricción entre la compuerta y la pared del tubo.
+b) El volumen de agua que sale en <span class="arithmatex">\(3\text{ h}\)</span> tras abrir la compuerta.
+c) El alcance horizontal del chorro si el tubo descarga a <span class="arithmatex">\(9.05\text{ m}\)</span> del suelo.</p>
+<p><strong>Resolución Analítica:</strong>
+* <strong>Parte a):</strong> Fuerza manométrica estática (<span class="arithmatex">\(h = 6.15\text{ m}\)</span>, <span class="arithmatex">\(A = 1.452 \times 10^{-3}\text{ m}^2\)</span>):
+  $<span class="arithmatex">\(P_{\text{man}} = \rho g h = (1000)(9.8)(6.15) = 60270\text{ Pa}\)</span>$
+  $<span class="arithmatex">\(F_{\text{fricción}} = P_{\text{man}} \cdot A = (60270)(1.452 \times 10^{-3}) = \mathbf{87.51\text{ N}}\)</span>$
+* <strong>Parte b):</strong> Volumen en <span class="arithmatex">\(3\text{ h}\)</span> (<span class="arithmatex">\(t = 10800\text{ s}\)</span>):
+  $<span class="arithmatex">\(v = \sqrt{2gh} = \sqrt{2(9.8)(6.15)} = 10.98\text{ m/s} \implies Q = A \cdot v = 0.01594\text{ m}^3/\text{s}\)</span>$
+  $<span class="arithmatex">\(V = Q \cdot t = (0.01594\text{ m}^3/\text{s})(10800\text{ s}) = \mathbf{172.15\text{ m}^3}\)</span>$
+* <strong>Parte c):</strong> Alcance horizontal (<span class="arithmatex">\(y_0 = 9.05\text{ m}\)</span>):
+  $<span class="arithmatex">\(t_{\text{caída}} = \sqrt{\frac{2 y_0}{g}} = \sqrt{\frac{2(9.05)}{9.8}} = 1.358\text{ s} \implies x = v \cdot t_{\text{caída}} = (10.98)(1.358) = \mathbf{14.91\text{ m}}\)</span>$</p>
+<h4 id="5-tanque-presurizado-con-empuje-de-retroceso-tp-ejercicio-b8">5. Tanque Presurizado con Empuje de Retroceso (TP - Ejercicio B8)</h4>
+<p><strong>Enunciado:</strong> Un tanque cilíndrico de <span class="arithmatex">\(1.2\text{ m}\)</span> de diámetro se llena hasta <span class="arithmatex">\(0.3\text{ m}\)</span> de profundidad con agua. El aire superior está comprimido a <span class="arithmatex">\(P = 2.026 \times 10^5\text{ N/m}^2\)</span>. Se quita un tapón del fondo de área <span class="arithmatex">\(A_{\text{orificio}} = 2.5\text{ cm}^2\)</span>.
+a) Calcular la velocidad inicial de salida.
+b) Encontrar la fuerza vertical hacia arriba (empuje de reacción) que experimenta el tanque.</p>
+<p><strong>Resolución Analítica:</strong>
+* <strong>Parte a):</strong> Velocidad inicial de descarga (<span class="arithmatex">\(\Delta P = 1.013 \times 10^5\text{ Pa}\)</span>):
+  $<span class="arithmatex">\(v = \sqrt{\frac{2 \Delta P}{\rho} + 2gh} = \sqrt{\frac{2(101300)}{1000} + 2(9.8)(0.3)} = \sqrt{202.6 + 5.88} = \mathbf{14.44\text{ m/s}}\)</span>$
+* <strong>Parte b):</strong> Fuerza de reacción por Segunda Ley de Newton (<span class="arithmatex">\(F = \rho A v^2\)</span>):
+  $<span class="arithmatex">\(F_{\text{reacción}} = \rho \cdot A_{\text{orificio}} \cdot v^2 = (1000)(2.5 \times 10^{-4})(14.44)^2 = \mathbf{52.13\text{ N (Hacia Arriba)}}\)</span>$</p>
+<h4 id="6-descarga-por-orificio-a-5text-m-ejemplo-bueche">6. Descarga por Orificio a <span class="arithmatex">\(5\text{ m}\)</span> (Ejemplo Bueche)</h4>
+<p><strong>Enunciado:</strong> Un tanque abierto en su parte superior tiene una abertura de <span class="arithmatex">\(3.0\text{ cm}\)</span> de diámetro situada a <span class="arithmatex">\(5.0\text{ m}\)</span> por debajo del nivel de agua. ¿Qué volumen de líquido saldrá por minuto?</p>
+<p><strong>Resolución Analítica:</strong>
+1. Velocidad de salida (<span class="arithmatex">\(h = 5.0\text{ m}\)</span>):
+   $<span class="arithmatex">\(v = \sqrt{2gh} = \sqrt{2(9.81)(5.0)} = 9.9\text{ m/s}\)</span>$
+2. Caudal volumétrico en <span class="arithmatex">\(\text{m}^3/\text{min}\)</span>:
+   $<span class="arithmatex">\(A = \pi (1.5 \times 10^{-2}\text{ m})^2 = 7.068 \times 10^{-4}\text{ m}^2\)</span>$
+   $<span class="arithmatex">\(Q = (9.9\text{ m/s})(7.068 \times 10^{-4}\text{ m}^2) = 7.0 \times 10^{-3}\text{ m}^3/\text{s} = \mathbf{0.42\text{ m}^3/\text{min}}\)</span>$</p>
+<hr />
+<h3 id="b-tubo-de-venturi">B. Tubo de Venturi</h3>
+<p>El Tubo de Venturi es un dispositivo hidráulico diseñado para medir la velocidad de flujo y el caudal de un fluido incompresible dentro de una tubería mediante una reducción en la sección transversal (garganta).</p>
+<h4 id="deduccion-analitica-completa">Deducción Analítica Completa</h4>
+<p>Para una tubería horizontal (<span class="arithmatex">\(y_1 = y_2\)</span>):
+1. Ecuación de Bernoulli:
+   $<span class="arithmatex">\(P_1 + \frac{1}{2}\rho v_1^2 = P_2 + \frac{1}{2}\rho v_2^2 \implies P_1 - P_2 = \frac{1}{2}\rho (v_2^2 - v_1^2)\)</span>$
+2. Por Ecuación de Continuidad (<span class="arithmatex">\(v_1 = \frac{A_2}{A_1} v_2\)</span>):
+   $<span class="arithmatex">\(P_1 - P_2 = \frac{1}{2}\rho v_2^2 \left[1 - \left(\frac{A_2}{A_1}\right)^2\right] \implies v_2 = A_1 \sqrt{\frac{2(P_1 - P_2)}{\rho(A_1^2 - A_2^2)}}\)</span>$</p>
+<h4 id="integracion-con-manometro-diferencial-de-mercurio-rho_texthg">Integración con Manómetro Diferencial de Mercurio (<span class="arithmatex">\(\rho_{\text{Hg}}\)</span>)</h4>
+<p>Si se conecta un manómetro en U con líquido manométrico de densidad <span class="arithmatex">\(\rho_{\text{Hg}}\)</span>, la diferencia de presión se iguala a <span class="arithmatex">\(P_1 - P_2 = g h (\rho_{\text{Hg}} - \rho)\)</span>:</p>
+<div class="arithmatex">\[v_2 = A_1 \sqrt{\frac{2 g h (\rho_{\text{Hg}} - \rho)}{\rho (A_1^2 - A_2^2)}}\]</div>
+<div class="arithmatex">\[Q = A_2 \cdot v_2 = \sqrt{\frac{2 g A_1^2 A_2^2 (\rho_{\text{Hg}} - \rho) h}{\rho (A_1^2 - A_2^2)}}\]</div>
+<p><img alt="Verturi" src="../../assets/Imagenes-5/image-10.png" />{: style="display: block; margin: 0 auto; max-width: 80%; height: auto;" }</p>
+<p><img alt="Venturi" src="../../assets/Imagenes-5/grafico_venturi_presion_velocidad.png" /></p>
+<hr />
+<h3 id="ejemplos-practicos-aplicados-venturi">🛠️ Ejemplos Prácticos Aplicados (Venturi):</h3>
+<h4 id="1-venturi-simple-en-caneria-tp-ejercicio-b9">1. Venturi Simple en Cañería (TP - Ejercicio B9)</h4>
+<p><strong>Enunciado:</strong> Para saber la velocidad del agua en una cañería de <span class="arithmatex">\(40\text{ cm}^2\)</span> se empalma un conector 10 veces menor (<span class="arithmatex">\(A_2 = 4\text{ cm}^2\)</span>) con dos tubos manométricos. La diferencia de nivel alcanzada es <span class="arithmatex">\(h = 5\text{ cm}\)</span>. Calcular la velocidad en ambas secciones y el caudal.</p>
+<p><strong>Resolución Analítica:</strong>
+1. Diferencia de presión piezométrica (<span class="arithmatex">\(P_1 - P_2 = \rho g h\)</span>):
+   $<span class="arithmatex">\(P_1 - P_2 = (1000)(9.8)(0.05) = 490\text{ Pa}\)</span>$
+2. Velocidad en la sección angosta (<span class="arithmatex">\(v_2\)</span>):
+   $<span class="arithmatex">\(v_2 = A_1 \sqrt{\frac{2 g h}{A_1^2 - A_2^2}} = (40 \times 10^{-4}) \sqrt{\frac{2(9.8)(0.05)}{(40 \times 10^{-4})^2 - (4 \times 10^{-4})^2}}\)</span>$
+   $<span class="arithmatex">\(v_2 = 40 \times 10^{-4} \sqrt{\frac{0.98}{1.584 \times 10^{-5}}} = (40 \times 10^{-4})(248.74) = \mathbf{0.995\text{ m/s}}\)</span>$
+3. Velocidad en la cañería principal (<span class="arithmatex">\(v_1\)</span>) y Caudal (<span class="arithmatex">\(Q\)</span>):
+   $<span class="arithmatex">\(v_1 = \frac{v_2}{10} = \mathbf{0.0995\text{ m/s}}\)</span>$
+   $<span class="arithmatex">\(Q = A_1 \cdot v_1 = (40 \times 10^{-4}\text{ m}^2)(0.0995\text{ m/s}) = \mathbf{3.98 \times 10^{-4}\text{ m}^3/\text{s}} \quad (0.398\text{ L/s})\)</span>$</p>
+<h4 id="2-venturi-con-manometro-de-mercurio-ejemplo-san-juan-tp">2. Venturi con Manómetro de Mercurio (Ejemplo San Juan / TP)</h4>
+<p><strong>Enunciado:</strong> Un tubo de Venturi tiene un diámetro de entrada <span class="arithmatex">\(D_1 = 40\text{ cm}\)</span> y en la garganta <span class="arithmatex">\(D_2 = 20\text{ cm}\)</span>. El manómetro de mercurio (<span class="arithmatex">\(\rho_{\text{Hg}} = 13.6\text{ g/cm}^3\)</span>) indica una diferencia de nivel <span class="arithmatex">\(h = 30\text{ cm}\)</span>. Calcule el caudal de agua.</p>
+<p><strong>Resolución Analítica:</strong>
+1. Cálculo de Áreas:
+   * <span class="arithmatex">\(A_1 = \pi (40)^2 / 4 = 1256.64\text{ cm}^2\)</span>
+   * <span class="arithmatex">\(A_2 = \pi (20)^2 / 4 = 314.16\text{ cm}^2\)</span>
+2. Reemplazo en la fórmula de Caudal en CGS (<span class="arithmatex">\(\rho = 1\text{ g/cm}^3\)</span>, <span class="arithmatex">\(g = 980\text{ cm/s}^2\)</span>):
+   $<span class="arithmatex">\(Q = \sqrt{\frac{2(980)(314.16)^2(1256.64)^2(13.6 - 1)(30)}{1 \cdot [(1256.64)^2 - (314.16)^2]}}\)</span>$
+   $<span class="arithmatex">\(Q = 3.0 \times 10^5\text{ cm}^3/\text{s} = \mathbf{0.3\text{ m}^3/\text{s}}\)</span>$</p>
+<hr />
+<h3 id="c-tubo-de-pitot">C. Tubo de Pitot</h3>
+<p>El Tubo de Pitot es un instrumento utilizado para medir la velocidad de flujo de un gas o líquido en una conducción o la velocidad de una nave con respecto al fluido circundante.</p>
+<h4 id="deduccion-analitica">Deducción Analítica</h4>
+<p>Consta de dos tomas: la toma estática (perpendicular al flujo, mide <span class="arithmatex">\(P_a\)</span>) y la toma de estancamiento (dirigida contra la corriente, donde el fluido se detiene <span class="arithmatex">\(v_b = 0\)</span>, midiendo la presión total <span class="arithmatex">\(P_b\)</span>).
+1. Ecuación de Bernoulli entre tomas <span class="arithmatex">\(a\)</span> y <span class="arithmatex">\(b\)</span>:
+   $<span class="arithmatex">\(P_a + \frac{1}{2}\rho_{\text{fluido}} v^2 = P_b\)</span>$
+2. La diferencia de presión <span class="arithmatex">\(P_b - P_a\)</span> equilibra la columna manométrica de líquido <span class="arithmatex">\(\rho_{\text{liq}}\)</span>:
+   $<span class="arithmatex">\(\frac{1}{2}\rho_{\text{fluido}} v^2 = \rho_{\text{liq}} \cdot g \cdot h \implies v = \sqrt{\frac{2 \rho_{\text{liq}} g h}{\rho_{\text{fluido}}}}\)</span>$</p>
+<p><img alt="pitot" src="../../assets/Imagenes-5/image-11.png" />{: style="display: block; margin: 0 auto; max-width: 80%; height: auto;" }</p>
+<hr />
+<h3 id="ejemplo-practico-aplicado-pitot">🛠️ Ejemplo Práctico Aplicado (Pitot):</h3>
+<h4 id="1-velocidad-de-aeroplano-tp-ejercicio-b10">1. Velocidad de Aeroplano (TP - Ejercicio B10)</h4>
+<p><strong>Enunciado:</strong> Un tubo de Pitot montado en el ala de un aeroplano determina su velocidad respecto al aire (<span class="arithmatex">\(\rho_{\text{aire}} = 1.03\text{ kg/m}^3\)</span>). El tubo contiene alcohol (<span class="arithmatex">\(\rho_{\text{alc}} = 810\text{ kg/m}^3\)</span>) e indica un desnivel <span class="arithmatex">\(h = 26.2\text{ cm}\)</span>. ¿Cuál es la velocidad del aeroplano?</p>
+<p><strong>Resolución Analítica:</strong>
+$<span class="arithmatex">\(v = \sqrt{\frac{2 \cdot \rho_{\text{alc}} \cdot g \cdot h}{\rho_{\text{aire}}}}\)</span>$
+$<span class="arithmatex">\(v = \sqrt{\frac{2 (810\text{ kg/m}^3) (9.8\text{ m/s}^2) (0.262\text{ m})}{1.03\text{ kg/m}^3}} = \sqrt{\frac{4159.27}{1.03}} = \sqrt{4038.13} = \mathbf{63.55\text{ m/s}} \quad (228.8\text{ km/h})\)</span>$</p>
+<hr />
+<h2 id="5-introduccion-a-fluidos-reales-viscosidad-y-regimen-de-flujo">5. Introducción a Fluidos Reales: Viscosidad y Régimen de Flujo</h2>
+<h3 id="a-viscosidad-dinamica-eta">A. Viscosidad Dinámica (<span class="arithmatex">\(\eta\)</span>)</h3>
+<p>La <strong>viscosidad</strong> representa el rozamiento interno de un fluido real debido a las fuerzas de cohesión entre sus moléculas. Al deslizar una placa móvil sobre un fluido viscoso confinado sobre una placa fija, se establece un perfil lineal de velocidades.</p>
+<div class="arithmatex">\[F = \eta \cdot A \cdot \frac{v}{e} \implies \eta = \frac{F \cdot e}{v \cdot A} \quad [\text{Pa}\cdot\text{s}]\]</div>
+<h3 id="b-numero-de-reynolds-n_r-y-regimenes-de-flujo">B. Número de Reynolds (<span class="arithmatex">\(N_R\)</span>) y Regímenes de Flujo</h3>
+<p>Osborne Reynolds demostró experimentalmente que el carácter del flujo en una tubería cilíndrica de diámetro <span class="arithmatex">\(D\)</span> depende de la densidad <span class="arithmatex">\(\rho\)</span>, la velocidad media <span class="arithmatex">\(v\)</span> y la viscosidad dinámica <span class="arithmatex">\(\mu\)</span>:</p>
+<div class="arithmatex">\[N_R = \frac{\rho \cdot v \cdot D}{\mu} = \frac{v \cdot D}{\nu}\]</div>
+<h4 id="criterios-de-clasificacion">Criterios de Clasificación:</h4>
+<ul>
+<li><strong>Flujo Laminar (<span class="arithmatex">\(N_R \le 2000\)</span>):</strong> El fluido se mueve en capas paralelas o láminas suaves sin mezclado macroscópico.</li>
+<li><strong>Zona de Transición (<span class="arithmatex">\(2000 &lt; N_R &lt; 4000\)</span>):</strong> Inestable; el flujo puede alternar entre laminar y turbulento.</li>
+<li><strong>Flujo Turbulento (<span class="arithmatex">\(N_R \ge 4000\)</span>):</strong> El flujo presenta remolinos, vórtices y mezcla caótica de partículas.
+<pre class="mermaid"><code>graph TD
+    subgraph S_Reynolds["Clasificación del Flujo según el Número de Reynolds (N_R)"]
+        NR["N_R = (ρ · v · D) / μ"] --&gt; Laminar["N_R ≤ 2000&lt;br&gt;Flujo Laminar (Capas Parallelas Suaves)"]
+        NR --&gt; Transicion["2000 &lt; N_R &lt; 4000&lt;br&gt;Zona de Transición (Inestable)"]
+        NR --&gt; Turbulento["N_R ≥ 4000&lt;br&gt;Flujo Turbulento (Vórtices y Remolinos)"]
+    end</code></pre></li>
+</ul>
+<p><img alt="Viscosidad" src="../../assets/Imagenes-5/grafico_perfil_viscosidad.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
